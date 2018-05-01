@@ -383,23 +383,14 @@ $site_url = $this->Url->build('/',true); ?>
 
 <script>
     function check_member(val) {
-
         if (val == '2') {
-
             $('#already_member_div').hide();
             $('#new_member_div').show();
-
         } else {
-
             $('#already_member_div').show();
             $('#new_member_div').hide();
-
         }
-
-
     }
-
-
     $(document).ready(function () {
         check_member('1');
     });
