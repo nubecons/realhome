@@ -257,6 +257,7 @@ class ProductsController extends AppController
 		$conditions['status'] = 'ACTIVE';
 		if ($this->request->is('post'))
 		{
+			
 			$this->Session->delete('SearchData');
 			$this->Session->delete('SearchCond');
 			
@@ -302,7 +303,7 @@ class ProductsController extends AppController
 
             }
 			
-			if ($data['min_area'] != '' ||  $data['max_area'] != ''  ) {
+			if ((isset($data['min_area']) && $data['min_area'] != '') ||  (isset($data['max_area']) && $data['max_area'] != '' ) ) {
 				
                 $conditions['Products.area_unit'] = $data['area_unit'] ;
 
@@ -333,6 +334,8 @@ class ProductsController extends AppController
 		if ($this->Session->check('SearchCond')) {
             $conditions = $this->Session->read('SearchCond');
         }
+		
+		
 		
 		$query = $this->Products->find('all')->where($conditions);
         $this->paginate['limit'] = 25;
@@ -387,6 +390,7 @@ class ProductsController extends AppController
 	
 public function locations($city_id = null)
     {
+		
 		$City = false;
 		if($city_id){
 			
