@@ -8724,3 +8724,423 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+2018-05-01 18:30:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Maps could not be found.
+Exception Attributes: array (
+  'class' => 'Maps',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /maps/index
+Stack Trace:
+#0 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\wamp\www\realhome\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\wamp\www\realhome\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-05-01 18:33:55 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 66]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 66
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:33:58 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 66]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 66
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:35:01 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 36]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:35:03 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 36]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:14 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:37:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:38:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:48:27 Error: Fatal Error (1): Call to a member function find() on boolean in [D:\wamp\www\realhome\src\Controller\MapsController.php, line 48]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-05-01 18:48:28 Warning: Headers already sent in D:\wamp\www\realhome\src\Controller\MapsController.php:48
+2018-05-01 18:48:28 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean in D:\wamp\www\realhome\src\Controller\MapsController.php on line 48
+Request URL: /maps/index
+Stack Trace:
+#0 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\wamp\\www\\rea...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-05-01 18:50:21 Error: Fatal Error (1): Call to a member function find() on boolean in [D:\wamp\www\realhome\src\Controller\MapsController.php, line 48]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-05-01 18:50:22 Warning: Headers already sent in D:\wamp\www\realhome\src\Controller\MapsController.php:48
+2018-05-01 18:50:22 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean in D:\wamp\www\realhome\src\Controller\MapsController.php on line 48
+Request URL: /maps/index
+Stack Trace:
+#0 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\wamp\\www\\rea...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-05-01 18:51:02 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 48]
+Request URL: /maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 48
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-05-01 18:51:03 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Maps\index.ctp, line 48]
+Request URL: /maps/index
+Referer URL: http://localhost/realhome/maps/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Maps\index.ctp, line 48
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+

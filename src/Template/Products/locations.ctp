@@ -58,7 +58,7 @@ $site_url = $this->Url->build('/',true); ?>
 								   foreach($Locations as $Location){
 									   $counter = $counter + 1;
 									   ?>
-<<<<<<< HEAD
+
                                       <li>
                                       <?php
 									  echo $this->Form->postLink(
@@ -70,9 +70,7 @@ $site_url = $this->Url->build('/',true); ?>
 											?>
                                       
                                      <?php /*?> <a href=""><?=$Location['name']?><span class="count"> (11)</span></a><?php */?></li> 
-=======
-                                                <li><a href=""><?=$Location['name']?><span class="count"> (11)</span></a></li> 
->>>>>>> 5eb8b9b0dcc559fcff5cd5cc937763658fa9cba7
+
                                      <?php 
 									 
 									  if($counter >= $dispRows ){

@@ -21,7 +21,7 @@
 							   <a class="nav-link" href="#">blog</a>
 						   </li>
 						   <li class="nav-item">
-							   <a class="nav-link" href="#">Maps</a>
+							   <a class="nav-link" href="<?=$site_url."maps/index/"?>">Maps</a>
 						   </li>
 						  <?php /*?> <li class="nav-item">
 							   <a class="nav-link" href="#">trends</a>
