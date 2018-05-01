@@ -8540,6 +8540,7 @@ Stack Trace:
 #15 {main}
 
 
+<<<<<<< HEAD
 2018-05-01 18:41:46 Error: [Cake\Controller\Exception\MissingActionException] Action ProductsController::delete() could not be found, or is not accessible.
 Exception Attributes: array (
   'controller' => 'ProductsController',
@@ -8654,10 +8655,36 @@ header - [internal], line ??
 Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
 Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
 Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+=======
+2018-05-01 18:10:35 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Products\locations.ctp, line 67]
+Request URL: /products/locations/103908
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\locations.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+>>>>>>> 5eb8b9b0dcc559fcff5cd5cc937763658fa9cba7
 [main] - ROOT\webroot\index.php, line 40
 
 
 
+<<<<<<< HEAD
 2018-05-01 18:52:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\realhome\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [D:\xampp\htdocs\realhome\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
 Request URL: /products
 Referer URL: http://localhost/realhome/products/locations/103908
@@ -8667,6 +8694,32 @@ header - [internal], line ??
 Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
 Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
 Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+=======
+2018-05-01 18:10:36 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\wamp\www\realhome\src\Template\Products\locations.ctp, line 67]
+Request URL: /products/locations/103908
+Referer URL: http://localhost/realhome/products/locations/103908
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\locations.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+>>>>>>> 5eb8b9b0dcc559fcff5cd5cc937763658fa9cba7
 [main] - ROOT\webroot\index.php, line 40
 
 
