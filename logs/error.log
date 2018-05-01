@@ -6788,6 +6788,7 @@ Stack Trace:
 #15 {main}
 
 
+<<<<<<< HEAD
 2018-05-01 16:44:59 Error: [Cake\View\Exception\MissingTemplateException] Template file "Products\locations.ctp" is missing.
 Exception Attributes: array (
   'file' => 'Products\\locations.ctp',
@@ -7405,10 +7406,16 @@ Stack Trace:
 2018-05-01 17:02:32 Error: [Cake\Controller\Exception\MissingActionException] Action MapsController::loading2.gif() could not be found, or is not accessible.
 Exception Attributes: array (
   'controller' => 'MapsController',
+=======
+2018-05-01 17:04:06 Error: [Cake\Controller\Exception\MissingActionException] Action PartnersController::loading2.gif() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PartnersController',
+>>>>>>> 704955e29a5510fc21298d7fa3069e162843ba5a
   'action' => 'loading2.gif',
   'prefix' => 'admin',
   'plugin' => false,
 )
+<<<<<<< HEAD
 Request URL: /admin/maps/loading2.gif
 Referer URL: http://localhost/realhome/admin/maps/index
 Stack Trace:
@@ -8510,6 +8517,26 @@ Stack Trace:
 #12 D:\xampp\htdocs\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
 #13 D:\xampp\htdocs\realhome\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
 #14 D:\xampp\htdocs\realhome\webroot\index.php(40): Cake\Http\Server->run()
+=======
+Request URL: /admin/partners/loading2.gif
+Referer URL: http://localhost/realhome/admin/partners/index
+Stack Trace:
+#0 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\PartnersController))
+#2 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\wamp\www\realhome\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\wamp\www\realhome\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\wamp\www\realhome\webroot\index.php(40): Cake\Http\Server->run()
+>>>>>>> 704955e29a5510fc21298d7fa3069e162843ba5a
 #15 {main}
 
 
