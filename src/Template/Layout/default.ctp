@@ -45,7 +45,7 @@
     <!-- bxSlider CSS file -->
     <link href="<?=$site_url?>assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
 
-    <script src="<?=$site_url?>assets/js/jquery.min.js"></script
+    <script src="<?=$site_url?>assets/js/jquery.min.js"> </script>
 		
     <!-- Just for debugging purposes. -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

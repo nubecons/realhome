@@ -42,7 +42,7 @@
 		<td><?php echo h($Partner['name']); ?>&nbsp;</td>
         <td><?php echo h($Partner['website']); ?>&nbsp;</td>
 		<td>
-		<a class="fancybox" href="<?php echo $site_url ?>img/partner/<?php echo $Partner['image']; ?>">
+		<a class="fancybox" href="<?php echo $site_url ?>img/partners/<?php echo $Partner['image']; ?>">
             View Image
         </a>
             

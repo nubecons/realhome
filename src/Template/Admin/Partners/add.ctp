@@ -5,7 +5,7 @@
 	    echo $this->Form->input('main_partner_category_id',array('options' => $PartnerCategories , 'style' => 'width:350px'));
 		echo $this->Form->input('partner_category_id',array('options' => $PartnerCategorieslvl2 , 'style' => 'width:350px'));
 		echo $this->Form->input('partner_sub_category_id',array('options' => $PartnerCategorieslvl3 , 'style' => 'width:350px'));
-		echo $this->Form->input('partner_sub_category_id',array('options' => $Cities , 'style' => 'width:350px'));
+		echo $this->Form->input('city_id',array('options' => $Cities , 'style' => 'width:350px'));
 		echo $this->Form->input('name',array('style' => 'width:350px'));
 		echo $this->Form->input('mobile',array('style' => 'width:350px'));
 		echo $this->Form->input('email',array('style' => 'width:350px'));

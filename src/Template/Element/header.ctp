@@ -28,7 +28,7 @@
 							   <a class="nav-link" href="#">index</a>
 						   </li>
 						   <li class="nav-item">
-							   <a class="nav-link" href="#">partners</a>
+							   <a class="nav-link" href="<?=$site_url?>partners">partners</a>
 						   </li>
 					   </ul>
 				   </div>

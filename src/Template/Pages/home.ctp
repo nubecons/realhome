@@ -369,7 +369,7 @@
                                     <i class="icon  icon-group"></i>
                                 </div>
                                 <div class="iconbox-wrap-content">
-                                    <h5><span>2200</span></h5>
+                                    <h5><span><?=$SiteInfo['trusted_seller']?></span></h5>
 
                                     <div class="iconbox-wrap-text">Trusted Seller</div>
                                 </div>
@@ -386,7 +386,7 @@
                                     <i class="icon  icon-th-large-1"></i>
                                 </div>
                                 <div class="iconbox-wrap-content">
-                                    <h5><span>100</span></h5>
+                                    <h5><span><?=$SiteInfo['categories']?></span></h5>
 
                                     <div class="iconbox-wrap-text">Categories</div>
                                 </div>
@@ -403,7 +403,7 @@
                                     <i class="icon  icon-map"></i>
                                 </div>
                                 <div class="iconbox-wrap-content">
-                                    <h5><span>700</span></h5>
+                                    <h5><span><?=$SiteInfo['location']?></span></h5>
 
                                     <div class="iconbox-wrap-text">Location</div>
                                 </div>
@@ -420,7 +420,7 @@
                                     <i class="icon icon-facebook"></i>
                                 </div>
                                 <div class="iconbox-wrap-content">
-                                    <h5><span>50,000</span></h5>
+                                    <h5><span><?=$SiteInfo['facebook_fans']?></span></h5>
 
                                     <div class="iconbox-wrap-text"> Facebook Fans</div>
                                 </div>

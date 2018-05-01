@@ -68,11 +68,12 @@ class AppController extends Controller
 		$this->set('sUser' ,$sUser);
 	
 		
-		if($this->Session->check('SiteInfo')){
+		//if($this->Session->check('SiteInfo'))
+		{
 	
-			$SiteInfo = $this->Session->read('SiteInfo');
+		//	$SiteInfo = $this->Session->read('SiteInfo');
 			
-		}else{
+	//	}else{
 			
 			$this->loadModel('SiteInformations');
 			$SiteInfo = $this->SiteInformations->find('list', ['keyField' => 'type', 'valueField' => 'value'])->toArray();
