@@ -27,14 +27,7 @@
 				$totalLocations = count($Locations);
 				
 				$dispRows = $totalLocations / 3 ;
-				
-				
-				
-				$city_idz = ['103908'/*Lahore*/ , '103895'/*karachi*/ ,'103952'/*Peshawar*/ ,'103961'/*Rawalpindi*/ ,'103930'/*Multan*/ 
-							,'103858'/*Faisalabad*/ ,'103956'/*Quetta*/ ,'103882'/*Islamabad*/,'103868'/*Gujranwala*/] ;
-				
-				$city_products = $this->GetInfo->getProductCityCount(['city_id in' => $city_idz]);
-				
+			
 				?>
                 
                 <div class="col-md-9 page-content col-thin-right">
@@ -50,7 +43,17 @@
 								   foreach($Locations as $Location){
 									   $counter = $counter + 1;
 									   ?>
-                                      <li><a href=""><?=$Location['name']?><span class="count"> (11)</span></a></li> 
+                                      <li>
+                                      <?php
+									  echo $this->Form->postLink(
+											$Location['name'].'<span class="count"> (11)</span>', 
+											['action' => 'index'],
+											['escape' => false,'data' => ['location_id' => $Location['id']]]
+											// third
+											);	
+											?>
+                                      
+                                     <?php /*?> <a href=""><?=$Location['name']?><span class="count"> (11)</span></a><?php */?></li> 
                                      <?php 
 									 
 									  if($counter >= $dispRows ){
