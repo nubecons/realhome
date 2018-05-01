@@ -78,5 +78,17 @@ class MapsController extends AppController {
         $Locations = $this->paginate($query, array('url' => '/Locations/'));
         $this->set('Locations', $Locations);
     }
+    public function locationMap($location_id =null)
+
+    {
+        
+        $this->loadModel('Locations');
+        if ($location_id) {
+
+            $Locations = $this->Locations->find()->where(['id' => $location_id])->first();
+                 $this->set('Locations', $Locations);
+        }
+
+    }
 
 }

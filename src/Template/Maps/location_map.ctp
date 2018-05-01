@@ -21,13 +21,6 @@
 	        
 
             <div class="row">
-                                <?php 
-				
-				$totalLocations = count($Locations);
-				
-				$dispRows = $totalLocations / 3 ;
-				
-				?>
                 <div class="col-md-9 page-content col-thin-right">
                     <div class="inner-box category-content">
                         <h2 class="title-2">Maps By Locations</h2>
@@ -36,32 +29,13 @@
                                 <div class="cat-list">
                                      <ul class="cat-collapse  cat-id-1">
                                     
-                                  <?php if($Locations){
-								   $counter = 0 ;
-								   foreach($Locations as $Location){
-									   $counter = $counter + 1;
-									   ?>
-                                      <li><a href="<?=$site_url."maps/location_map/".$Location['id']?>"><?=$Location['name']?></li> 
-                                     <?php 
-									 
-									  if($counter >= $dispRows ){
-											if($counter == $dispRows){
-												$counter = 0 ;
-											}else{
-												$counter = 1 ;
-											}
-										 ?>
-                                          </ul>
-                              		  </div>
-                           			</div> 
-									<div class="col-md-4 col-sm-4 ">
-                                        <div class="cat-list">
-                                         <ul class="cat-collapse  cat-id-1">
-                                    <?php	  
-									   }
-                                  }}else{?>
-                                             <h2>No Location Found against this City</h2>
-                                 <?php }?>
+                                  
+								   <?php if($Locations['location_map'] != ''){?>
+                <img src="<?=$site_url?>img/maps/<?php echo $Locations['location_map'];?>" alt="img" width="100%" height="100%"/>
+               <?php }else{?>
+                 <img src="<?=$site_url?>img/maps/awaiting.jpg" alt="img" width="100%" height="100%"/>
+               <?php }?>
+                                    
                                     </ul>
                                 </div>
                             </div>
