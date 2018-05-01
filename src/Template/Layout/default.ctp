@@ -86,7 +86,57 @@
 <script src="<?=$site_url?>assets/js/vendors.min.js"></script>
 <script src="<?=$site_url?>assets/js/script.js"></script>
 
+<script>
+/*
+var data =  [ 
+    { "name": "Quebec", "y": 1, "origin": "CA", "color": "#ffe3b8" },
+    { "name": "Quebec", "y": 1, "origin": "CA", "color": "#ffe3b8" },
+    { "name": "Saskatchewan", "y": 1, "origin": "CA", "color": "#ffe3b8" },
+    { "name": "Alberta", "y": 1, "origin": "CA", "color": "#ffe3b8" }, 
+    { "name": "Northwest Territories", "y": 1, "origin": "CA", "color": "#ffdca6" },
+    { "name": "British Columbia", "y": 1, "origin": "CA", "color": "#ffd594" },
+    { "name": "Maine", "y": 1, "origin": "CA", "color": "#ffce83" },
+    { "name": "Nova Scotia", "y": 1, "origin": "CA", "color": "#ffc771" },
+    { "name": "Massachusetts", "y": 1, "origin": "CA", "color": "#ffc05f" },
+    { "name": "Mississippi", "y": 1, "origin": "CA", "color": "#ffb94e" },
+    
+    { "name": "Indiana", "y": 1, "origin": "US", "color": "#bc86f4" }, 
+    { "name": "Kansas", "y": 1, "origin": "US", "color": "#c292f5" }, 
+    { "name": "Nevada", "y": 1, "origin": "US", "color": "#c99ef6" }, 
+    { "name": "Rhode Island", "y": 1, "origin": "US", "color": "#d0aaf7" },
+    { "name": "Montana", "y": 1, "origin": "US", "color": "#d6b6f8" }, 
+    { "name": "Pennsylvania", "y": 1, "origin": "US", "color": "#ddc2f9" },
+    { "name": "Oklahoma", "y": 1, "origin": "US", "color": "#e4cefa" }, 
+    { "name": "Washington", "y": 1, "origin": "US", "color": "#e4cefa" },
+    { "name": "Delaware", "y": 1, "origin": "US", "color": "#e4cefa" },
+    { "name": "Alabama", "y": 1, "origin": "US", "color": "#e4cefa" }, 
+   ];
 
+sum = 0;
+var sdata = new Array();
+$.each(data, function( index, value ) {
+	t = 0 ;
+	if(sdata[value.name]){
+	t = sdata[value.name] ;
+	}
+	sdata[value.name] = t + parseFloat(value.y); 
+    
+	if(value.origin == 'US' || value.origin == 'CA'){
+		sum = sum + parseFloat(value.y)
+	}
+});
+
+alert(sdata["Quebec"]);*/
+
+/*var fasy = [];
+  $.each(chart.series[0].data, function( i, p ) {
+    console.log(p['y'])
+    fasy.push(p['y'])
+  });*/
+
+
+
+</script>
 
 </body>
 </html>

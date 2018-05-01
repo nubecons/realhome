@@ -427,7 +427,40 @@ class ProductsController extends AppController
 	
     }
 	
-	function searchElement(){
+public function locations($city_id = null)
+    {
+		$City = false;
+		if($city_id){
+			
+			$this->loadModel('Cities');
+			$City = $this->Cities->find()->where(['id' => $city_id])->first();
+		
+		}
+		
+		
+		$this->set('City', $City);
+		
+		
+		
+		$this->loadModel('Locations');
+		$conditions['country_code'] = 'pk';
+		
+		if($city_id){
+			 $conditions['city_id'] = $city_id;
+			 }
+		
+
+		$query = $this->Locations->find('all')->select(['id' , 'name' , 'city_id'])->where($conditions);
+        $this->paginate['limit'] = 97;
+        $this->paginate['order'] = ['created' => 'DESC', ];
+        $Locations = $this->paginate($query, array('url' => '/Locations/'));
+        $this->set('Locations', $Locations);
+		
+		
+	
+    }	
+	
+	    function searchElement(){
     
 	
 		$this->set( 'UnitOptoins' , $this->Products->UnitOptoins);
@@ -465,6 +498,17 @@ class ProductsController extends AppController
 		/*if($purpose){
 			$this->request->data['purpose'] = $purpose ;	
 		}*/		
+		
+		$this->render();
+		
+		}
+		
+		
+		function adsElement(){
+    
+    	$this->loadModel('Advertisements');
+        $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
+        $this->set('Advertisements', $Advertisements);
 		
 		$this->render();
 		

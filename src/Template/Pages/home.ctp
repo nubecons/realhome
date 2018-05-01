@@ -75,11 +75,11 @@
                                                 class=" icon-down-open-big"></span> </span>
                                     </h3><?php */?>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Lahore<span class="count"> (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</span></a></li> 
-                                          <li><a href="">Rawalpindi<span class="count"> (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>)</span></a></li>
-                                        <li><a href="">Multan<span class="count"> (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>)</span></a></li>
+                                        <li><a href="<?=$site_url?>products/locations/103908">Lahore<span class="count"> (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</span></a></li> 
+                                          <li><a href="<?=$site_url?>products/locations/103961">Rawalpindi<span class="count"> (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>)</span></a></li>
+                                        <li><a href="<?=$site_url?>products/locations/103930">Multan<span class="count"> (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>)</span></a></li>
                                      
-                                        <li><a href="">View all cities<span class="count"> </span></a></li>
+                                        <li><a href="#">View all cities<span class="count"> </span></a></li>
                                     </ul>
                                 </div>
                                
@@ -92,9 +92,9 @@
                                               class="btn-cat-collapsed collapsed">   <span class=" icon-down-open-big"></span> </span>
                                     </h3><?php */?>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Karachi<span class="count"> (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</span></a></li> 
-                                        <li><a href="">Faisalabad<span class="count"> (<?=isset($city_products['103858'])?number_format($city_products['103858']):'0';?>)</span></a></li>
-                                        <li><a href="">Peshawar<span class="count"> (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>)</span></a></li>
+                                        <li><a href="<?=$site_url?>products/locations/103895">Karachi<span class="count"> (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</span></a></li> 
+                                        <li><a href="<?=$site_url?>products/locations/103858">Faisalabad<span class="count"> (<?=isset($city_products['103858'])?number_format($city_products['103858']):'0';?>)</span></a></li>
+                                        <li><a href="<?=$site_url?>products/locations/103952">Peshawar<span class="count"> (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>)</span></a></li>
                                      </ul>
                                 </div>
                             </div>
@@ -108,9 +108,9 @@
                                             class=" icon-down-open-big"></span> </span>
                                     </h3><?php */?>
                                     <ul class="cat-collapse  cat-id-1">
-                                         <li><a href="">Islamabad<span class="count"> (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>)</span></a></li> 
-                                        <li><a href="">Gujranwala<span class="count"> (<?=isset($city_products['103868'])?number_format($city_products['103868']):'0';?>)</span></a></li>
-                                        <li><a href="">Quetta<span class="count"> (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>)</span></a></li>
+                                         <li><a href="<?=$site_url?>products/locations/103882">Islamabad<span class="count"> (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>)</span></a></li> 
+                                        <li><a href="<?=$site_url?>products/locations/103868">Gujranwala<span class="count"> (<?=isset($city_products['103868'])?number_format($city_products['103868']):'0';?>)</span></a></li>
+                                        <li><a href="<?=$site_url?>products/locations/103956">Quetta<span class="count"> (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>)</span></a></li>
                                       </ul>
                                 </div>
                               
@@ -142,14 +142,13 @@
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
                                         <li><a href="">Houses For Sale in DHA Defence<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in Bahria Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in Johar Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in Allama Iqbal Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in State Life Housing Society<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in Pak Arab Housing Society<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in Wapda Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                        <li><a href="">Houses For Sale in Eden<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
                                     </ul>
                                 </div>
                                
@@ -163,14 +162,13 @@
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
                                         <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in Gulistan-e-Jauhar<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in Gulshan-e-Iqbal Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in North Karachi<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in Clifton<span class="count"> (228,705)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -184,15 +182,14 @@
                                             class=" icon-down-open-big"></span> </span>
                                     </h3>
                                    <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
+                                        <li><a href="">Houses For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li> 
                                         <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in Airport Housing Society<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-11<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-13<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Flats For Sale in E-11<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-11<span class="count"> (228,705)</span></a></li>
                                     </ul>
                                 </div>
                               
@@ -211,15 +208,14 @@
                                                 class=" icon-down-open-big"></span> </span>
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
+                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Orchard<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Lake City<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA 11 Rahbar<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in LDA Avenue<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Central Park Housing Scheme<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Sui Gas Housing Society<span class="count"> (228,705)</span></a></li>
                                     </ul>
                                 </div>
                                
@@ -232,15 +228,14 @@
                                               class="btn-cat-collapsed collapsed">   <span class=" icon-down-open-big"></span> </span>
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town Karachi<span class="count"> (228,705)</span></a></li> 
+                                        <li><a href="">Plots For Sale in Scheme 33<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gadap Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA City Karachi<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bin Qasim Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gulistan-e-Jauhar<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Scheme 45<span class="count"> (228,705)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -254,15 +249,14 @@
                                             class=" icon-down-open-big"></span> </span>
                                     </h3>
                                    <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li> 
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in B-17<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gulberg<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in D-12<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in G-14<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in I-12<span class="count"> (228,705)</span></a></li>
                                     </ul>
                                 </div>
                               
@@ -278,7 +272,7 @@
                 </div>
                 <div class="col-md-3 page-sidebar col-thin-left">
                     <aside>
-                        <div class="inner-box no-padding">
+                       <?php /*?> <div class="inner-box no-padding">
                              <div class="inner-box">
                             <h2 class="title-2">Featured Agencies</h2>
 
@@ -286,33 +280,16 @@
                                 <ul class="cat-list arrow">
                                     <li><a href="sub-category-sub-location.html"> AL- karam</a></li>
                                     <li><a href="sub-category-sub-location.html"> Real Estate </a></li>
-                                    <li><a href="sub-category-sub-location.html"> Business Opportunities (4,974) </a>
-                                    </li>
+                                    <li><a href="sub-category-sub-location.html"> Business Opportunities (4,974) </a></li>
                                     <li><a href="sub-category-sub-location.html"> Community and Events (1,258) </a></li>
                                     
                                 </ul>
                             </div>
                         </div>
                             <div class="inner-box-content"><a href="#"><img class="img-responsive" src="images/site/app.jpg" alt="tv"></a></div>
-                        </div>
-                           <?php
-						     foreach($Advertisements as $Advertisement){
-								 $ads_link = '#';
-								 $target = '';
-								 if($Advertisement['link'] != ''){
-									  $ads_link = $Advertisement['link'];
-								      $ads_target = '_blank"';
-									 
-									 }
-							 ?>	 
-                           
-                           <div class="inner-box no-padding">
-                               <a href="<?=$ads_link?>" target="<?=$ads_target?>">
-                                    <img class="img-responsive" src="<?=$site_url?>img/advertisements/<?=$Advertisement['image']?>" alt="">
-                               </a>
-                           </div>
-                           <?php }?>
+                        </div><?php */?>
                           
+                       <?php echo $this->requestAction('/products/ads_element');?>   
                     </aside>
                 </div>
             </div>

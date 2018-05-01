@@ -77,12 +77,11 @@ class PagesController extends AppController {
 
 
     function home($purpose = null) {
+     
 
         $this->set('purpose', $purpose);
       
-		$this->loadModel('Advertisements');
-        $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
-        $this->set('Advertisements', $Advertisements);
+		
 		
 		$this->loadModel('Products');
         $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE' , 'is_sponsored' => '1'])->toArray();
