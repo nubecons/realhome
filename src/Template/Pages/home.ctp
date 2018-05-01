@@ -16,7 +16,10 @@
                     <div style="clear: both"></div>
 
                     <div class=" relative  content featured-list-row  w100">
-
+ <?php
+						  if(count($SponsProducts) == 0) {?>
+						   <img src="<?=$site_url?>img/maps/awaiting.jpg" alt="img" width="100%" height="250"/>
+                           <?php }else{?>
                         <nav class="slider-nav has-white-bg nav-narrow-svg">
                             <a class="prev">
                                 <span class="nav-icon-wrap"></span>
@@ -26,7 +29,7 @@
                                 <span class="nav-icon-wrap"></span>
                             </a>
                         </nav>
-
+                       
                         <div class="no-margin featured-list-slider ">
                          <?php 
 						    foreach($SponsProducts as $Product){
@@ -44,6 +47,7 @@
                             
                             <?php }?>
                         </div>
+                        <?php }?>
                     </div>
 
 
@@ -129,7 +133,7 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-4 ">
                                 <div class="cat-list">
-                                    <h3 class="cat-title"><a href="category.html"><i class="icon-home ln-shadow"></i>
+                                    <h3 class="cat-title"><a href="#"><i class="icon-home ln-shadow"></i>
                                        Lahore <span class="count">
                                       
                                        <?=isset($city_product['103908'])?number_format($city_products['103908']):'0';?>
