@@ -22,6 +22,8 @@ class PartnersController extends AppController {
 
     public function index() {
 		
+		 $this->set('is_partner', '1');
+		
 	    $this->loadModel('PartnerCategories');
 	    $PartnerCategories = $this->PartnerCategories->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status'=>'ACTIVE' ,'parent_id' => 0])->toArray();
         $this->set('PartnerCategories', $PartnerCategories);

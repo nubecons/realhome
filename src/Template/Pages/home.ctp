@@ -9,7 +9,7 @@
 	            <div class="col-xl-12 content-box ">
                 <div class="row row-featured">
                     <div class="col-xl-12  box-title ">
-                        <div class="inner"><h2><span>Sponsored </span> Properties <a href="category.html" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a></h2>
+                        <div class="inner"><h2><span>Sponsored </span> Properties <a href="#" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a></h2>
                         </div>
                     </div>
 
@@ -28,59 +28,21 @@
                         </nav>
 
                         <div class="no-margin featured-list-slider ">
-                            <div class="item"><a href="ads-details-automobile.html">
-                     <span class="item-carousel-thumb">
-                    	<img class="img-responsive" src="images/auto/2012-mercedes-benz-sls-amg.jpg" alt="img">
-                     </span>
-                                <span class="item-name"> 2011 Mercedes-Benz SLS AMG  </span>
-                                <span class="price">  $204,990 </span>
+                         <?php 
+						    foreach($SponsProducts as $Product){
+                            ?>
+                            
+                            <div class="item"><a href="<?=$site_url?>products/detail/<?=$Product['id']?>">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="images/item/3.jpg" alt="img">
+                                </span>
+                                <span class="item-name"> <?=$Product['title']?>   </span>
+                                
+                                <span class="price">  Rs: <?=$Product['price']?> </span>
                             </a>
                             </div>
-
-                            <div class="item">
-
-                                <a href="ads-details.html">
-                     <span class="item-carousel-thumb">
-                    	<img class="img-responsive" src="images/item/tp/Image00011.jpg" alt="img">
-                     </span>
-                                    <span class="item-name"> Lorem ipsum dolor sit amet </span>
-                                    <span class="price"> $ 260 </span>
-                                </a>
-                            </div>
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img"
-                                                                        src="images/item/tp/Image00006.jpg" alt="img"> </span>
-                                <span class="item-name"> consectetuer adipiscing elit </span>
-                                <span class="price"> $ 240 </span></a></div>
-
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img"
-                                                                        src="images/item/tp/Image00022.jpg" alt="img"> </span>
-                                <span class="item-name"> sed diam nonummy  </span> <span class="price"> $ 140</span></a>
-                            </div>
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img"
-                                                                        src="images/item/tp/Image00013.jpg" alt="img">  </span><span
-                                    class="item-name"> feugiat nulla facilisis  </span> <span
-                                    class="price"> $ 140 </span></a></div>
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img" src="images/item/3.jpg"
-                                                                        alt="img"> </span> <span class="item-name"> praesent luptatum zzril  </span>
-                                <span class="price"> $ 220 </span></a></div>
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img" src="images/item/4.jpg"
-                                                                        alt="img"> </span> <span class="item-name"> delenit augue duis dolore  </span>
-                                <span class="price"> $ 120 </span></a></div>
-
-                            <div class="item"><a href="ads-details.html">
-                                <span class="item-carousel-thumb"> <img class="item-img" src="images/item/6.jpg"
-                                                                        alt="img"> </span> <span class="item-name"> te feugait nulla facilisi </span>
-                                <span class="price"> $ 251 </span></a></div>
+                            
+                            <?php }?>
                         </div>
                     </div>
 
@@ -441,10 +403,9 @@
         <div class="page-bottom-info-inner">
 
             <div class="page-bottom-info-content text-center">
-                <h1>If you have any questions, comments or concerns, please call the Classified Advertising department
-                    at (000) 555-5556</h1>
+                <h1><?=$SiteInfo['home_footer_text']?></h1>
                 <a class="btn  btn-lg btn-primary-dark" href="tel:+000000000">
-                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now:</span> (000) 555-5555 </a>
+                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now: </span><?=$SiteInfo['phone']?> </a>
             </div>
 
         </div>

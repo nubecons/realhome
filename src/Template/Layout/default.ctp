@@ -86,5 +86,7 @@
 <script src="<?=$site_url?>assets/js/vendors.min.js"></script>
 <script src="<?=$site_url?>assets/js/script.js"></script>
 
+
+
 </body>
 </html>

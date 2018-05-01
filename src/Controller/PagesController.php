@@ -81,10 +81,12 @@ class PagesController extends AppController {
         $this->set('purpose', $purpose);
       
 		$this->loadModel('Advertisements');
-      
-	    $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
-    
-	    $this->set('Advertisements', $Advertisements);
+        $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
+        $this->set('Advertisements', $Advertisements);
+		
+		$this->loadModel('Products');
+        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE' , 'is_sponsored' => '1'])->toArray();
+        $this->set('SponsProducts', $SponsProducts);
 	
 	}
 

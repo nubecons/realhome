@@ -1,4 +1,6 @@
-<?php $site_url = $this->Url->build('/',true); ?>
+<?php
+
+ $site_url = $this->Url->build('/',true); ?>
 <header id="header">
            <strong class="menu_head">Menu</strong>
            <i class="fa fa-bars" aria-hidden="true"></i>
@@ -21,12 +23,12 @@
 						   <li class="nav-item">
 							   <a class="nav-link" href="#">Maps</a>
 						   </li>
-						   <li class="nav-item">
+						  <?php /*?> <li class="nav-item">
 							   <a class="nav-link" href="#">trends</a>
 						   </li>
 						   <li class="nav-item">
 							   <a class="nav-link" href="#">index</a>
-						   </li>
+						   </li><?php */?>
 						   <li class="nav-item">
 							   <a class="nav-link" href="<?=$site_url?>partners">partners</a>
 						   </li>
@@ -84,7 +86,33 @@
 						</a>
 					</li>
                 </ul>
-                <?php /*?><div class="nav-item toggle_menu">
+               
+                
+                <?php
+				if(isset($is_partner) and $is_partner == 1){
+			    ?>		
+                
+                 <ul class="nav">
+		             <li class="nav-item">
+						<a class="nav-link" href="<?=$site_url?>Partners">Products</a>
+					</li>
+					
+                    <li class="nav-item br-left">
+						<a class="nav-link" href="<?=$site_url?>Partners">Services</a>
+					</li>
+					
+                    <li class="nav-item br-left">
+						<a class="nav-link" href="<?=$site_url?>Partners">Partners</a>
+					</li>
+					
+                 
+                </ul>
+                
+                
+					
+					<?php }else{ ?>
+                    
+                     <div class="nav-item toggle_menu">
                     <a class="nav-link active" href="#">Buy <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
                 <ul class="nav collapsable_menu">
@@ -92,17 +120,18 @@
 						<a class="nav-link" href="#">Homes</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">plots</a>
+						<a class="nav-link" href="#">Plots</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">commercial</a>
+						<a class="nav-link" href="#">Commercial</a>
 					</li>
-                </ul><?php */?>
+                </ul>
+				
                 <ul class="nav">
 		             
-                     <li class="nav-item">
+                    <?php /*?> <li class="nav-item">
 						<a class="nav-link" href="<?=$site_url?>Buy">Buy</a>
-					</li>
+					</li><?php */?>
 					
                     <li class="nav-item br-left">
 						<a class="nav-link" href="<?=$site_url?>Rent">Rent</a>
@@ -116,6 +145,8 @@
 						<a class="nav-link" href="<?=$site_url?>Agent">Agent</a>
 					</li>
                 </ul>
+                
+                <?php }?>
 			</div>
 		</div>
 		

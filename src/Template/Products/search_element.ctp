@@ -1,14 +1,14 @@
 <div class="search-row-wrapper">
     <div class="container ">
     	<?php echo $this->Form->create('' ,[ 'url' => ['controller' => 'products' ,'action' => 'index'] , 'class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
-<?php echo $this->Form->hidden('purpose', ['class'=>'form-control' ]); ?>
+<?php //echo $this->Form->hidden('purpose', ['class'=>'form-control' ]); ?>
        <?php /*?> <input type="hidden" name ="purpose" value="<?=$purpose?>"><?php */?>
         <div class="row">
         <div class="col-md-9 page-content col-thin-left">
             <div class="category-list">
                 <ul id="myTab" class="nav nav-tabs tab-box nav nav-tabs add-tabs" role="tablist">
-                    <li class="active nav-item"><a href="#buy" class="nav-link" data-toggle="tab">Buy Property</a></li>
-                    <li class="nav-item"><a href="#rent"  class="nav-link"data-toggle="tab">Rent Property</a></li>
+                    <li class="active nav-item"><a href="#buy" class="nav-link" data-toggle="tab">Search Property</a></li>
+                   <?php /*?> <li class="nav-item"><a href="#rent"  class="nav-link"data-toggle="tab">Rent Property</a></li><?php */?>
                 </ul>
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane in active" id="buy">
@@ -87,6 +87,12 @@
                                     <?php echo $this->Form->input('bedrooms', ['empty' =>'Any', 'options' => $BedRooms , 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
                                    
                                 </div>
+                                 <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                    <label for="exampleInputEmail1">Purpose</label>
+                                    <?php echo $this->Form->input('purpose', ['empty' =>'Any', 'options' => ['Buy'=>'Buy' , 'Rent'=>'Rent'] , 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                   
+                                </div>
+                                
                                 <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
                                       <label for="exampleInputEmail1"> &nbsp;</label>
                                       <button type="submit" class="btn btn-block btn-primary fa fa-search">  Find  Property</button>
@@ -96,11 +102,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane " id="rent">
+                   <?php /*?> <div class="tab-pane " id="rent">
                         <p>Microsoft Windows is a series of graphical
                             interface operating systems developed, marketed,
                             and sold by Microsoft</p> 
-                    </div>
+                    </div><?php */?>
                 </div>
     		<?php echo $this->Form->end()?>
             </div>
