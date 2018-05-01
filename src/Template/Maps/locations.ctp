@@ -26,16 +26,11 @@
 				$totalLocations = count($Locations);
 				
 				$dispRows = $totalLocations / 3 ;
-
-				$city_idz = ['103908'/*Lahore*/ , '103895'/*karachi*/ ,'103952'/*Peshawar*/ ,'103961'/*Rawalpindi*/ ,'103930'/*Multan*/ 
-							,'103858'/*Faisalabad*/ ,'103956'/*Quetta*/ ,'103882'/*Islamabad*/,'103868'/*Gujranwala*/] ;
-				
-				$city_products = $this->GetInfo->getProductCityCount(['city_id in' => $city_idz]);
 				
 				?>
                 <div class="col-md-9 page-content col-thin-right">
                     <div class="inner-box category-content">
-                        <h2 class="title-2">Maps By Cities</h2>
+                        <h2 class="title-2">Maps By Locations</h2>
                         <div class="row">
                            <div class="col-md-4 col-sm-4 ">
                                 <div class="cat-list">
