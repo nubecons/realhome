@@ -40,8 +40,9 @@
 								   $counter = 0 ;
 								   foreach($Cities as $City){
 									   $counter = $counter + 1;
+                                                                          
 									   ?>
-                                         <li><a href="<?=$site_url."maps/locations/".$City['id']?>"><?=$City['title']?><span class="count"> (11)</span></a></li> 
+                                         <li><a href="<?=$site_url."maps/locations/".$City['id']?>"><?=$City['title']?><span class="count"> (0)</span></a></li> 
                                      <?php 
 									 
 									  if($counter >= $dispRows ){

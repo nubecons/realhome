@@ -93,7 +93,5 @@ function getProductLocationCount($conditions = []){
          
 		//  return  $Products->find()->where($conditions)->count();
 
-	   } 	   
-
-   
+	   } 	     
 }
