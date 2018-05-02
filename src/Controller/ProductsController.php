@@ -34,7 +34,7 @@ class ProductsController extends AppController
 		
 		$this->loadComponent('Upload');
 
-		$this->Auth->allow(['add','index' ,'detail' ,'searchElement' ,'getLocations']);
+		$this->Auth->allow(['add','index' ,'detail' ,'searchElement' ,'getLocations','adsElement','locations']);
 
 		$this->set('title', 'Manage Property');
 
