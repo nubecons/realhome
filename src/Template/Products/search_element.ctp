@@ -1,3 +1,4 @@
+<?php $site_url = $this->Url->build('/',true); ?> 
 <div class="search-row-wrapper">
     <div class="container ">
     	<?php echo $this->Form->create('' ,[ 'url' => ['controller' => 'products' ,'action' => 'index'] , 'class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
@@ -122,13 +123,13 @@
                             <h3 class="title-3">Papular Locations</h3>
                             <div class="inner-box-content">
                                 <ul class="cat-list arrow">
-                                <li><a href="#"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
-                                <li><a href="#"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
-                                <li><a href="#"> Islamabad (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>) </a></li>
-                                <li><a href="#"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
-                                <li><a href="#"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
-                                <li><a href="#"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
-                                <li><a href="#"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
+                                <li><a href="<?=$site_url?>products/locations/103895"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
+                                <li><a href="<?=$site_url?>products/locations/103952"> Islamabad (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103952"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
                                
                                     
                                 </ul>
