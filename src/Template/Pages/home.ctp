@@ -178,14 +178,14 @@
                                               class="btn-cat-collapsed collapsed">   <span class=" icon-down-open-big"></span> </span>
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Flats For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in Gulistan-e-Jauhar<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in Gulshan-e-Iqbal Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in North Karachi<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in Clifton<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (0)</span></a></li> 
+                                        <li><a href="">Flats For Sale in DHA Defence<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in Gulistan-e-Jauhar<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in Bahria Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in Bahria Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in Gulshan-e-Iqbal Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in North Karachi<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in Clifton<span class="count"> (0)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -199,14 +199,14 @@
                                             class=" icon-down-open-big"></span> </span>
                                     </h3>
                                    <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Houses For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in Airport Housing Society<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in E-11<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in E-13<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Flats For Sale in E-11<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Houses For Sale in E-11<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Houses For Sale in Bahria Town Rawalpindi<span class="count"> (0)</span></a></li> 
+                                        <li><a href="">Houses For Sale in DHA Defence<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in Airport Housing Society<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-11<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-13<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in Bahria Town Rawalpindi<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Flats For Sale in E-11<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Houses For Sale in E-11<span class="count"> (0)</span></a></li>
                                     </ul>
                                 </div>
                               
@@ -225,14 +225,14 @@
                                                 class=" icon-down-open-big"></span> </span>
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Bahria Orchard<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Lake City<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in DHA 11 Rahbar<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in LDA Avenue<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Central Park Housing Scheme<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Sui Gas Housing Society<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (0)</span></a></li> 
+                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Orchard<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Lake City<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA 11 Rahbar<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in LDA Avenue<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Central Park Housing Scheme<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Sui Gas Housing Society<span class="count"> (0)</span></a></li>
                                     </ul>
                                 </div>
                                
@@ -245,14 +245,14 @@
                                               class="btn-cat-collapsed collapsed">   <span class=" icon-down-open-big"></span> </span>
                                     </h3>
                                     <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Plots For Sale in Bahria Town Karachi<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Plots For Sale in Scheme 33<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Gadap Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in DHA City Karachi<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Bin Qasim Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Gulistan-e-Jauhar<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Scheme 45<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town Karachi<span class="count"> (0)</span></a></li> 
+                                        <li><a href="">Plots For Sale in Scheme 33<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gadap Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in DHA City Karachi<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bin Qasim Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gulistan-e-Jauhar<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Scheme 45<span class="count"> (0)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -266,14 +266,14 @@
                                             class=" icon-down-open-big"></span> </span>
                                     </h3>
                                    <ul class="cat-collapse  cat-id-1">
-                                        <li><a href="">Plots For Sale in Bahria Town Rawalpindi<span class="count"> (228,705)</span></a></li> 
-                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in B-17<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in Gulberg<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in D-12<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in G-14<span class="count"> (228,705)</span></a></li>
-                                        <li><a href="">Plots For Sale in I-12<span class="count"> (228,705)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town Rawalpindi<span class="count"> (0)</span></a></li> 
+                                        <li><a href="">Plots For Sale in DHA Defence<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Bahria Town<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in B-17<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in Gulberg<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in D-12<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in G-14<span class="count"> (0)</span></a></li>
+                                        <li><a href="">Plots For Sale in I-12<span class="count"> (0)</span></a></li>
                                     </ul>
                                 </div>
                               
