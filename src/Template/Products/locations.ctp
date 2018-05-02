@@ -39,7 +39,7 @@ $site_url = $this->Url->build('/',true); ?>
                         <li class="active nav-item"><a href="#houses" class="nav-link" data-toggle="tab">Houses<span class="count"> (0)</span></a></li>
                         <li class="nav-item"><a href="#flats"  class="nav-link"data-toggle="tab">Flats<span class="count"> (0)</span></a></li>
                         <li class="nav-item"><a href="#farm_house"  class="nav-link"data-toggle="tab">Farm Houses<span class="count"> (0)</span></a></li>
-                        <li class="nav-item"><a href="#upper_portion"  class="nav-link"data-toggle="tab">Upper Portions Houses<span class="count"> (0)</span></a></li>
+                        <li class="nav-item"><a href="#upper_portion"  class="nav-link"data-toggle="tab">Upper Portions<span class="count"> (0)</span></a></li>
                         <li class="nav-item"><a href="#lower_portion"  class="nav-link"data-toggle="tab">Lower Portions<span class="count"> (0)</span></a></li>
                         <li class="nav-item"><a href="#pent_house"  class="nav-link"data-toggle="tab">Pent Houses<span class="count"> (0)</span></a></li>
                         <li class="nav-item"><a href="#rooms"  class="nav-link"data-toggle="tab">Rooms<span class="count"> (0)</span></a></li>
@@ -62,7 +62,9 @@ $site_url = $this->Url->build('/',true); ?>
                                       <li>
                                       <?php
 									  echo $this->Form->postLink(
+
 											$Location['name'].'<span class="count">('. $Location['records'].')</span>', 
+
 											['action' => 'index'],
 											['escape' => false,'data' => ['location_id' => $Location['id']]]
 											// third
