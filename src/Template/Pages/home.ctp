@@ -16,10 +16,7 @@
                     <div style="clear: both"></div>
 
                     <div class=" relative  content featured-list-row  w100">
- <?php
-						  if(count($SponsProducts) == 0) {?>
-						   <img src="<?=$site_url?>img/maps/awaiting.jpg" alt="img" width="100%" height="250"/>
-                           <?php }else{?>
+							
                         <nav class="slider-nav has-white-bg nav-narrow-svg">
                             <a class="prev">
                                 <span class="nav-icon-wrap"></span>
@@ -31,6 +28,22 @@
                         </nav>
                        
                         <div class="no-margin featured-list-slider ">
+                           <?php
+						  if(count($SponsProducts) == 0) {?>
+						   <?php /*?><img src="<?=$site_url?>img/maps/awaiting.jpg" alt="img" width="100%" height="250"/><?php */?>
+                           
+                           <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/maps/awaiting.jpg" alt="img">
+                                </span>
+                                <span class="item-name"> Waiting Sponsored</span>
+                                
+                                <span class="price">  Rs:0.00 </span>
+                            </a>
+                            </div>
+                           
+                           <?php }else{?> 
+                        
                          <?php 
 						    foreach($SponsProducts as $Product){
                             ?>
@@ -45,9 +58,9 @@
                             </a>
                             </div>
                             
-                            <?php }?>
+                            <?php }?> <?php }?>
                         </div>
-                        <?php }?>
+                       
                     </div>
 
 
@@ -120,14 +133,14 @@
                               
                             </div>
                         </div>
-                        <?php 
+                        
+						<?php 
 						$location_idz = ['677'/*DHA Defence Lahore*/ ] ;
 						
 						$location_product = $this->GetInfo->getProductLocationCount(['location_id in' => $location_idz]); 
 						
 						$city_idz = ['103908'/*Lahore*/ , '103895'/*karachi*/ ,'103882'/*Islamabad*/] ;
-						 
-						 $city_product = $this->GetInfo->getProductCityCount(['city_id IN' => $city_idz]);?>
+						$city_product = $this->GetInfo->getProductCityCount(['city_id IN' => $city_idz]);?>
                          
                         <h2 class="title-2">Most Popular Locations for Homes</h2>
                         <div class="row">
