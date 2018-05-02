@@ -62,7 +62,9 @@ $site_url = $this->Url->build('/',true); ?>
                                       <li>
                                       <?php
 									  echo $this->Form->postLink(
-											$Location['name'].'<span class="count"> (0)</span>', 
+
+											$Location['name'].'<span class="count">('. $Location['records'].')</span>', 
+
 											['action' => 'index'],
 											['escape' => false,'data' => ['location_id' => $Location['id']]]
 											// third

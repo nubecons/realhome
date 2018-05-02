@@ -402,20 +402,46 @@ public function locations($city_id = null)
 		
 		$this->set('City', $City);
 		
+		 $joins = [
+
+            'products' => [
+
+                'table' => 'products',
+
+                'alias' => 'Products',
+
+                'type' => 'LEFT',
+
+                'conditions' => 'Locations.id= Products.location_id'
+
+            ],
+
+        ];
+
+
 		
 		
 		$this->loadModel('Locations');
+		$conditions[] = 'Products.id is not null';
 		$conditions['country_code'] = 'pk';
+		//$conditions['Products.id'] = NULL;
 		
 		if($city_id){
-			 $conditions['city_id'] = $city_id;
+			 $conditions['Locations.city_id'] = $city_id;
 			 }
 		
 
-		$query = $this->Locations->find('all')->select(['id' , 'name' , 'city_id'])->where($conditions);
-        $this->paginate['limit'] = 97;
+		$query = $this->Locations->find('all')
+		 ->select(['id' , 'name' , 'Locations.city_id', 'records' => 'count(*)' ])
+		->select(['Products.id' , 'Products.city_id', ])
+		 ->join($joins)
+		 ->group('Locations.id')
+		 ->where($conditions);
+        $this->paginate['limit'] = 10;
         $this->paginate['order'] = ['created' => 'DESC', ];
         $Locations = $this->paginate($query, array('url' => '/Locations/'));
+	//	debug($Locations);
+	//	exit;
         $this->set('Locations', $Locations);
 		
 		
