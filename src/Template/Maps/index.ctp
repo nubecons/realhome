@@ -42,7 +42,7 @@
 									   $counter = $counter + 1;
                                                                           
 									   ?>
-                                         <li><a href="<?=$site_url."maps/locations/".$City['id']?>"><?=$City['title']?><span class="count"> (0)</span></a></li> 
+                                         <li><a href="<?=$site_url."maps/locations/".$City['id']?>"><?=$City['title']?><span class="count"><?php echo ' ('.number_format($this->GetInfo->getLocationCount(array('city_id'=>$City['id']))).')';?></span></a></li> 
                                      <?php 
 									 
 									  if($counter >= $dispRows ){
