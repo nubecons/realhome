@@ -16,10 +16,11 @@ class PartnersController extends AppController {
         parent::beforeFilter($event);
         $this->product_file_path = WWW_ROOT . 'img' . DS . 'partners' . DS;
         $this->loadComponent('Upload');
-	    $this->Auth->allow(['index']);
+	    $this->Auth->allow(['index','view']);
     }
 
-   
+    public function view() {
+	}
 
     public function index() {
 		
