@@ -10961,15 +10961,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 20]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 20
+=======
+2018-05-08 14:51:52 Notice: Notice (8): Undefined variable: ads_link in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 9]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 9
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -10993,6 +11003,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 138
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11015,15 +11034,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 213]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 213
+=======
+2018-05-08 14:51:52 Notice: Notice (8): Undefined variable: ads_target in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 9]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 9
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11047,6 +11076,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 238
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11069,15 +11107,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 266]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 266
+=======
+2018-05-08 14:51:52 Notice: Notice (8): Undefined variable: Advertisement in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 10
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11101,6 +11149,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 295
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11123,15 +11180,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 322]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 322
+=======
+2018-05-08 14:51:53 Notice: Notice (8): Undefined variable: ads_link in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 9]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 9
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11155,6 +11222,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 433
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11177,15 +11253,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 456]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 456
+=======
+2018-05-08 14:51:53 Notice: Notice (8): Undefined variable: ads_target in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 9]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 9
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11209,6 +11295,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 479
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11231,15 +11326,25 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:36 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 502]
 Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 502
+=======
+2018-05-08 14:51:53 Notice: Notice (8): Undefined variable: Advertisement in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 10
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11263,6 +11368,15 @@ Request URL: /blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 525
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11285,16 +11399,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 20]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 20
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: ads_link in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 3]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 3
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11319,6 +11443,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 138
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11341,16 +11474,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 213]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 213
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: ads_target in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 3]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 3
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11375,6 +11518,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 238
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11397,16 +11549,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 266]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 266
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: Advertisement in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 4]
+Request URL: /
+Referer URL: http://localhost/realhome/products/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 4
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11431,6 +11593,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 295
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11453,16 +11624,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 322]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 322
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: ads_link in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 3]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 3
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11487,6 +11668,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 433
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11509,16 +11699,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 456]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 456
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: ads_target in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 3]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 3
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11543,6 +11743,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 479
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
@@ -11565,16 +11774,26 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+<<<<<<< HEAD
 2018-05-08 17:16:37 Notice: Notice (8): Undefined variable: site_url in [D:\wamp\www\realhome\src\Template\Blogs\blog_details.ctp, line 502]
 Request URL: /blogs/blogDetails
 Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 502
+=======
+2018-05-08 14:52:33 Notice: Notice (8): Undefined variable: Advertisement in [D:\xampp\htdocs\realhome\src\Template\Products\ads_element.ctp, line 4]
+Request URL: /
+Referer URL: http://localhost/realhome/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Products\ads_element.ctp, line 4
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765
 Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+<<<<<<< HEAD
 Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
 Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
@@ -11599,6 +11818,15 @@ Referer URL: http://localhost/realhome/blogs/blogDetails
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
 include - APP/Template\Blogs\blog_details.ctp, line 525
+=======
+App\Controller\ProductsController::adsElement() - APP/Controller\ProductsController.php, line 501
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+Cake\View\View::requestAction() - CORE\src\Routing\RequestActionTrait.php, line 177
+include - APP/Template\Pages\home.ctp, line 393
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
 Cake\View\View::_render() - CORE\src\View\View.php, line 1157
 Cake\View\View::render() - CORE\src\View\View.php, line 765

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 <?php $site_url = $this->Url->build('/',true); ?>
+=======
+<?php
+
+ $site_url = $this->Url->build('/',true); ?>
+ <div class="container">
+>>>>>>> c50f275790a0c8c19fcd4a11dea119d050450ef7
 <header id="header">
            <strong class="menu_head">Menu</strong>
            <i class="fa fa-bars" aria-hidden="true"></i>
@@ -80,7 +87,7 @@
 				<ul class="nav">
 					<li id="logo" class="nav-item">
 						<a class="nav-link" href="#">
-
+				            <img class="img-responsive" src="<?=$site_url?>img/realhomelogo.png" alt="logo">
 						</a>
 					</li>
                 </ul>
@@ -147,4 +154,4 @@
                 <?php }?>
 			</div>
 		</div>
-		
+		</div>

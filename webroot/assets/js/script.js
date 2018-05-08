@@ -64,9 +64,16 @@ $(document).ready(function () {
 
     featuredListSlider.owlCarousel({
         //navigation : true, // Show next and prev buttons
-        navigation: false,
+		
+		loop:true,
+		margin:10,
+		autoPlay:true,
+		autoplayTimeout:10,
+		autoplayHoverPause:true,
+        
+		navigation: false,
         pagination: false,
-        items: 5,
+        items: 6,
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768, 3],
         itemsTabletSmall: [660, 2],
