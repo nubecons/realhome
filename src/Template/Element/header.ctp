@@ -1,6 +1,4 @@
-<?php
-
- $site_url = $this->Url->build('/',true); ?>
+<?php $site_url = $this->Url->build('/',true); ?>
 <header id="header">
            <strong class="menu_head">Menu</strong>
            <i class="fa fa-bars" aria-hidden="true"></i>
@@ -18,7 +16,7 @@
 							   <a class="nav-link" href="#">Forum</a>
 						   </li>
 						   <li class="nav-item">
-							   <a class="nav-link" href="<?=$site_url?>blog">blog</a>
+							   <a class="nav-link" href="<?=$site_url?>blogs">blog</a>
 						   </li>
 						   <li class="nav-item">
 							   <a class="nav-link" href="<?=$site_url."maps"?>">Maps</a>
