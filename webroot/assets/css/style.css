@@ -2309,7 +2309,7 @@ label {
     color: #888; }
   .featured-list-slider .item > a {
     display: block;
-    padding: 30px;
+    padding: 10px;
     border: solid 1px transparent; }
     .featured-list-slider .item > a:hover {
       background: #f5f5f5;
@@ -2340,7 +2340,7 @@ label {
          -o-transform: scale(1) translateY(2px);
             transform: scale(1) translateY(2px); }
   .featured-list-slider .item a img {
-    width: 100%;
+    width: 50%;
     -webkit-transition: all 0.25s cubic-bezier(0.3, 0, 1, 1) 0s;
        -moz-transition: all 0.25s cubic-bezier(0.3, 0, 1, 1) 0s;
          -o-transition: all 0.25s cubic-bezier(0.3, 0, 1, 1) 0s;
@@ -2359,8 +2359,8 @@ label {
   max-width: 90%;
   float: none;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+ /* padding-top: 20px;
+  padding-bottom: 20px;*/
   /*rtl:ignore*/
   direction: ltr; }
 
@@ -2693,7 +2693,7 @@ nav.slider-nav a {
   background-position: center;
   background-size: cover;
   height: auto;
-  padding: 50px 0;
+  padding: 12px 0;
   height: 400px !important;
   -webkit-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
      -moz-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;

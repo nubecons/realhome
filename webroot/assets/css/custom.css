@@ -53,4 +53,26 @@
 
 #header {
    background-color: #16a085;
-}	
+}
+
+.gheading{
+	background-color:#16a085 !important;
+	color:#fff;
+	}
+	
+.list-user-list-cus li {
+    border-radius: 6px;
+    border: solid 1px #ccc;
+    width: 85px !important;
+    height: 90px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+	line-height: 90px;
+}
+.list-user-list-cus li img
+{
+ display:inline-block;
+ vertical-align:central;
+ max-width:80px;	
+}		

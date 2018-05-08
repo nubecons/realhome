@@ -5,13 +5,26 @@
 <?php //echo $this->Form->hidden('purpose', ['class'=>'form-control' ]); ?>
        <?php /*?> <input type="hidden" name ="purpose" value="<?=$purpose?>"><?php */?>
         <div class="row">
-        <div class="col-md-9 page-content col-thin-left">
-            <div class="category-list">
-                <ul id="myTab" class="nav nav-tabs tab-box nav nav-tabs add-tabs" role="tablist">
-                    <li class="active nav-item"><a href="#buy" class="nav-link" data-toggle="tab">Search Property</a></li>
-                   <?php /*?> <li class="nav-item"><a href="#rent"  class="nav-link"data-toggle="tab">Rent Property</a></li><?php */?>
+
+        <div class="col-md-9 inner-box" style="padding-top:0px;">
+           
+         <div class="row card-footer">
+            <div class="col-md-3 pull-left" >
+           <h2> <i class="fa fa-search"></i>  Property for sale in Pakistan</h2>
+            </div>
+            <div class="col-md-9 card bg-light" style="padding-top:5px;" >
+           <ul id="myTab" class="nav" role="tablist" >
+                    <li class="nav-item"><a href="#buy"   class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary" style="min-width:100px;">  Rent</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Buy</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Projects</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Wanted</button></a></li>
                 </ul>
-                <div id="myTabContent" class="tab-content">
+            </div>
+            </div>
+           
+               
+               
+                <div id="myTabContent" class="tab-content" style="margin-top:10px;">
                     <div class="tab-pane in active" id="buy">
                         <div class="container">
                             <div class="row">
@@ -110,8 +123,10 @@
                     </div><?php */?>
                 </div>
     		<?php echo $this->Form->end()?>
-            </div>
+            
         </div>
+        
+        
             <?php 
 				$city_idz = ['103908'/*Lahore*/ , '103895'/*karachi*/ ,'103952'/*Peshawar*/ ,'103961'/*Rawalpindi*/ ,'103930'/*Multan*/ 
 							,'103956'/*Quetta*/ ,'103882'/*Islamabad*/] ;
@@ -129,6 +144,7 @@
                                 <li><a href="<?=$site_url?>products/locations/103952"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
                                
                                     

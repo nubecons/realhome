@@ -5,17 +5,21 @@
 
     <div class="main-container">
         <div class="container">
+        
+        
+        
+        
             <div style="clear: both"></div>
 	            <div class="col-xl-12 content-box ">
                 <div class="row row-featured">
                     <div class="col-xl-12  box-title ">
-                        <div class="inner"><h2><span>Sponsored </span> Properties <a href="#" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a></h2>
+                        <div class="inner"><h2><span>TITANIUM  </span> AGENCIES <?php /*?><a href="#" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a><?php */?></h2>
                         </div>
                     </div>
 
                     <div style="clear: both"></div>
 
-                    <div class=" relative  content featured-list-row  w100">
+                    <div class=" relative  content featured-list-row  w100" style="height:130px;">
 							
                         <nav class="slider-nav has-white-bg nav-narrow-svg">
                             <a class="prev">
@@ -28,19 +32,103 @@
                         </nav>
                        
                         <div class="no-margin featured-list-slider ">
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/149635_5a49f40bae9d6.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/153218_5abc97bbc7555.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/154721_5ac35d909d723.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/157962.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/149635_5a49f40bae9d6.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/166379.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                            
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/149635_5a49f40bae9d6.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/153218_5abc97bbc7555.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/154721_5ac35d909d723.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/157962.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/149635_5a49f40bae9d6.jpg" alt="img">
+                                </span>
+                              
+                            </a>
+                            </div>
+                             <div class="item"><a href="#">
+                                <span class="item-carousel-thumb">
+                                <img class="img-responsive" src="<?=$site_url?>img/partners/166379.jpg" alt="img">
+                                </span>
+                               
+                            </a>
+                            </div>
+                            
                            <?php
 						  if(count($SponsProducts) == 0) {?>
 						   <?php /*?><img src="<?=$site_url?>img/maps/awaiting.jpg" alt="img" width="100%" height="250"/><?php */?>
                            
-                           <div class="item"><a href="#">
+                          <?php /*?> <div class="item"><a href="#">
                                 <span class="item-carousel-thumb">
                                 <img class="img-responsive" src="<?=$site_url?>img/maps/awaiting.jpg" alt="img">
                                 </span>
-                                <span class="item-name"> Waiting Sponsored</span>
-                                
-                                <span class="price">  Rs:0.00 </span>
+                              
                             </a>
-                            </div>
+                            </div><?php */?>
                            
                            <?php }else{?> 
                         
@@ -79,6 +167,118 @@
 				?>
                 
                 <div class="col-md-9 page-content col-thin-right">
+                <style>
+				.list-user-list li{ width:8.33%}
+				</style>
+                
+                <div class="card sidebar-card card-contact-seller">
+                                    <div class="card-header gheading">FEATURED AGENTS <span class="badge badge-secondary"></span>
+                                    </div>
+                                    <div class="card-content user-info">
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled list-user-list list-user-list-cus ">
+
+                                                <li><img alt="img" src="<?=$site_url?>img/agents/165153.jpg"
+                                                            class="img-circle" style="display:inline; vertical-align:middle"></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/162995.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img"src="<?=$site_url?>img/agents/169904.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/165435.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/150916.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/172338_5a55d5d81a0f3.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/157272.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/127436.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/160737_5a8eb4f6a15a0.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/168597_5acdfdbda51be.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/159955.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/168857.jpg"
+                                                            class="img-circle   "></a></li>
+
+                                                <li><a><img alt="img"src="<?=$site_url?>img/agents/1996_5a619fe5b6dbe.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/156816.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/158071.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/168138.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/165008.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/149724.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/170538_59f18e630c5f1.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/153242.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/160721_5a61c4acdce9e.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/168955.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/157275.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/166715.jpg"
+                                                            class="img-circle   "></a></li>
+                                               
+                                                 <li><a><img alt="img" src="<?=$site_url?>img/agents/156816.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/151938.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/157237_5a9fb365eb078.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/151134.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/169409_5a93d6915ca19.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/166076.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/152206.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/165679.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/155613.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/165113.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/153316.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/68754.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/157808.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/170023.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/161773.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/169227.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/172338_5a55d5d81a0f3.jpg"
+                                                            class="img-circle   "></a></li>
+                                                             <li><a><img alt="img" src="<?=$site_url?>img/agents/157275.jpg"
+                                                            class="img-circle   "></a></li>
+                                                              <li><a><img alt="img" src="<?=$site_url?>img/agents/158071.jpg"
+                                                            class="img-circle   "></a></li>
+                                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/158071.jpg"
+                                                            class="img-circle   "></a></li>
+                                                <li><a><img alt="img" src="<?=$site_url?>img/agents/168138.jpg"
+                                                            class="img-circle   "></a></li>
+                                                                      
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                
+                
                     <div class="inner-box category-content">
                         <h2 class="title-2">Pakistan Properties For Sale </h2>
                         <div class="row">
@@ -287,7 +487,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 page-sidebar col-thin-left">
+                <div class="col-md-3 no-padding">
                     <aside>
                        <?php /*?> <div class="inner-box no-padding">
                              <div class="inner-box">

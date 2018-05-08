@@ -1,6 +1,7 @@
 <?php
 
  $site_url = $this->Url->build('/',true); ?>
+ <div class="container">
 <header id="header">
            <strong class="menu_head">Menu</strong>
            <i class="fa fa-bars" aria-hidden="true"></i>
@@ -82,7 +83,7 @@
 				<ul class="nav">
 					<li id="logo" class="nav-item">
 						<a class="nav-link" href="#">
-
+				            <img class="img-responsive" src="<?=$site_url?>img/realhomelogo.png" alt="logo">
 						</a>
 					</li>
                 </ul>
@@ -149,4 +150,4 @@
                 <?php }?>
 			</div>
 		</div>
-		
+		</div>
