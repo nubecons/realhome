@@ -14,10 +14,10 @@
             </div>
             <div class="col-md-9 card bg-light" style="padding-top:5px;" >
            <ul id="myTab" class="nav" role="tablist" >
-                    <li class="nav-item"><a href="#buy"   class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary" style="min-width:100px;">  Rent</button></a></li>
-                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Buy</button></a></li>
-                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Projects</button></a></li>
-                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" style="min-width:100px;">  Wanted</button></a></li>
+                    <li class="nav-item"><a href="#buy"   class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary" >  Rent</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" >  Buy</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" >  Projects</button></a></li>
+                    <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" >  Wanted</button></a></li>
                 </ul>
             </div>
             </div>
@@ -152,4 +152,6 @@
                             </div>
                         </div>
         </div>
+    </div>
+    </div>
     </div>

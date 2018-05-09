@@ -2693,8 +2693,8 @@ nav.slider-nav a {
   background-position: center;
   background-size: cover;
   height: auto;
-  padding: 12px 0;
-  height: 400px !important;
+  padding: 100px 0;
+  height: 600px !important;
   -webkit-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
      -moz-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
        -o-transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
@@ -5905,8 +5905,8 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   width: 150px;
 }
 #header .add_btn {
-  color: #515151;
-  background-color: #ffffff;
+  color: #fff;
+  background-color:#ff6f29;
   border-radius: 5px;
   display: block;
   text-align: right;
@@ -5917,7 +5917,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   line-height: 26px;
 }
 #header .add_btn .fa {
-  color: #515151;
+  color: #fff;
   font-size: 14px;
 }
 #header .header_search .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -5934,6 +5934,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 #secondary_header .nav-item {
   margin-right: 10px;
+  margin-top:28px;
 }
 .br-left {
   border-left: solid 1px #d1d1d1;
@@ -5945,7 +5946,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   color: #848484;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   float: left;
   text-decoration: none;
   padding: 0.1rem 1rem;

@@ -5,13 +5,13 @@
            <i class="fa fa-bars" aria-hidden="true"></i>
 		   <div class="container-fluid">
 			   <div class="row clearfix">
-				   <div class="col-md-7">
+				   <div class="col-md-6">
 					   <ul class="nav">
 						   <li class="nav-item">
 							   <a class="nav-link" href="<?=$site_url?>"><i class="fa fa-home" aria-hidden="true"></i></a>
 						   </li>
 						   <li class="nav-item">
-							   <a class="nav-link active" href="<?=$site_url?>">Porperties</a>
+							   <a class="nav-link active" href="<?=$site_url?>">Properties</a>
 						   </li>
 						   <li class="nav-item">
 							   <a class="nav-link" href="#">Forum</a>
@@ -33,8 +33,29 @@
 						   </li>
 					   </ul>
 				   </div>
-				   <div class="col-md-5 d-flex justify-content-end ">
+                   
+				   <div class="col-md-2 d-flex justify-content-end ">
 					   <ul class="nav">
+                            
+                            <li class="nav-item d-flex align-items-center">
+                            
+                           <div id="google_translate_element"></div>
+						   <script type="text/javascript">
+							
+							function googleTranslateElementInit() {
+							 	 new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+							}
+							
+                            </script>
+							<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        					</li>
+                            </ul>
+                            </div>
+                   
+				   <div class="col-md-4 d-flex justify-content-end ">
+					   <ul class="nav">
+                            
+                        
 						   <li class="nav-item d-flex align-items-center mr-3">
 							   <div class="header_search">
                                <?php echo $this->Form->create('' ,[ 'id' =>'top_search_form' , 'url' => ['controller' => 'products' ,'action' => 'index'] , 'class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
@@ -57,7 +78,7 @@
 						    if($sUser){
 								?>
                             <li class="nav-item">
-							   <a class="nav-link" href="<?=$site_url?>users/dashboard"><i class="fa fa-user" aria-hidden="true"></i></a>
+							   <a class="nav-link" href="<?=$site_url?>users/dashboard"><i class="fa fa-user" aria-hidden="true" style="color:#d33c44"></i></a>
 						   </li>
                                
 						   <li class="nav-item">
@@ -66,7 +87,7 @@
 						  
                            <?php }else{?>
                             <li class="nav-item">
-							   <a class="nav-link" href="<?=$site_url?>users/login"><i class="fa fa-user" aria-hidden="true"></i></a>
+							   <a class="nav-link" href="<?=$site_url?>users/login"><i class="fa fa-user" aria-hidden="true" style="color:#d33c44"></i></a>
 						   </li>
                            <?php }?>
 					   </ul>
@@ -77,15 +98,12 @@
 	   </header>
        
        <div id="secondary_header">
-			<div class="container-fluid d-flex">
-				<ul class="nav">
-					<li id="logo" class="nav-item">
-						<a class="nav-link" href="#">
-				            <img class="img-responsive" src="<?=$site_url?>img/realhomelogo.png" alt="logo">
+			<div class="container-fluid d-flex" style="padding-left:0px;">
+				
+						<a href="<?=$site_url?>">
+				            <img  src="<?=$site_url?>img/realhomelogo1.png" alt="logo"  >
 						</a>
-					</li>
-                </ul>
-               
+				
                 
                 <?php
 				if(isset($is_partner) and $is_partner == 1){
