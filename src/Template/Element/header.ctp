@@ -14,7 +14,7 @@
 							   <a class="nav-link active" href="<?=$site_url?>">Properties</a>
 						   </li>
 						   <li class="nav-item">
-							   <a class="nav-link" href="#">Forum</a>
+							   <a class="nav-link" href="<?=$site_url."forums"?>">Forum</a>
 						   </li>
 						   <li class="nav-item">
 							   <a class="nav-link" href="<?=$site_url?>blogs">blog</a>
