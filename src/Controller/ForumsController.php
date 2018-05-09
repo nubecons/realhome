@@ -17,8 +17,9 @@ class ForumsController extends AppController {
         parent::beforeFilter($event);
         $this->product_file_path = WWW_ROOT . 'img' . DS . 'maps' . DS;
         $this->loadComponent('Upload');
-		$this->Auth->allow(['index']);
+		$this->Auth->allow(['index','ask']);
     }
     public function index() {}
+    public function ask() {}
 
 }
