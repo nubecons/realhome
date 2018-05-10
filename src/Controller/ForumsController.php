@@ -19,7 +19,24 @@ class ForumsController extends AppController {
         $this->loadComponent('Upload');
 		$this->Auth->allow(['index','ask']);
     }
-    public function index() {}
-    public function ask() {}
+    public function index() {
+        $this->loadModel('ForumCategories');
+        $ForumCategories = $this->ForumCategories->find()->all();
+        $this->set('ForumCategories', $ForumCategories);
+        
+    }
+    public function ask() {
+        $this->loadModel('ForumCategories');
+        $ForumCategories = $this->ForumCategories->find()->all();
+        $this->set('ForumCategories', $ForumCategories);
+        
+        $this->loadModel('Cities');
+	$Cities = $this->Cities->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status'=>'ACTIVE' ,'country_code' => 'pk'])->toArray();
+        $this->set('Cities', $Cities);
+        
+        $this->loadModel('ForumCategories');
+	$ForumCategoriesList = $this->ForumCategories->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status'=>'ACTIVE' ,'parent_id' => '0'])->toArray();
+        $this->set('ForumCategoriesList', $ForumCategoriesList);
+    }
 
 }

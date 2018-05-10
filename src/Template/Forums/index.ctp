@@ -27,20 +27,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card sidebar-card">
-                                    <div class="card-header gheading">Forum Categories</div>
-                                    <div class="card-content user-info">
-                                        <div class="card-body">
-                                            <ul class="list-check ">
-                                                <li><a>Buy</a></li>
-                                                <li><a>Rent</li>
-                                                <li><a>General</a></li>
-                                                <li><a>Question</a></li>
-                                                <li><a>Text</a></li>
-                                            </ul>
-                                        </div>
+                                <div class="card-header gheading">Forum Categories</div>
+                               <div class="inner-box">
+                            <div class="user-panel-sidebar">
+                                <div class="collapse-box">
+                                    <?php if($ForumCategories){
+                                        foreach($ForumCategories as $ForumCategory){
+                                            if($ForumCategory->parent_id ==0){?>
+                                    <h5 class="collapse-title no-border"><?php echo $ForumCategory->title; ?><a class="pull-right" aria-expanded="true" data-toggle="collapse" href="#MyClassified"><i class="fa fa-angle-down"></i></a></h5>
+                                            <?php }if($ForumCategory->parent_id == $ForumCategory->id){?>
+                                    <div id="MyClassified" class="panel-collapse collapse show">
+                                        <ul class="acc-list">
+                                            <li><a href="#"><i class="icon-home"></i><?php echo $ForumCategory->title; ?></a></li>
+
+                                        </ul>
                                     </div>
+                                            <?php }}}?>
                                 </div>
+
+                            </div>
+                        </div>
                             </aside>
                         </div>
                         
@@ -93,22 +99,14 @@
                                     <div class="card-header gheading">Forum Categories </div>
                                     <div class="card-content user-info">
                                     <div class="card-body">
+                                         <?php if($ForumCategories){
+                                        foreach($ForumCategories as $ForumCategory){
+                                            if($ForumCategory->parent_id ==0){?>
                                     <div class="card bg-light card-body mb-3">
-                                        <h3><i class=" icon-certificate icon-color-1"></i> Buying Property</h3>
-                                        <p>Premium ads help sellers promote their product or service by getting their ads more visibility with more  buyers and sell what they want faster.</p>
+                                        <h3><i class=" icon-certificate icon-color-1"></i><?php echo $ForumCategory->title; ?></h3>
+                                        <p><?php echo $ForumCategory->description; ?></p>
                                     </div>
-                                         <div class="card bg-light card-body mb-3">
-                                        <h3><i class=" icon-certificate icon-color-1"></i>Selling Property</h3>
-                                        <p>Premium ads help sellers promote their product or service by getting their ads more visibility with more  buyers and sell what they want faster.</p>
-                                    </div>
-                                         <div class="card bg-light card-body mb-3">
-                                        <h3><i class=" icon-certificate icon-color-1"></i> General</h3>
-                                        <p>Premium ads help sellers promote their product or service by getting their ads more visibility with more  buyers and sell what they want faster.</p>
-                                    </div>
-                                         <div class="card bg-light card-body mb-3">
-                                        <h3><i class=" icon-certificate icon-color-1"></i> Other</h3>
-                                        <p>Premium ads help sellers promote their product or service by getting their ads more visibility with more  buyers and sell what they want faster.</p>
-                                    </div>
+                                         <?php }}}?>
                                     </div>
                                     </div>
                                 </div>
@@ -130,81 +128,21 @@
                                                 <div class="ads-details">
                                                     <h5 class="add-title"><a href="ads-details.html"> MSI GE70 Apache Pro-061 17.3"
                                                         Core i5-4200H/8GB DDR3/NV GTX860M Gaming Laptop </a></h5>
-                                                                        <span class="info-row"> <span class="add-type business-ads tooltipHere"
-                                                                                                      data-toggle="tooltip" data-placement="right"
-                                                                                                      title="Business Ads">B </span> <span class="date"><i
-                                                                                class=" icon-clock"> </i> Today 1:21 pm </span> - <span
-                                                                                class="category">Electronics </span>- <span class="item-location"><i
-                                                                                class="fa fa-map-marker"></i> New York </span> </span></div>
+                                                                        <span class="info-row"> <span class="date"><i
+                                                                                class=" icon-clock"> </i>In Category </span> <span class="item-location"><i
+                                                                                class="fa fa-map-marker"></i> Latest Reply by Khalid Javaid | 5 hours ago</span> </span></div>
                                             </div>
                                             <!--/.add-desc-box-->
                                             <div class="col-md-3 text-right  price-box">
                                                 <h2 class="item-price"> $ 400 </h2>
-                                                <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span>
+                                                <span class="info-row">
+                                                    <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Views">30 </span> 
+                                                    <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Replays">10 </span> 
+                                                </span>
                                                 </a></div>
                                             <!--/.add-desc-box-->
                                         </div>
                                     </div>
-                                    <!--/.item-list-->
-                                    <div class="item-list">
-                                        <div class="row"><div class="col-md-2 no-padding photobox">
-                                            <div class="add-image"><span class="photo-count"><i
-                                                    class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img
-                                                    class="thumbnail no-margin" src="images/item/tp/Image00022.jpg"
-                                                    alt="img"></a></div>
-                                        </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-7 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html"> Apple iPod touch 16 GB 3rd
-                                                        Generation </a></h5>
-                                                                        <span class="info-row"> <span class="add-type business-ads tooltipHere"
-                                                                                                      data-toggle="tooltip" data-placement="right"
-                                                                                                      title="Business Ads">B </span> <span class="date"><i
-                                                                                class=" icon-clock"> </i> Today 1:21 pm </span> - <span
-                                                                                class="category">Electronics </span>- <span class="item-location"><i
-                                                                                class="fa fa-map-marker"></i> New York </span> </span></div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-                                            <div class="col-md-3 text-right  price-box">
-                                                <h2 class="item-price"> $ 150 </h2>
-                                                <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span>
-                                                </a></div>
-                                            <!--/.add-desc-box-->
-                                        </div>
-                                    </div>
-                                    <!--/.item-list-->
-                                    <div class="item-list">
-                                        <div class="row"><div class="col-md-2 no-padding photobox">
-                                            <div class="add-image"><span class="photo-count"><i
-                                                    class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img
-                                                    class="thumbnail no-margin"
-                                                    src="images/item/FreeGreatPicture.com-46405-google-drops-price-of-nexus-4-smartphone.jpg"
-                                                    alt="img"></a></div>
-                                        </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-7 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html"> Google drops Nexus 4 by $100,
-                                                        offers 15 day price protection refund </a></h5>
-                                                                        <span class="info-row"> <span class="add-type business-ads tooltipHere"
-                                                                                                      data-toggle="tooltip" data-placement="right"
-                                                                                                      title="Business Ads">B </span> <span class="date"><i
-                                                                                class=" icon-clock"> </i> Today 1:21 pm </span> - <span
-                                                                                class="category">Electronics </span>- <span class="item-location"><i
-                                                                                class="fa fa-map-marker"></i> New York </span> </span></div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-                                            <div class="col-md-3 text-right  price-box">
-                                                <h2 class="item-price"> $ 150 </h2>
-                                                <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span>
-                                                </a></div>
-                                            <!--/.add-desc-box-->
-                                        </div>
-                                    </div>
-                                    <!--/.item-list-->
-
-
                                 </div>
 
 

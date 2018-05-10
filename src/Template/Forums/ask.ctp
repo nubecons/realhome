@@ -26,15 +26,23 @@ $site_url = $this->Url->build('/',true); ?>
                             </div>
                             <div class="card sidebar-card">
                                 <div class="card-header gheading">Forum Categories</div>
-                                <div class="card-content user-info">
-                                    <div class="card-body">
-                                        <ul class="list-check ">
-                                            <li><a>Buy</a></li>
-                                            <li><a>Rent</li>
-                                            <li><a>General</a></li>
-                                            <li><a>Question</a></li>
-                                            <li><a>Text</a></li>
-                                        </ul>
+                                <div class="inner-box">
+                                    <div class="user-panel-sidebar">
+                                        <div class="collapse-box">
+                                    <?php if($ForumCategories){
+                                        foreach($ForumCategories as $ForumCategory){
+                                            if($ForumCategory->parent_id ==0){?>
+                                            <h5 class="collapse-title no-border"><?php echo $ForumCategory->title; ?><a class="pull-right" aria-expanded="true" data-toggle="collapse" href="#MyClassified"><i class="fa fa-angle-down"></i></a></h5>
+                                            <?php }if($ForumCategory->parent_id == $ForumCategory->id){?>
+                                            <div id="MyClassified" class="panel-collapse collapse show">
+                                                <ul class="acc-list">
+                                                    <li><a href="#"><i class="icon-home"></i><?php echo $ForumCategory->title; ?></a></li>
+
+                                                </ul>
+                                            </div>
+                                            <?php }}}?>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +62,7 @@ $site_url = $this->Url->build('/',true); ?>
                                             <div class="form-group row">
                                                 <label for="" class="col-sm-3 col-form-label">Title: </label>
                                                 <div class="col-sm-8">
-<?php echo $this->Form->text('title', ['class'=>'form-control']); ?>
+                                                <?php echo $this->Form->text('title', ['class'=>'form-control']); ?>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -67,18 +75,24 @@ $site_url = $this->Url->build('/',true); ?>
                                             <div class="form-group row">
                                                 <label  class="col-sm-3 col-form-label">Category:</label>
                                                 <div class="col-sm-4">
-                                        <?php echo $this->Form->input('city_id', ['required' => true, 'empty' =>'-- Select --','options' => @$Cities ,'id'=>'city_id','onchange' => "get_locations()", 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                        <?php echo $this->Form->input('forum_category_id', ['required' => true, 'empty' =>'-- Select --','options' => $ForumCategoriesList ,'onchange' => "get_forum_sub_categories()", 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
                                                 </div>
 
                                             </div>
                                             <div class="form-group row">
                                                 <label  class="col-sm-3 col-form-label">Sub Category:</label>
                                                 <div class="col-sm-4">
-                                        <?php echo $this->Form->input('city_id', ['required' => true, 'empty' =>'-- Select --','options' => @$Cities ,'id'=>'city_id','onchange' => "get_locations()", 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                        <?php echo $this->Form->input('forum_sub_category_id', ['required' => true, 'empty' =>'-- Select --','options' => '' , 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
                                                 </div>
 
                                             </div>
+                                            <div class="form-group row" >
+                                                <label  class="col-sm-3 col-form-label">City:</label>
+                                                <div class="col-sm-4">
+                                        <?php echo $this->Form->input('city_id', [ 'required' => true, 'empty' =>'-- Select --', 'options' => $Cities ,'onchange' => "get_locations()", 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                                </div>
 
+                                            </div> 
                                             <div class="form-group row" >
                                                 <label  class="col-sm-3 col-form-label">Location:</label>
                                                 <div class="col-sm-4" id="locations_div">
@@ -211,7 +225,7 @@ $site_url = $this->Url->build('/',true); ?>
 </div>
 <script>
     function get_locations() {
-        var CityId = $('#city_id option:selected').val();
+        var CityId = $('#city-id option:selected').val();
         $.ajax({
             type: "POST",
             url: "<?php echo $site_url?>Products/get_locations/" + CityId,
