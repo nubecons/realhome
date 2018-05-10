@@ -81,7 +81,7 @@ $site_url = $this->Url->build('/',true); ?>
                                             </div>
                                             <div class="form-group row">
                                                 <label  class="col-sm-3 col-form-label">Sub Category:</label>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4" id="sub_category_div">
                                         <?php echo $this->Form->input('forum_sub_category_id', ['required' => true, 'empty' =>'-- Select --','options' => '' , 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
                                                 </div>
 
@@ -224,7 +224,7 @@ $site_url = $this->Url->build('/',true); ?>
     </div>
 </div>
 <script>
-    function get_locations() {
+    function get_locations() { 
         var CityId = $('#city-id option:selected').val();
         $.ajax({
             type: "POST",
@@ -237,37 +237,18 @@ $site_url = $this->Url->build('/',true); ?>
             }
         });
     }
-    function check_member(val) {
 
-        if (val == '2') {
-
-            $('#already_member_div').hide();
-            $('#new_member_div').show();
-
-        } else {
-
-            $('#already_member_div').show();
-            $('#new_member_div').hide();
-
-        }
-
-
+    function get_forum_sub_categories() { 
+        var CategoryId = $('#forum-category-id option:selected').val();
+        $.ajax({
+            type: "POST",
+            url: "<?php echo $site_url?>Products/get_forum_sub_categories/" + CategoryId,
+            success: function (data) {
+                if (data != '')
+                {
+                    $('#sub_category_div').html(data); 
+                }
+            }
+        });
     }
-
-    function check_purpose(val) {
-
-        if (val == 'Wanted') {
-            $('#wanted_type_div').show();
-        } else {
-            $('#wanted_type_div').hide();
-        }
-    }
-
-    $(document).ready(function () {
-        check_member('<?=$this->request->data['membership_status']?>');
-        check_purpose('<?=$this->request->data['purpose']?>');
-        $('#SubProductTypes<?=$product_type_id?>').show();
-    });
-
-
 </script>

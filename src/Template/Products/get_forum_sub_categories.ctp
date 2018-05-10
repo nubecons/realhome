@@ -1,0 +1,2 @@
+<?php  echo $this->Form->input('forum_sub_category_id', [ 'required' => true, 'empty' =>'-- Select --','options' => $ForumCategories , 'dev' => false , 'label' => false, 'class'=>'form-control']); 
+           ?>

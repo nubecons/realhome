@@ -34,7 +34,7 @@ class ProductsController extends AppController
 		
 		$this->loadComponent('Upload');
 
-		$this->Auth->allow(['add','index' ,'detail' ,'searchElement' ,'getLocations','adsElement','locations']);
+		$this->Auth->allow(['add','index' ,'detail' ,'searchElement' ,'getLocations','adsElement','locations','getForumSubCategories']);
 
 		$this->set('title', 'Manage Property');
 
@@ -494,22 +494,26 @@ public function locations($city_id = null)
 		
 		function adsElement(){
     
-    	$this->loadModel('Advertisements');
-        $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
-        $this->set('Advertisements', $Advertisements);
-		
+                $this->loadModel('Advertisements');
+                $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
+                $this->set('Advertisements', $Advertisements);
 		$this->render();
 		
 		}
 		
-		
 		function getLocations($city_id)
 		{
-		
 			$this->loadModel('Locations');
 			$Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
 			$this->set('Locations', $Locations);
 			$this->viewBuilder()->setLayout(false);
+		}
+                function getForumSubCategories($forumCategoryId)
+		{
+			   $this->loadModel('ForumCategories');
+                           $ForumCategories = $this->ForumCategories->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status'=>'ACTIVE' ,'parent_id' => $forumCategoryId])->toArray();
+                           $this->set('ForumCategories', $ForumCategories);
+                           $this->viewBuilder()->setLayout(false); 
 		}
 		
 		function myProducts(){
