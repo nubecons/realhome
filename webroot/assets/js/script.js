@@ -413,7 +413,7 @@ $(document).ready(function () {
     } // end Desktop else
 
     // custom
-    function loadCiies(filter){
+   /* function loadCiies(filter){
         var country_list = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas"
             ,"Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands"
             ,"Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica"
@@ -447,14 +447,14 @@ $(document).ready(function () {
         }
 
     }
-    loadCiies();
+    loadCiies();*/
     // filter cities
-    $(".city_filter").keyup(function(){
+   /* $(".city_filter").keyup(function(){
         var val = $(this).val();
         loadCiies(val);
-    });
+    });*/
     // select city
-    $( "#main_search_form" ).on("click", ".city_select", function( event ) {
+  /*  $( "#main_search_form" ).on("click", ".city_select", function( event ) {
         var text = $(this).html();
         $('#City_selectbox').hide();
         $('#city_value').empty().html(text);
@@ -479,7 +479,7 @@ $(document).ready(function () {
             $(element).show();
         }
 
-    });
+    });*/
     $('.toggle_menu').click(function () {
         $('.collapsable_menu').animate({width: 'toggle'});
     });

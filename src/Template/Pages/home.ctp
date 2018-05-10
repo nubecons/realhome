@@ -483,9 +483,9 @@
                     
                         <h2 class="title-2"><span>Latest  </span> Pakistan Property News
 
-                            <a id="nextItem" class="link  pull-right carousel-nav"> <i class="icon-right-open-big"></i></a>
+                        <?php /*?>    <a id="nextItem" class="link  pull-right carousel-nav"> <i class="icon-right-open-big"></i></a>
                             <a id="prevItem" class="link pull-right carousel-nav"> <i class="icon-left-open-big"></i>
-                            </a>
+                            </a><?php */?>
 
                         </h2>
 
@@ -605,26 +605,25 @@
                     
                     
                     
-                    <div class="container">
+          
+           
             <div class="section-content">
-                <div class="row ">
-                    <h1 class="text-center title-1"> classified ads <strong>FAQ</strong></h1>
-                    <hr class="center-block small text-hr">
-                </div>
+               
                 <div class="faq-content">
 
                     <div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group faq-panel">
+                    
                         <div class="card">
                             <div id="headingOne" role="tab" class="card-header">
                                 <h4 class="card-title">
                                     <a aria-controls="collapseOne" aria-expanded="true" href="#collapseOne"
-                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse" >
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed" >
                                         How do I place an ad?
                                     </a>
                                 </h4>
                             </div>
-                            <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show"
-                                 id="collapseOne">
+                            <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show" id="collapseOne">
+                            
                                 <div class="card-body">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
                                     amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu erat
@@ -752,11 +751,12 @@
 
 
                 </div>
-
-
             </div>
-        </div>
-                    
+
+        
+        
+ 
+                   
 
                     <div class="inner-box has-aff relative">
                         <a class="dummy-aff-img" href="category.html"><img src="images/aff2.jpg" class="img-responsive"
