@@ -18,9 +18,32 @@ class BlogsController extends AppController {
 		$this->Auth->allow(['index','blogDetails']);
     }
     public function index(){
-            $this->loadModel('BlogCategories');
-	    $BlogCategories = $this->BlogCategories->find('all')->where(['status'=>'ACTIVE' ,'parent_id' => 0])->toArray();
-            $this->set('BlogCategories', $BlogCategories);
+		
+		 $joins = [
+            'Blogs' => [
+                'table' => 'blogs',
+                'alias' => 'Blogs',
+                'type' => 'LEFT',
+
+                'conditions' => 'BlogCategories.id= Blogs.blog_category_id'
+
+            ],
+
+        ];
+
+		 
+		$this->loadModel('BlogCategories');
+		$BlogCategories = $this->BlogCategories
+		->find('all')
+		->select(['id' , 'title' , 'records' => 'count(Blogs.id)' ])
+		//->select(['Blogs.id', 'Blogs.title', ])
+		->join($joins)
+		->group('BlogCategories.id')
+		->where(['BlogCategories.status'=>'ACTIVE' ,'parent_id' => 0])
+		->all();
+
+     
+		$this->set('BlogCategories', $BlogCategories);
             
 	    $Blogs = $this->Blogs->find('all')->toArray();
             $this->set('Blogs', $Blogs);
@@ -28,16 +51,37 @@ class BlogsController extends AppController {
     }
     
     public function blogDetails($blog_id =null){
-        
-                    $this->loadModel('BlogCategories');
-	    $BlogCategories = $this->BlogCategories->find('all')->where(['status'=>'ACTIVE' ,'parent_id' => 0])->toArray();
-            $this->set('BlogCategories', $BlogCategories);
+         $joins = [
+            'Blogs' => [
+                'table' => 'blogs',
+                'alias' => 'Blogs',
+                'type' => 'LEFT',
+
+                'conditions' => 'BlogCategories.id= Blogs.blog_category_id'
+
+            ],
+
+        ];
+
+		 
+		$this->loadModel('BlogCategories');
+		$BlogCategories = $this->BlogCategories
+		->find('all')
+		->select(['id' , 'title' , 'records' => 'count(Blogs.id)' ])
+		//->select(['Blogs.id', 'Blogs.title', ])
+		->join($joins)
+		->group('BlogCategories.id')
+		->where(['BlogCategories.status'=>'ACTIVE' ,'parent_id' => 0])
+		->all();
+
+     
+		$this->set('BlogCategories', $BlogCategories);
             
-             $Blogs = $this->Blogs->find('all')->toArray();
-            $this->set('Blogs', $Blogs);
-            
-	    $Blog = $this->Blogs->find()->where(['id' => $blog_id])->first();
-            $this->set('Blog', $Blog);
+		$Blogs = $this->Blogs->find('all')->toArray();
+		$this->set('Blogs', $Blogs);
+		
+		$Blog = $this->Blogs->find()->where(['id' => $blog_id])->first();
+		$this->set('Blog', $Blog);
     }
 
 }

@@ -15,7 +15,7 @@
 
                                         <a href="blogDetails">
                                             <figure>
-                                                <img class="img-responsive" alt="blog-post image"
+                                                <img  style="max-height:350px" class="img-responsive" alt="blog-post image"
                                                      src="<?php echo $site_url ?>img/blog/<?php echo $Blog->image; ?>">
                                             </figure>
                                         </a>
@@ -34,7 +34,7 @@
 
 
                                         <div class="blog-post-content">
-                                            <h2><a href="blog-details.html"><?php echo $Blog->title;?></a></h2>
+                                            <h2><a href="#"><?php echo $Blog->title;?></a></h2>
 
                                             <p><?php echo substr($Blog->post,0,200);?></p>
 
@@ -64,7 +64,7 @@
                                     <h5 class="list-title uppercase"><strong><a href="#"> Categories</a></strong></h5>
                                     <ul class=" list-unstyled list-border ">
                                         <?php foreach($BlogCategories as $BlogCategory){?>
-                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (0)</span></a></li>
+                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (<?php echo $BlogCategory['records']?>)</span></a></li>
                                         <?php }?>
                                     </ul>
                                 </div>
@@ -80,7 +80,7 @@
 
 
                                             <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><img class="no-margin"
+                                                <div class="add-image"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><img  class="no-margin img-responsive"
                                                                                                        src="<?=$site_url?>img/blog/<?php echo $Blog->image?>" alt="img"></a>
                                                 </div>
                                             </div>

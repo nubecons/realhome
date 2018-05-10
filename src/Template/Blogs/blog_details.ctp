@@ -16,7 +16,7 @@
 
                                         <a href="blog-details.html">
                                             <figure>
-                                                <img class="img-responsive" alt="blog-post image" src="<?=$site_url?>img/blog/<?php echo $Blog['image']?>">
+                                                <img  style="max-height:350px" class="img-responsive" alt="blog-post image" src="<?=$site_url?>img/blog/<?php echo $Blog['image']?>">
                                             </figure>
                                         </a>
                                     </div>
@@ -34,7 +34,7 @@
 
 
                                         <div class="blog-post-content">
-                                            <h2><a href="blog-details.html"><?php echo $Blog->title;?></a></h2>
+                                            <h2><a href="#"><?php echo $Blog->title;?></a></h2>
 
 
                                             <div class="blog-article-text">
@@ -281,7 +281,7 @@
                                     <h5 class="list-title uppercase"><strong><a href="#"> Categories</a></strong></h5>
                                     <ul class=" list-unstyled list-border ">
                                         <?php foreach($BlogCategories as $BlogCategory){?>
-                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (0)</span></a></li>
+                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (<?php echo $BlogCategory['records']?>)</span></a></li>
                                         <?php }?>
                                     </ul>
                                 </div>
