@@ -12,10 +12,8 @@
             <div style="clear: both"></div>
 	            <div class="col-xl-12 content-box ">
                 <div class="row row-featured">
-                    <div class="col-xl-12  box-title ">
-                        <div class="inner"><h2><span>TITANIUM  </span> AGENCIES <?php /*?><a href="#" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a><?php */?></h2>
-                        </div>
-                    </div>
+                     <div class="card-header gheading col-xl-12">FEATURED AGENTS <span class="badge badge-secondary"></span>
+                                </div>
 
                     <div style="clear: both"></div>
 
@@ -276,9 +274,10 @@
                                 </div>
                             </div>
                     
-                    
+                     <div class="card-header gheading">Pakistan Properties For Sale</div>
                     <div class="inner-box category-content">
-                    <h2 class="title-2">Pakistan Properties For Sale </h2>
+                   
+                   
                     <div class="row">
                         <div class="col-md-4 col-sm-4 ">
                             <div class="cat-list">
@@ -479,16 +478,12 @@
                     </div>
                     </div>
                     
-                    <div class="inner-box relative ">
                     
-                        <h2 class="title-2"><span>Latest  </span> Pakistan Property News
-
-                        <?php /*?>    <a id="nextItem" class="link  pull-right carousel-nav"> <i class="icon-right-open-big"></i></a>
+                     <div class="card-header gheading"><span>Latest  </span> Pakistan Property News <?php /*?>    <a id="nextItem" class="link  pull-right carousel-nav"> <i class="icon-right-open-big"></i></a>
                             <a id="prevItem" class="link pull-right carousel-nav"> <i class="icon-left-open-big"></i>
-                            </a><?php */?>
-
-                        </h2>
-
+                            </a><?php */?></div>
+                    <div class="inner-box relative ">
+                   
                         <div class="row" >
                             <div class="col-xl-12">
                                 <div class="no-margin item-news owl-carousel owl-theme">
@@ -611,16 +606,14 @@
                
                 <div class="faq-content">
 
-                    <div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group faq-panel">
+                    <div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group">
                     
                         <div class="card">
-                            <div id="headingOne" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapseOne" aria-expanded="true" href="#collapseOne"
-                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed" >
+                            <div id="headingOne" role="tab" class="card-header gheading collapsed" aria-controls="collapseOne" aria-expanded="true" href="#collapseOne"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  >
                                         How do I place an ad?
-                                    </a>
-                                </h4>
+                                   
+                              
                             </div>
                             <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show" id="collapseOne">
                             
@@ -643,13 +636,10 @@
                         </div>
 
                         <div class="card">
-                            <div id="headingTwo" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapseTwo" aria-expanded="false" href="#collapseTwo"
+                            <div id="headingTwo" role="tab" class="card-header gheading collapsed"  aria-controls="collapseTwo" aria-expanded="false" href="#collapseTwo"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
                                         What does it cost to advertise?
-                                    </a>
-                                </h4>
+                                   
                             </div>
                             <div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse"
                                  id="collapseTwo">
@@ -666,13 +656,10 @@
                         </div>
 
                         <div class="card">
-                            <div id="headingThree" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapseThree" aria-expanded="false" href="#collapseThree"
+                            <div id="headingThree" role="tab" class="card-header gheading collapsed" aria-controls="collapseThree" aria-expanded="false" href="#collapseThree"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
                                         If I post an ad, will I also get more spam e-mails?
-                                    </a>
-                                </h4>
+                                  
                             </div>
                             <div aria-labelledby="headingThree" role="tabpanel" class="panel-collapse collapse"
                                  id="collapseThree">
@@ -686,14 +673,10 @@
                         </div>
 
                         <div class="card">
-                            <div id="heading_04" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapse_04" aria-expanded="false" href="#collapse_04"
+                            <div id="heading_04" role="tab" class="card-header gheading collapsed" aria-controls="collapse_04" aria-expanded="false" href="#collapse_04"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
                                         How long will my ad remain on the website?
-                                    </a>
-                                </h4>
-                            </div>
+                             </div>
                             <div aria-labelledby="heading_04" role="tabpanel" class="panel-collapse collapse"
                                  id="collapse_04">
                                 <div class="card-body">
@@ -706,13 +689,10 @@
                         </div>
 
                         <div class="card">
-                            <div id="heading_05" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapse_05" aria-expanded="false" href="#collapse_05"
+                            <div id="heading_05" role="tab" class="card-header gheading collapsed" aria-controls="collapse_05" aria-expanded="false" href="#collapse_05"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
                                         I sold my item. How do I delete my ad?
-                                    </a>
-                                </h4>
+                                   
                             </div>
                             <div aria-labelledby="heading_05" role="tabpanel" class="panel-collapse collapse"
                                  id="collapse_05">
@@ -726,13 +706,10 @@
                         </div>
 
                         <div class="card">
-                            <div id="heading_06" role="tab" class="card-header">
-                                <h4 class="card-title">
-                                    <a aria-controls="collapse_06" aria-expanded="false" href="#collapse_06"
-                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
+                            <div id="heading_06" role="tab"class="card-header gheading collapsed" aria-controls="collapse_06" aria-expanded="false" href="#collapse_06"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  >
                                         What is a wish list?
-                                    </a>
-                                </h4>
+                                 
                             </div>
                             <div aria-labelledby="heading_06" role="tabpanel" class="panel-collapse collapse"
                                  id="collapse_06">
@@ -758,11 +735,11 @@
  
                    
 
-                    <div class="inner-box has-aff relative">
+                  <?php /*?>  <div class="inner-box has-aff relative">
                         <a class="dummy-aff-img" href="category.html"><img src="images/aff2.jpg" class="img-responsive"
                                                                            alt=" aff"> </a>
 
-                    </div>
+                    </div><?php */?>
                 </div>
                 <div class="col-md-3 no-padding">
                     <aside>

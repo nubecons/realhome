@@ -6,6 +6,8 @@ use App\Controller\AppController;
 use Cake\Event\Event;
 use Cake\Datasource\ConnectionManager;
 
+use App\View\Helper\CkHelper;
+
 class BlogsController extends AppController {
 
     public function initialize() {
