@@ -78,7 +78,7 @@
 						    if($sUser){
 								?>
                             <li class="nav-item">
-							   <a class="nav-link" href="<?=$site_url?>users/dashboard"><i class="fa fa-user" aria-hidden="true" style="color:#d33c44"></i></a>
+							   <a class="nav-link" href="<?=$site_url?>users/dashboard"><i class="fa fa-user" aria-hidden="true" style="color:#df2114"></i></a>
 						   </li>
                                
 						   <li class="nav-item">
@@ -87,7 +87,7 @@
 						  
                            <?php }else{?>
                             <li class="nav-item">
-							   <a class="nav-link" href="<?=$site_url?>users/login"><i class="fa fa-user" aria-hidden="true" style="color:#d33c44"></i></a>
+							   <a class="nav-link" href="<?=$site_url?>users/login"><i class="fa fa-user" aria-hidden="true" style="color:#df2114"></i></a>
 						   </li>
                            <?php }?>
 					   </ul>

@@ -7,7 +7,7 @@
     				<div class=" col-xl-4 col-xl-4 col-md-4 col-6  ">
     					<div class="footer-col">
     						<h4 class="footer-title">About us</h4>
-                                                <b>Address:</b> company name, street, city, Country.
+                                                <b>Address:</b> company name, street, city, Country. <br>
                                                 <b>Email:</b> <?=$SiteInfo['contact_email']?></br>
                                                 <b>Phone:</b> <?=$SiteInfo['phone']?>
     					</div>

@@ -36,13 +36,13 @@ $(document).ready(function () {
      ====================================*/
 
     // Featured Listings  carousel || HOME PAGE
-    var owlitem = $(".item-carousel");
+    var owlitem = $(".item-news");
 
     owlitem.owlCarousel({
         //navigation : true, // Show next and prev buttons
         navigation: false,
         pagination: true,
-        items: 5,
+        items: 1,
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768, 3],
         itemsTabletSmall: [660, 2],
@@ -91,6 +91,39 @@ $(document).ready(function () {
         featuredListSlider.trigger('owl.prev');
     });
 
+
+
+// News Listings  carousel || HOME PAGE
+    var featuredNewsListSlider = $("#new-slider");
+
+    featuredNewsListSlider.owlCarousel({
+        //navigation : true, // Show next and prev buttons
+		
+		loop:true,
+		margin:10,
+		autoPlay:true,
+		autoplayTimeout:10,
+		autoplayHoverPause:true,
+        
+		navigation: false,
+        pagination: false,
+        items: 1,
+        itemsDesktopSmall: [979, 3],
+        itemsTablet: [768, 3],
+        itemsTabletSmall: [660, 2],
+        itemsMobile: [400, 1]
+
+
+    });
+
+    // Custom Navigation Events
+    $(".featured-news-list-row .next").click(function () {
+        featuredNewsListSlider.trigger('owl.next');
+    });
+
+    $(".featured-news-list-row .prev").click(function () {
+        featuredNewsListSlider.trigger('owl.prev');
+    });
 
     /*==================================
      Ajax Tab || CATEGORY PAGE
