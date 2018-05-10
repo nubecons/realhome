@@ -16,8 +16,7 @@
 
                                         <a href="blog-details.html">
                                             <figure>
-                                                <img class="img-responsive" alt="blog-post image"
-                                                     src="<?=$site_url?>img/blog/4.jpg">
+                                                <img class="img-responsive" alt="blog-post image" src="<?=$site_url?>img/blog/<?php echo $Blog['image']?>">
                                             </figure>
                                         </a>
                                     </div>
@@ -27,145 +26,20 @@
                                     <div class="blog-post-content-desc">
 
 
-                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> Today 1:21 pm </span>  -
+                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> <?php echo date("F j, Y, g:i a",strtotime($Blog->created));?></span>  -
                                 <span class="author"> <i class="fa fa-user"></i>  <a href="#" title="Posts by Jhon Doe"
-                                                                                     rel="author">Jhon Doe</a> </span>  -
+                                                                                     rel="author">Admin</a> </span>  -
                                 <span class="item-location"><i class="fa fa-comments"></i> Comments <a
                                         href="#">0</a> </span> </span>
 
 
                                         <div class="blog-post-content">
-                                            <h2><a href="blog-details.html">Donec leo lorem, suscipit vitae eros et,
-                                                tristique viverra orci</a></h2>
+                                            <h2><a href="blog-details.html"><?php echo $Blog->title;?></a></h2>
 
 
                                             <div class="blog-article-text">
-
-
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                                    lacus elit, efficitur at tellus pulvinar, mollis pulvinar arcu.
-                                                    Integer lectus orci, commodo sed est vitae, lacinia accumsan nulla.
-                                                    Integer neque felis, molestie vehicula vehicula nec, cursus ac
-                                                    dolor. In hac habitasse platea dictumst. Class aptent taciti
-                                                    sociosqu ad litora torquent per conubia nostra, per inceptos
-                                                    himenaeos. Cras sed magna iaculis, congue quam sed, luctus orci.
-                                                    Nunc ante tortor, rutrum ac felis sit amet, ultricies aliquam eros.
-                                                    Phasellus vestibulum ligula orci, at aliquet quam egestas vitae.
-                                                    Duis interdum pellentesque pulvinar. Duis elit lorem, tristique eu
-                                                    dui eu, tincidunt lacinia urna.
-                                                </p>
-
-                                                <h4>Camera and video</h4>
-
-                                                <p>
-                                                </p>
-                                                <ul class="list-dot">
-
-                                                    <li>16x digital zoom</li>
-                                                    <li>Superior Auto &ndash; automatic scene selection</li>
-                                                    <li>Geotagging &ndash; add location info to your photos</li>
-                                                    <li>Object tracking &ndash; lock focus on a specific object</li>
-                                                    <li>Red-eye reduction</li>
-                                                    <li>Image capture, supported file format: JPEG</li>
-                                                    <li>Image playback, supported file formats: BMP, GIF, JPEG, PNG;
-                                                        WebP
-                                                    </li>
-                                                </ul>
-                                                Maecenas vel consequat metus. Sed aliquam leo et dui venenatis cursus.
-                                                Ut gravida, sapien vitae scelerisque ullamcorper, magna dui commodo
-                                                nunc, et gravida diam justo sit amet massa. Maecenas et ex eget ante
-                                                tincidunt vulputate. Aliquam erat volutpat. Nunc eleifend scelerisque
-                                                enim sit amet tempor. Duis convallis lacinia ligula, vel pretium ligula
-                                                consectetur in. Cras vitae cursus magna, vitae iaculis libero.
-                                                <p></p>
-
-                                                <p>
-                                                    Pellentesque venenatis, arcu in aliquam ultricies, erat mauris
-                                                    tempus purus, eu ullamcorper lectus sem vel purus. Sed in ligula
-                                                    varius, fermentum odio nec, tempor leo. Curabitur molestie a metus
-                                                    et feugiat. In metus erat, pharetra vel laoreet eu, venenatis ac
-                                                    tellus. Praesent feugiat nec augue a ullamcorper. Aliquam ac lectus
-                                                    in nunc ullamcorper venenatis. Donec faucibus fermentum eleifend.
-                                                    Suspendisse potenti. Curabitur ex ligula, euismod ut feugiat quis,
-                                                    aliquam ut purus. Mauris quis vulputate leo. Vestibulum tristique
-                                                    viverra arcu ut molestie. Curabitur in porttitor dui, ut venenatis
-                                                    nulla.
-                                                </p>
-
-                                                <blockquote>
-                                                    <p>
-                                                        Pellentesque venenatis, arcu in aliquam ultricies, erat mauris
-                                                        tempus purus, eu ullamcorper
-                                                        Maecenas vel consequat metus. Sed aliquam leo et dui venenatis
-                                                        cursus.
-                                                        sapien vitae scelerisque ullamcorper
-                                                    </p>
-                                                </blockquote>
-
-                                                <p>
-                                                    In imperdiet dolor sed arcu fringilla, faucibus ultrices ante
-                                                    finibus. Proin blandit id quam eget rhoncus. Phasellus nec varius
-                                                    enim. Sed in est quis justo ultrices posuere nec fringilla neque.
-                                                    Proin rutrum erat finibus malesuada congue. Maecenas lacinia
-                                                    eleifend egestas. Aenean ullamcorper commodo feugiat. Suspendisse
-                                                    lorem massa, aliquam at nisi in, interdum lacinia nunc. Ut magna
-                                                    ligula, ultricies in luctus in, mattis sit amet leo. Duis posuere
-                                                    magna vel massa vehicula blandit. Sed egestas volutpat magna, sed
-                                                    suscipit ipsum sollicitudin convallis. Suspendisse et ex iaculis
-                                                    massa egestas euismod sed ac leo. Etiam eget dolor lectus.
-                                                    Suspendisse placerat, orci sit amet posuere sodales, est odio varius
-                                                    nunc, eu interdum ligula arcu ut tortor.
-                                                </p>
-
-                                                <p>
-                                                    Pellentesque venenatis, arcu in aliquam ultricies, erat mauris
-                                                    tempus purus, eu ullamcorper lectus sem vel purus. Sed in ligula
-                                                    varius, fermentum odio nec, tempor leo. Curabitur molestie a metus
-                                                    et feugiat. In metus erat, pharetra vel laoreet eu, venenatis ac
-                                                    tellus. Praesent feugiat nec augue a ullamcorper. Aliquam ac lectus
-                                                    in nunc ullamcorper venenatis. Donec faucibus fermentum eleifend.
-                                                    Suspendisse potenti. Curabitur ex ligula, euismod ut feugiat quis,
-                                                    aliquam ut purus. Mauris quis vulputate leo. Vestibulum tristique
-                                                    viverra arcu ut molestie. Curabitur in porttitor dui, ut venenatis
-                                                    nulla.
-                                                </p>
-
-                                                <div class="row ">
-                                                    <div class="col-xs-12 col-sm-5">
-                                                        <div class="image">
-                                                            <img class="img-responsive" alt="image"
-                                                                 src="<?=$site_url?>img/blog/7.jpg">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-7">
-                                                        <ul class="list-dot no-margin">
-                                                            <li>Cras sollicitudin lectus vitae urna varius vulputate.
-                                                            </li>
-                                                            <li>Donec vel sapien blandit, aliquet dui eu, pharetra
-                                                                ante.
-                                                            </li>
-                                                            <li>Mauris quis neque id magna blandit aliquam iaculis eu
-                                                                lorem.
-                                                            </li>
-                                                            <li>Quisque facilisis justo sit amet bibendum dignissim.
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Nam pellentesque laoreet nulla a porttitor. Fusce sollicitudin
-                                                    turpis in finibus pharetra. Etiam rutrum convallis imperdiet.
-                                                    Quisque venenatis accumsan nisi, et venenatis leo sollicitudin ut.
-                                                    Pellentesque tortor velit, interdum non turpis at, facilisis tempor
-                                                    dui. Morbi ullamcorper pretium orci, mollis mollis augue vehicula
-                                                    ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                </p>
-
-
+                                                <p> <?php echo $Blog->post;?></p>
                                             </div>
-
-
                                         </div>
 
 
@@ -200,7 +74,7 @@
 
 
                                             <div class="blogs-comments-area">
-                                                <h3 class="list-title"><a href="#" class="post-comments">12 Comments</a>
+                                                <h3 class="list-title"><a href="#" class="post-comments">Comments</a>
                                                 </h3>
 
                                                 <div class="blogs-comment-respond" id="respond">
@@ -405,142 +279,39 @@
                             <div class="inner-box">
                                 <div class="categories-list  list-filter">
                                     <h5 class="list-title uppercase"><strong><a href="#"> Categories</a></strong></h5>
-                                    <ul class=" list-unstyled">
-                                        <li><a href="#"><span class="title"> Fashion </span><span
-                                                class="count">&nbsp;30</span></a></li>
-                                        <li><a href="#"><span class="title"> Gadgets </span><span
-                                                class="count">&nbsp;35</span></a></li>
-                                        <li><a href="#"><span class="title"> Beauty </span><span
-                                                class="count">&nbsp;85</span></a></li>
-                                        <li><a href="#"><span class="title"> Success  </span><span
-                                                class="count">&nbsp;21</span></a></li>
-                                        <li><a href="#"><span class="title">Learning </span><span
-                                                class="count">&nbsp;55</span></a></li>
+                                    <ul class=" list-unstyled list-border ">
+                                        <?php foreach($BlogCategories as $BlogCategory){?>
+                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (0)</span></a></li>
+                                        <?php }?>
                                     </ul>
                                 </div>
                                 <!--/.categories-list-->
                                 <div class="categories-list  list-filter">
-                                    <h5 class="list-title uppercase"><strong><a href="#"> recent
-                                        popular</a></strong></h5>
+                                    <h5 class="list-title uppercase"><strong><a href="#"> recent Blogs</a></strong></h5>
 
 
                                     <div class="blog-popular-content">
+                                         <?php if($Blogs){
+                                foreach ($Blogs as $Blog){?>
                                         <div class="item-list">
-                                            <div class="row">
+
 
                                             <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/5.jpg"
-                                                                                                       alt="img"></a>
+                                                <div class="add-image"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><img class="no-margin"
+                                                                                                       src="<?=$site_url?>img/blog/<?php echo $Blog->image?>" alt="img"></a>
                                                 </div>
                                             </div>
                                             <!--/.photobox-->
                                             <div class="col-sm-8 col-xs-8 add-desc-box">
                                                 <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Sed aliquam leo et
-                                                        dui venenatis cursus</a></h5>
+                                                    <h5 class="add-title"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><?php echo substr($Blog->title,0,20);?></a></h5>
                                                     <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 1:21 pm </span> </span>
+                                                            class=" icon-clock"> </i><?php echo date("F j, g:i a",strtotime($Blog->created));?></span> </span>
                                                 </div>
                                             </div>
                                             <!--/.add-desc-box-->
-                                            </div>
-
                                         </div>
-
-                                        <div class="item-list">
-                                            <div class="row">
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/7.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Maecenas vel
-                                                        consequat metus perferendis sunt aliquam </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 12:50 pm </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-                                            </div>
-                                        </div>
-
-                                        <div class="item-list">
-                                            <div class="row">
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/3.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Pellentesque
-                                                        venenatis, arcu in aliquam ultricies</a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 12:10 pm </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-                                            </div>
-
-                                        </div>
-
-                                        <div class="item-list">
-                                            <div class="row">
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/item/tp/Image00006.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Erat mauris tempus
-                                                        purus consectetur adipiscing elit. </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 10:30 am</span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-                                            </div>
-                                        </div>
-
-                                        <div class="item-list">
-                                            <div class="row">
-
-                                            <div class="col-sm-4 nocol-sm-4 col-xs-4 no-padding photoboxpadding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/10.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Inventore ex
-                                                        perferendis sunt aliquam </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 9:20 am </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-</div>
-                                        </div>
-
-
+                                         <?php }}?>
                                     </div>
 
 
@@ -554,7 +325,6 @@
                         </aside>
                     </div>
                     <!--page-sidebar-->
-
                 </div>
             </div>
 

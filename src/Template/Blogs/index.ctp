@@ -5,18 +5,18 @@
                 <div class="row ">
                     <div class="col-sm-8 blogLeft">
                         <div class="blog-post-wrapper">
-
+                            <?php if($Blogs){
+                                foreach ($Blogs as $Blog){?>
                             <article class="blog-post-item">
                                 <div class="inner-box">
-
 
                                     <!--blog image-->
                                     <div class="blog-post-img">
 
-                                        <a href="blog-details.html">
+                                        <a href="blogDetails">
                                             <figure>
                                                 <img class="img-responsive" alt="blog-post image"
-                                                     src="<?=$site_url?>img/blog/1.jpg">
+                                                     src="<?php echo $site_url ?>img/blog/<?php echo $Blog->image; ?>">
                                             </figure>
                                         </a>
                                     </div>
@@ -26,23 +26,21 @@
                                     <div class="blog-post-content-desc">
 
 
-                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> Today 1:21 pm </span>  -
+                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> <?php echo date("F j, Y, g:i a",strtotime($Blog->created));?> </span>  -
                                 <span class="author"> <i class="fa fa-user"></i>  <a rel="author"
-                                                                                     title="Posts by Jhon Doe" href="#">Jhon
-                                    Doe</a> </span>  -
+                                                                                     title="Posts by" href="#">Admin</a> </span>  -
                                 <span class="item-location"><i class="fa fa-comments"></i> Comments <a
                                         href="#">0</a> </span> </span>
 
 
                                         <div class="blog-post-content">
-                                            <h2><a href="blog-details.html">Curabitur pretium tincidunt lacus</a></h2>
+                                            <h2><a href="blog-details.html"><?php echo $Blog->title;?></a></h2>
 
-                                            <p>Sint, hic, et qui inventore ex perferendis sunt aliquam commodi nihil
-                                                vitae. Sint, hic, et qui inventore ex perferendis sunt aliquam.</p>
+                                            <p><?php echo substr($Blog->post,0,200);?></p>
 
                                             <div class="row">
                                                 <div class="col-md-12 clearfix blog-post-bottom">
-                                                    <a class="btn btn-primary  pull-left" href="<?=$site_url."blogs/blogDetails"?>">More
+                                                    <a class="btn btn-primary  pull-left" href="<?=$site_url."blogs/blogDetails/".$Blog->id?>">More
                                                         info</a>
                                                 </div>
                                             </div>
@@ -52,151 +50,7 @@
 
                                 </div>
                             </article>
-
-                            <article class="blog-post-item">
-                                <div class="inner-box">
-
-
-                                    <!--blog image-->
-                                    <div class="blog-post-img">
-
-                                        <a href="blog-details.html">
-                                            <figure>
-                                                <img class="img-responsive" alt="blog-post image"
-                                                     src="<?=$site_url?>img/blog/2.jpg">
-                                            </figure>
-                                        </a>
-                                    </div>
-
-                                    <!--blog content-->
-
-                                    <div class="blog-post-content-desc">
-
-
-                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> Today 1:21 pm </span>  -
-                                <span class="author"> <i class="fa fa-user"></i>  <a rel="author"
-                                                                                     title="Posts by Jhon Doe" href="#">Jhon
-                                    Doe</a> </span>  -
-                                <span class="item-location"><i class="fa fa-comments"></i> Comments <a
-                                        href="#">0</a> </span> </span>
-
-
-                                        <div class="blog-post-content">
-                                            <h2><a href="blog-details.html">Donec leo lorem, suscipit vitae eros et,
-                                                tristique viverra orci</a></h2>
-
-                                            <p>Sint, hic, et qui inventore ex perferendis sunt aliquam commodi nihil
-                                                vitae. Sint, hic, et qui inventore ex perferendis sunt aliquam.</p>
-
-                                            <div class="row">
-                                                <div class="col-md-12 clearfix blog-post-bottom">
-                                                    <a class="btn btn-primary  pull-left" href="<?=$site_url."blogs/blogDetails"?>">More
-                                                        info</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </article>
-
-                            <article class="blog-post-item">
-                                <div class="inner-box">
-
-
-                                    <!--blog image-->
-                                    <div class="blog-post-img">
-
-                                        <a href="blog-details.html">
-                                            <figure>
-                                                <img class="img-responsive" alt="blog-post image"
-                                                     src="<?=$site_url?>img/blog/9.jpg">
-                                            </figure>
-                                        </a>
-                                    </div>
-
-                                    <!--blog content-->
-
-                                    <div class="blog-post-content-desc">
-
-
-                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> Today 1:21 pm </span>  -
-                                <span class="author"> <i class="fa fa-user"></i>  <a rel="author"
-                                                                                     title="Posts by Jhon Doe" href="#">Jhon
-                                    Doe</a> </span>  -
-                                <span class="item-location"><i class="fa fa-comments"></i> Comments <a
-                                        href="#">0</a> </span> </span>
-
-
-                                        <div class="blog-post-content">
-                                            <h2><a href="blog-details.html">Curabitur pretium tincidunt lacus</a></h2>
-
-                                            <p>Sint, hic, et qui inventore ex perferendis sunt aliquam commodi nihil
-                                                vitae. Sint, hic, et qui inventore ex perferendis sunt aliquam.</p>
-
-                                            <div class="row">
-                                                <div class="col-md-12 clearfix blog-post-bottom">
-                                                    <a class="btn btn-primary  pull-left" href="<?=$site_url."blogs/blogDetails"?>">More
-                                                        info</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </article>
-
-                            <article class="blog-post-item">
-                                <div class="inner-box">
-
-
-                                    <!--blog image-->
-                                    <div class="blog-post-img">
-
-                                        <a href="blog-details.html">
-                                            <figure>
-                                                <img class="img-responsive" alt="blog-post image"
-                                                     src="<?=$site_url?>img/blog/4.jpg">
-                                            </figure>
-                                        </a>
-                                    </div>
-
-                                    <!--blog content-->
-
-                                    <div class="blog-post-content-desc">
-
-
-                            <span class="info-row blog-post-meta"> <span class="date"><i class=" icon-clock"> </i> Today 1:21 pm </span>  -
-                                <span class="author"> <i class="fa fa-user"></i>  <a rel="author"
-                                                                                     title="Posts by Jhon Doe" href="#">Jhon
-                                    Doe</a> </span>  -
-                                <span class="item-location"><i class="fa fa-comments"></i> Comments <a
-                                        href="#">0</a> </span> </span>
-
-
-                                        <div class="blog-post-content">
-                                            <h2><a href="blog-details.html">In enim justo, rhoncus ut, imperdiet a,
-                                                venenatis vitae, justo</a></h2>
-
-                                            <p>Sint, hic, et qui inventore ex perferendis sunt aliquam commodi nihil
-                                                vitae. Sint, hic, et qui inventore ex perferendis sunt aliquam.</p>
-
-                                            <div class="row">
-                                                <div class="col-md-12 clearfix blog-post-bottom">
-                                                    <a class="btn btn-primary  pull-left" href="<?=$site_url."blogs/blogDetails"?>">More
-                                                        info</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </article>
-
-
+                            <?php }}?>
                         </div>
                         <!--/.blog-post-wrapper-->
                     </div>
@@ -209,143 +63,38 @@
                                 <div class="categories-list  list-filter">
                                     <h5 class="list-title uppercase"><strong><a href="#"> Categories</a></strong></h5>
                                     <ul class=" list-unstyled list-border ">
-                                        <li><a href="#"><span class="title">Electronics</span><span class="count">&nbsp;8626</span></a>
-                                        </li>
-                                        <li><a href="#"><span class="title">Automobiles </span><span class="count">&nbsp;123</span></a>
-                                        </li>
-                                        <li><a href="#"><span class="title">Property </span><span
-                                                class="count">&nbsp;742</span></a></li>
-                                        <li><a href="#"><span class="title">Services </span><span class="count">&nbsp;8525</span></a>
-                                        </li>
-                                        <li><a href="#"><span class="title">For Sale </span><span
-                                                class="count">&nbsp;357</span></a></li>
-                                        <li><a href="#"><span class="title">Learning </span><span class="count">&nbsp;3576</span></a>
-                                        </li>
+                                        <?php foreach($BlogCategories as $BlogCategory){?>
+                                        <li><a href="#"><span class="title"><?php echo $BlogCategory['title']?></span><span class="count"> (0)</span></a></li>
+                                        <?php }?>
                                     </ul>
                                 </div>
                                 <!--/.categories-list-->
                                 <div class="categories-list  list-filter">
-                                    <h5 class="list-title uppercase"><strong><a href="#"> recent
-                                        popular</a></strong></h5>
+                                    <h5 class="list-title uppercase"><strong><a href="#"> recent Blogs</a></strong></h5>
 
 
                                     <div class="blog-popular-content">
+                                         <?php if($Blogs){
+                                foreach ($Blogs as $Blog){?>
                                         <div class="item-list">
 
 
                                             <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/5.jpg"
-                                                                                                       alt="img"></a>
+                                                <div class="add-image"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><img class="no-margin"
+                                                                                                       src="<?=$site_url?>img/blog/<?php echo $Blog->image?>" alt="img"></a>
                                                 </div>
                                             </div>
                                             <!--/.photobox-->
                                             <div class="col-sm-8 col-xs-8 add-desc-box">
                                                 <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Sed aliquam leo et
-                                                        dui venenatis cursus</a></h5>
+                                                    <h5 class="add-title"><a href="<?=$site_url."blogs/blogDetails/".$Blog->id?>"><?php echo substr($Blog->title,0,20);?></a></h5>
                                                     <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 1:21 pm </span> </span>
+                                                            class=" icon-clock"> </i><?php echo date("F j, g:i a",strtotime($Blog->created));?></span> </span>
                                                 </div>
                                             </div>
                                             <!--/.add-desc-box-->
-
-
                                         </div>
-
-                                        <div class="item-list">
-
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/7.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Maecenas vel
-                                                        consequat metus perferendis sunt aliquam </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 12:50 pm </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-
-                                        </div>
-
-                                        <div class="item-list">
-
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/3.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Pellentesque
-                                                        venenatis, arcu in aliquam ultricies</a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 12:10 pm </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-
-                                        </div>
-
-                                        <div class="item-list">
-
-
-                                            <div class="col-sm-4 col-xs-4 no-padding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/item/tp/Image00006.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Erat mauris tempus
-                                                        purus consectetur adipiscing elit. </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 10:30 am</span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-
-                                        </div>
-
-                                        <div class="item-list">
-
-
-                                            <div class="col-sm-4 nocol-sm-4 col-xs-4 no-padding photoboxpadding photobox">
-                                                <div class="add-image"><a href="ads-details.html"><img class="no-margin"
-                                                                                                       src="<?=$site_url?>img/blog/10.jpg"
-                                                                                                       alt="img"></a>
-                                                </div>
-                                            </div>
-                                            <!--/.photobox-->
-                                            <div class="col-sm-8 col-xs-8 add-desc-box">
-                                                <div class="ads-details">
-                                                    <h5 class="add-title"><a href="ads-details.html">Inventore ex
-                                                        perferendis sunt aliquam </a></h5>
-                                                    <span class="info-row">  <span class="date"><i
-                                                            class=" icon-clock"> </i> Today 9:20 am </span> </span>
-                                                </div>
-                                            </div>
-                                            <!--/.add-desc-box-->
-
-
-                                        </div>
-
-
+                                         <?php }}?>
                                     </div>
 
 
