@@ -67,6 +67,14 @@ padding:0px;
 			<li><a href="<?php echo $site_url.'admin/partners/add';?>">Add New Partner</a></li>
 		</ul>
         
+          <li class="menu_header"><a href="#">Blogs Management</a></li>
+		<ul class="sub">
+			<li><a href="<?php echo $site_url.'admin/blogCategories/index';?>">Categories List</a></li>
+			<li><a href="<?php echo $site_url.'admin/blogCategories/add';?>">Add New Category</a></li>
+            <li><a href="<?php echo $site_url.'admin/blogs/index';?>">Posts List</a></li>
+			<li><a href="<?php echo $site_url.'admin/blogs/add';?>">Add New Post</a></li>
+		</ul>
+        
 		
 	  
 		
