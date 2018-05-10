@@ -17,8 +17,27 @@ class BlogsController extends AppController {
         $this->loadComponent('Upload');
 		$this->Auth->allow(['index','blogDetails']);
     }
-    public function index() {}
+    public function index(){
+            $this->loadModel('BlogCategories');
+	    $BlogCategories = $this->BlogCategories->find('all')->where(['status'=>'ACTIVE' ,'parent_id' => 0])->toArray();
+            $this->set('BlogCategories', $BlogCategories);
+            
+	    $Blogs = $this->Blogs->find('all')->toArray();
+            $this->set('Blogs', $Blogs);
+		
+    }
     
-    public function blogDetails(){}
+    public function blogDetails($blog_id =null){
+        
+                    $this->loadModel('BlogCategories');
+	    $BlogCategories = $this->BlogCategories->find('all')->where(['status'=>'ACTIVE' ,'parent_id' => 0])->toArray();
+            $this->set('BlogCategories', $BlogCategories);
+            
+             $Blogs = $this->Blogs->find('all')->toArray();
+            $this->set('Blogs', $Blogs);
+            
+	    $Blog = $this->Blogs->find()->where(['id' => $blog_id])->first();
+            $this->set('Blog', $Blog);
+    }
 
 }
