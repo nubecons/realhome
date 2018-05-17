@@ -332,7 +332,10 @@
                     </div>
                     
                     <?php 
-                    $location_idz = ['677'/*DHA Defence Lahore*/ ] ;
+                    $location_idz = [
+                        '677'/*Houses For Sale in DHA Defence Lahore*/,
+                        '607' /*Houses For Sale in Bahria Town Lahore*/
+                        ] ;
                     
                     $location_product = $this->GetInfo->getProductLocationCount(['location_id in' => $location_idz]); 
                     
@@ -356,7 +359,7 @@
                                 </h3>
                                 <ul class="cat-collapse  cat-id-1">
                                     <li><a href="">Houses For Sale in DHA Defence<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li> 
-                                    <li><a href="">Houses For Sale in Bahria Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
+                                    <li><a href="">Houses For Sale in Bahria Town<span class="count"> (<?=isset($location_product['607'])?number_format($location_product['607']):'0';?>)</span></a></li>
                                     <li><a href="">Houses For Sale in Johar Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
                                     <li><a href="">Houses For Sale in Allama Iqbal Town<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>
                                     <li><a href="">Houses For Sale in State Life Housing Society<span class="count"> (<?=isset($location_product['677'])?number_format($location_product['677']):'0';?>)</span></a></li>

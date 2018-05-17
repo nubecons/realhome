@@ -548,6 +548,7 @@ $site_url = $this->Url->build('/',true); ?>
 
 <script>
     function get_locations(){
+     
         var CityId = $('#city_id option:selected').val();
         $.ajax({
             type: "POST",
