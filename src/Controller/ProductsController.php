@@ -505,8 +505,9 @@ public function locations($city_id = null)
 		{
 			$this->viewBuilder()->setLayout(false);
 			$this->loadModel('Locations');
-			$Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
-		    $this->set('Locations', $Locations);
+			$Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->limit(15000)->toArray();
+		   
+		   $this->set('Locations', $Locations);
 			
 		}
         function getForumSubCategories($forumCategoryId)
