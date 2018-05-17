@@ -34,7 +34,7 @@ class UsersController extends AppController {
 
 
 
-    public $helpers = ['OrderInfo'];
+   // public $helpers = ['OrderInfo'];
 
 
 

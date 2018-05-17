@@ -503,12 +503,13 @@ public function locations($city_id = null)
 		
 		function getLocations($city_id)
 		{
+			$this->viewBuilder()->setLayout(false);
 			$this->loadModel('Locations');
 			$Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
-			$this->set('Locations', $Locations);
-			$this->viewBuilder()->setLayout(false);
+		    $this->set('Locations', $Locations);
+			
 		}
-                function getForumSubCategories($forumCategoryId)
+        function getForumSubCategories($forumCategoryId)
 		{
 			   $this->loadModel('ForumCategories');
                            $ForumCategories = $this->ForumCategories->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status'=>'ACTIVE' ,'parent_id' => $forumCategoryId])->toArray();
