@@ -53,9 +53,9 @@ $site_url = $this->Url->build('/',true); ?>
                         <div class="row">
                     <?= $this->Flash->render() ?>
                             <div class="col-sm-12">
-                            <?php echo $this->Form->create('' ,['class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
+                            <?php echo $this->Form->create($forum ,['class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
                                 <div class="card sidebar-card card-contact-seller">
-                                    <div class="card-header gheading">Forum Search </div>
+                                    <div class="card-header gheading">Create Topic </div>
                                     <div class="card-content user-info">
                                         <div class="card-body">
 
@@ -68,7 +68,8 @@ $site_url = $this->Url->build('/',true); ?>
                                             <div class="form-group row">
                                                 <label for="" class="col-sm-3 col-form-label">Description: </label>
                                                 <div class="col-sm-8">
-                                                    <textarea class="form-control" name="textarea" rows="3" style="height: 190px;">Describe here</textarea>
+                                                    <?php echo $this->Form->text('description', ['class'=>'form-control' ,'type' =>'textarea' , "rows"=>"3" ,"style"=>"height: 130px;" ]); ?>
+                                                   <?php /*?> <textarea class="form-control" name="textarea" rows="3" style="height: 190px;">Describe here</textarea><?php */?>
                                                 </div>
                                             </div>
 
@@ -96,7 +97,7 @@ $site_url = $this->Url->build('/',true); ?>
                                             <div class="form-group row" >
                                                 <label  class="col-sm-3 col-form-label">Location:</label>
                                                 <div class="col-sm-4" id="locations_div">
-                                        <?php echo $this->Form->input('location_id', [ 'required' => true, 'empty' =>'-- Select --', 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                        <?php echo $this->Form->input('location_id', [ 'empty' =>'-- Select--', 'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
                                                 </div>
 
                                             </div>   
@@ -144,7 +145,7 @@ $site_url = $this->Url->build('/',true); ?>
 
                                             </div>
 
-                            <?php }?>
+                        
 
                                             <div id="new_member_div">
                                                 <div class="form-group row">
@@ -176,8 +177,7 @@ $site_url = $this->Url->build('/',true); ?>
                                                 </div>
 
 
-                                  <?php  if(!$sUser) { ?>
-
+                                 
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="seller-Number">Email</label>
 
@@ -193,10 +193,10 @@ $site_url = $this->Url->build('/',true); ?>
                                            <?php echo $this->Form->password('contact_password', ['class'=>'form-control']); ?>
                                                     </div>
                                                 </div>
-                                <?php }?>
+                               
 
                                             </div>
-
+    							<?php }?>
 
                                             <!-- Button  -->
                                             <div class="form-group row">
@@ -251,4 +251,29 @@ $site_url = $this->Url->build('/',true); ?>
             }
         });
     }
+	
+	function check_member(val) {
+
+        if (val == '2') {
+
+            $('#already_member_div').hide();
+            $('#new_member_div').show();
+
+        } else {
+
+            $('#already_member_div').show();
+            $('#new_member_div').hide();
+
+        }
+
+
+    }
+
+   
+
+    $(document).ready(function () {
+        check_member('<?=$this->request->data['membership_status']?>');
+        
+    });
+
 </script>

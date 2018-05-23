@@ -203,17 +203,9 @@ public function initialize(array $config)
 
 
 public function findAuth(\Cake\ORM\Query $query, array $options)
-
 	{
-
-		$query
-
-			->select(['id', 'first_name', 'last_name', 'email', 'password' ,'group_id']);
-
-		
-
+		$query->select(['id', 'first_name', 'last_name', 'email', 'password' ,'group_id','mobile']);
 		return $query;
-
 	}
 
 
@@ -250,7 +242,8 @@ public function validatePassword($data){
 
 public function create_account($data = []){
 		
-		 $errors = '';
+		 
+		  $return = [];
 	
 		if(isset($data['id']))
 		  {
@@ -263,18 +256,28 @@ public function create_account($data = []){
 			
 			if($check_email){
 				
-				return $errors = 'This email already registered.';
+			        $return['status'] = 'fail';
+			    	$return['message'] = 'This email already registered.';
+					return $return;
 				
 				}
 		  }
 
     	  $udata = $this->patchEntity($udata, $data);
 
-    	  if($this->save($udata)){
+    	  if($result = $this->save($udata)){
 
-		   return TRUE;
+           	        $return['status'] = 'success';
+					$return['id'] = $result->id;
+			    	$return['message'] = 'User registered.';
+					return $return;
+				
+			
 
 		  }
-		 return $errors = 'The user could not be saved. Please, try again.';
+		    $return['status'] = 'success';
+			$return['message'] =  'The user could not be saved. Please, try again.';
+			return $return;
+		
 	 }	
 }

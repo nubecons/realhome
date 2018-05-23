@@ -40,21 +40,36 @@
                             <div class="col-sm-9 automobile-left-col">
 
                                 <div class="ads-image">
-                                    <ul class="bxslider">
-                                        <li><img src="<?=$site_url?>images/house/2.jpg" alt="img"/></li>
+                                    <ul class="bxslider"><li>
+                                    <?php if($Product['image'] != ''){?>
+                                          <img src="<?=$site_url?>img/Products/<?=$Product['image']?>" alt="img">
+                                            <?php }else{?>
+                                           <img src="<?=$site_url?>images/house/2.jpg" alt="img"/>
+                                            <?php }?>
+                                            </li>
+                                       <?php /*?> <li><img src="<?=$site_url?>images/house/2.jpg" alt="img"/></li>
                                         <li><img src="<?=$site_url?>images/house/4.jpg" alt="img"/></li>
                                         <li><img src="<?=$site_url?>images/house/11.jpg" alt="img"/></li>
                                         <li><img src="<?=$site_url?>images/house/14.jpg" alt="img"/></li>
                                         <li><img src="<?=$site_url?>images/house/b12.jpg" alt="img"/></li>
                                         <li><img src="<?=$site_url?>images/house/13.jpg" alt="img"/></li>
-                                        <li><img src="<?=$site_url?>images/house/14.jpg" alt="img"/></li>
+                                        <li><img src="<?=$site_url?>images/house/14.jpg" alt="img"/></li><?php */?>
                                     </ul>
 
                                     <div class="product-view-thumb-wrapper">
 
 
                                         <ul id="bx-pager" class="product-view-thumb">
-                                            <li><a  data-slide-index="0" class="thumb-item-link"  href="#"><img
+                                         <li><a  data-slide-index="0" class="thumb-item-link"  href="#">
+                                          <?php if($Product['image'] != ''){?>
+                                           <img src="<?=$site_url?>img/Products/<?=$Product['image']?>" alt="img"></a>
+                                            <?php }else{?>
+                                           <img src="<?=$site_url?>images/house/2.jpg" alt="img"/>
+                                            <?php }?>
+                                           </a>
+                                            </li>
+                                        
+                                           <?php /*?> <li><a  data-slide-index="0" class="thumb-item-link"  href="#"><img
                                                     src="<?=$site_url?>images/house/thumb/2.jpg" alt="img"/></a></li>
                                             <li  ><a data-slide-index="1" class="thumb-item-link" href="#"><img
                                                     src="<?=$site_url?>images/house/thumb/4.jpg" alt="img"/></a></li>
@@ -65,7 +80,7 @@
                                             <li  ><a data-slide-index="4" class="thumb-item-link" href="#"><img
                                                     src="<?=$site_url?>images/house/thumb/b12.jpg" alt="img"/></a></li>
                                             <li ><a data-slide-index="5" class="thumb-item-link"  href="#"><img
-                                                    src="<?=$site_url?>images/house/thumb/14.jpg" alt="img"/></a></li>
+                                                    src="<?=$site_url?>images/house/thumb/14.jpg" alt="img"/></a></li><?php */?>
                                         </ul>
 
 

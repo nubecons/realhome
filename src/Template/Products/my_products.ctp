@@ -60,13 +60,21 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td style="width:14%" class="add-img-td"><a href="#"><img
-                                            class="thumbnail  img-responsive"
+                                    <td style="width:14%" class="add-img-td"><a href="#">
+                                       <?php if($Product['image'] != ''){?>
+                                         
+                                        <img class="thumbnail  img-responsive"
+                                            src="<?=$site_url?>img/Products/<?=$Product['image']?>"
+                                            alt="img">
+                                            <?php }else{?>
+                                        <img class="thumbnail  img-responsive"
                                             src="<?=$site_url?>images/item/FreeGreatPicture.com-46407-nexus-4-starts-at-199.jpg"
-                                            alt="img"></a></td>
+                                            alt="img">
+                                            <?php }?>
+                                            </a></td>
                                     <td style="width:58%" class="ads-details-td">
                                         <div>
-                                            <p><strong> <a href="#" title="Brand New Nexus 4"><?=$Product['title']?></a> </strong></p>
+                                            <p><strong> <a href="#" title="<?=$Product['title']?>"><?=$Product['title']?></a> </strong></p>
 
                                             <p><strong> Posted On </strong>:
                                                <?= date('d M Y m:i A', strtotime($Product['created']))?>  </p>

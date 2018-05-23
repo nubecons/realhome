@@ -232,7 +232,12 @@ return [
          
 			/*'username' => 'trylcpvv_rhome',
             'password' => '1P4&4vF]il@I',
-            'database' => 'trylcpvv_realhome',*/
+            'database' => 'trylcpvv_realhome',
+			'username' => 'realhome_db',
+            'password' => 'T5pCuP?Zu1n3',
+            'database' => 'realhome_db',
+			
+			*/
 			'username' => 'root',
             'password' => '',
             'database' => 'realhome',

@@ -174,9 +174,13 @@ $site_url = $this->Url->build('/',true); ?>
 
                                 <div class="col-md-3 no-padding photobox">
                                     <div class="add-image"><span class="photo-count"><i
-                                                class="fa fa-camera"></i> 2 </span> <a href="<?=$site_url?>products/detail/<?=$Product['id']?>"><img
-                                                class="thumbnail no-margin" src="<?=$site_url?>images/house/thumb/2.jpg"
-                                                alt="img"></a></div>
+                                                class="fa fa-camera"></i> 2 </span> <a href="<?=$site_url?>products/detail/<?=$Product['id']?>">
+                                               <?php if($Product['image'] != ''){?>
+                                                <img class="thumbnail no-margin" src="<?=$site_url?>img/Products/<?=$Product['image']?>" alt="img">
+                                                <?php }else{?>
+                                                <img class="thumbnail no-margin" src="<?=$site_url?>images/house/thumb/2.jpg" alt="img">
+                                                <?php }?>
+                                                </a></div>
                                 </div>
                                 <!--/.photobox-->
                                 <div class="col-md-6 add-desc-box">

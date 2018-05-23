@@ -392,7 +392,7 @@ class UsersController extends AppController {
 					->emailFormat('html')
 					->viewVars(['user' => $user, 'confirm_link' => $confirm_link, 'site_name' => $this->SiteInfo['site-name']])
 					->from([$this->SiteInfo['contact_email']])
-					->to('muzammilshabir@gmail.com') //$user['email'];
+					->to($user['email']) //$user['email'];
 					->subject($this->SiteInfo['site-name']. '- Password Change Request')
 					->send();
 
@@ -409,6 +409,13 @@ class UsersController extends AppController {
 
 
     public function forgotreset($userid = null, $change_password_code = null) {
+		
+		  if($this->sUser){
+
+				return $this->redirect('/');
+
+			}
+
 
         if ($this->request->is('post')) {
 
@@ -431,16 +438,15 @@ class UsersController extends AppController {
                 $user->id = $this->Session->read('user_id_for_reset');
 
                 $user->password = $this->request->data['new_password'];
-
-               /* $hasher = new DefaultPasswordHasher();
-
-                $hasher->hash($user->password);
-*/
+				
+				$user->change_password_code = '';
 
 
                 if ($this->Users->save($user)) {
 
                     $this->Flash->success(__('Your password has been changed successfully'));
+					
+					$this->Session->delete('user_id_for_reset');
 
                     return $this->redirect(['controller' => 'users', 'action' => 'login']);
 
@@ -466,7 +472,7 @@ class UsersController extends AppController {
 
                 $this->Flash->error(__('Password reset link not valid, Please try again'));
 
-                $this->redirect(['controller' => 'users', 'action' => 'login']);
+                return $this->redirect(['controller' => 'users', 'action' => 'login']);
 
             }
 

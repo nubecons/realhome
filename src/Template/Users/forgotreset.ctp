@@ -1,42 +1,44 @@
-<?php 
-	echo $this->Html->css('validationEngine.jquery.css');
-	echo $this->Html->script('languages/jquery.validationEngine-en.js');
-	echo $this->Html->script('jquery.validationEngine.js');
-?>
-<script>
-	jQuery(document).ready(function(){			
-		jQuery("#UserForgotresetForm").validationEngine();
-	});			
-</script>			
-<div id="create_order" class="widget_content">
-<?php echo $this->Form->create(null, ['url' => ['action' => 'forgotreset'], 'id' => 'UserForgotresetForm']); ?>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" id="form_table">
-   <tr>
-      <td width="120"><label>New Password:</label></td>
-      <td><?php //echo $form->password('new_password', array('size'=>"40", 'class'=>'validate[required]'))?>
-      <?php echo $this->Form->password('new_password', ['size'=>"40", 'class'=>'validate[required]','label'=>false, 'id'=>'UserNewPassword']); ?>
-      </td>
-   </tr>
-   <tr>
-      <td><label>Confirm Password:</label></td>
-      <td><?php //echo $form->password('confirm_password', array('size'=>"40", 'class'=>'validate[required,equals[UserNewPassword]]'))?>
-      <?php echo $this->Form->password('confirm_password', ['size'=>"40", 'class'=>'validate[required,equals[UserNewPassword]]']); ?>
-      </td>
-   </tr>
-   <tr>
-      <td>&nbsp </td>
-      <td>
-         <table>
-            <tr>
-               <td><?php //e($form->submit('Change',array('value'=>'Change','class'=>'b_empty btn_red','div'=>false,'label'=>false)))?>
-               <?php echo $this->Form->button(__('Change'), ['class'=>'b_empty btn_red']); ?>
-               </td>
-               <td> &nbsp; </td>
-               <td> &nbsp; </td>
-            </tr>
-         </table>
-      </td>
-   </tr>
-</table>	
-<?php echo $this->Form->end();?>	
-</div>
+<?php $site_url = $this->Url->build('/',true); ?> 
+<div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 login-box">
+                    <div class="card card-default">
+                        <div class="panel-intro text-center">
+                            <h2 class="logo-title">
+                                <!-- Original Logo will be placed here  -->
+                                <span class="logo-icon"><i
+                                        class="icon icon-search-1 ln-shadow-logo shape-0"></i> </span> New Password<span></span>
+                            </h2>
+                        </div>
+                        <?= $this->Flash->render() ?>
+					    <div class="card-body">
+                           <?php echo $this->Form->create(null, ['url' => ['action' => 'forgotreset'], 'id' => 'UserForgotresetForm']); ?>
+                                <div class="form-group">
+                                    <label for="sender-email" class="control-label">New Password:</label>
+
+                                    <div class="input-icon"><i class="icon-lock fa"></i>
+                                     <?php echo $this->Form->password('new_password', ['required'=>true, "class" => "form-control email"]); ?>
+                                      
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-pass" class="control-label">Confirm Password:</label>
+
+                                    <div class="input-icon"><i class="icon-lock fa"></i>
+                                   <?php echo $this->Form->password('confirm_password', ['required'=>true ,"class" => "form-control email"]); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary  btn-block">Submit</button>
+                                    
+                                </div>
+                            <?= $this->Form->end() ?>
+                        </div>
+                      
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>

@@ -34,7 +34,7 @@ $site_url = $this->Url->build('/',true); ?>
                                     <?php if($ForumCategories){
                                         foreach($ForumCategories as $ForumCategory){
                                             if($ForumCategory->parent_id ==0){?>
-                                        <h5 class="collapse-title no-border"><?php echo $ForumCategory->title; ?><a class="pull-right" aria-expanded="true" data-toggle="collapse" href="#MyClassified"><i class="fa fa-angle-down"></i></a></h5>
+                                        <h5 class="collapse-title no-border"><a href="<?=$site_url?>forums/view/<?php echo $ForumCategory->id; ?>"><?php echo $ForumCategory->title; ?></a><a class="pull-right" aria-expanded="true" data-toggle="collapse" href="#MyClassified"><i class="fa fa-angle-down"></i></a></h5>
                                             <?php }if($ForumCategory->parent_id == $ForumCategory->id){?>
                                         <div id="MyClassified" class="panel-collapse collapse show">
                                             <ul class="acc-list">
@@ -51,49 +51,7 @@ $site_url = $this->Url->build('/',true); ?>
                     </div>
 
                     <div class="col-sm-9 col-thin-left page-content ">
-                        <div class="card sidebar-card card-contact-seller">
-                            <div class="card-header gheading">Forum Search </div>
-                            <div class="card-content user-info">
-                                <div class="card-body">
-                                    <div class="form-group row">
-                                        <label class="col-sm-1 col-form-label" for="textinput-name">Name</label>
-
-                                        <div class="col-sm-7">
-                                            <input id="textinput-name" name="textinput-name" placeholder="Seller Name" class="form-control input-md" required="" type="text">
-                                        </div >
-                                        <div class="col-sm-3"><a href="#buy" class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary">Search</button></a></div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label" for="textinput-name">Advice Type:</label>
-                                        <div class="checkbox col-sm-2 ">
-                                            <label>
-                                                <input value="" type="checkbox">
-                                                <small> Questions</small>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox col-sm-2 ">
-                                            <label>
-                                                <input value="" type="checkbox">
-                                                <small>Answers</small>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox col-sm-2 ">
-                                            <label>
-                                                <input value="" type="checkbox">
-                                                <small>Discussions</small>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox col-sm-2 ">
-                                            <label>
-                                                <input value="" type="checkbox">
-                                                <small>Replies</small>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <?php echo $this->element('forum_search')?>
 
                         <div class="card sidebar-card card-contact-seller">
                             <div class="card-header gheading">Forum Categories </div>
@@ -103,7 +61,7 @@ $site_url = $this->Url->build('/',true); ?>
                                         foreach($ForumCategories as $ForumCategory){
                                             if($ForumCategory->parent_id ==0){?>
                                     <div class="card bg-light card-body mb-3">
-                                        <h3><i class=" icon-certificate icon-color-1"></i><?php echo $ForumCategory->title; ?></h3>
+                                        <h3><i class=" icon-certificate icon-color-1"></i><a href="<?=$site_url?>forums/view/<?php echo $ForumCategory->id; ?>"><?php echo $ForumCategory->title; ?></a></h3>
                                         <p><?php echo $ForumCategory->description; ?></p>
                                     </div>
                                          <?php }}}?>

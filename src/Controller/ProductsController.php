@@ -74,6 +74,8 @@ class ProductsController extends AppController
             
 			 if(!$this->sUser){
 				 
+				 $user_id = 0;
+				 
 				 if(isset($data['membership_status']) && $data['membership_status'] == 1){
 					
 					 
@@ -91,6 +93,9 @@ class ProductsController extends AppController
 							 $this->request->data['email'] = $user['email'];
 						    
 							 }
+					  
+					  
+					  $user_id = $user['id'];
 							  
 					 }elseif(isset($data['membership_status']) && $data['membership_status'] == 2){
 							
@@ -99,21 +104,27 @@ class ProductsController extends AppController
 							$udata['last_name'] =  $this->request->data['contact_last_name'];
 							$udata['mobile'] = $this->request->data['contact_mobile'];
 							$udata['email'] = $this->request->data['contact_email'];
+							$udata['new_password'] = $this->request->data['contact_password'];
 							$udata['password'] = $this->request->data['contact_password'];
 							$udata['group_id'] = 2 ;
 						    
 						   $this->loadModel('Users');							
 						   $result = $this->Users->create_account($udata);
-						   
-						   if($result !== TRUE){
-	   					     
-							 $this->Flash->error(__($result));
-							 return;
-						     
-							 }
+				
+			
+							if($result['status'] == 'fail'){
+							
+							$this->Flash->error(__($result['message']));
+							return;
+							
+							}	
+						 
+						  $user_id = $result['id'];
 						 
 						 }
-				 }
+				 } else{
+					$user_id = $this->sUser['id'];
+					}
             
 			if (!empty($this->request->data['image_file']['name']))
 			{
@@ -131,7 +142,7 @@ class ProductsController extends AppController
 			}
 		
 		
-				$product->user_id = $this->Auth->user('id');
+				$product->user_id = $user_id;
 				$product->status = "ACTIVE";
 				
 				$product= $this->Products->patchEntity($product, $this->request->data);
@@ -497,7 +508,7 @@ public function locations($city_id = null)
                 $this->loadModel('Advertisements');
                 $Advertisements = $this->Advertisements->find('all')->where(['status' => 'ACTIVE'])->toArray();
                 $this->set('Advertisements', $Advertisements);
-		$this->render();
+		        $this->render();
 		
 		}
 		
