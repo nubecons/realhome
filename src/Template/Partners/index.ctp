@@ -197,8 +197,8 @@ $site_url = $this->Url->build('/',true); ?>
                     <div style="clear: both"></div>
                     <div class="tab-lite relative w100">
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs " role="tablist">
-                            <li role="presentation" class="active nav-item"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="nav-link"><i class="icon-location-2"></i>Partners</a>
+                        <ul class="nav nav-tabs gheading " role="tablist">
+                            <li role="presentation" class=" nav-item"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="nav-link"><i class="icon-location-2"></i>Partners</a>
                             </li>
                             <li role="presentation" class="nav-item"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="nav-link"><i class="icon-search"></i>Products</a>
                             </li>

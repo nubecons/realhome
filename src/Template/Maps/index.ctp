@@ -9,6 +9,11 @@ $site_url = $this->Url->build('/',true); ?>
 
 
         <div class="row">
+                <div class="col-md-9  box-title gheading">
+                        <h2>Maps By Societe</h2>
+
+                        
+                    </div>
                                 <?php 
 				
 				$totalCities = count($Cities);
@@ -16,10 +21,12 @@ $site_url = $this->Url->build('/',true); ?>
 				$dispRows = $totalCities / 3 ;
 				
 				?>
-            <div class="col-md-9 page-content col-thin-right">
-                <div class="inner-box category-content">
-                    <h2 class="title-2">Maps By Cities</h2>
+            <div class="col-md-9 page-content col-thin-right ">
+                <div class="inner-box category-content ">
+                 
+                       
                     <div class="row">
+                       
                         <div class="col-md-4 col-sm-4 ">
                             <div class="cat-list">
                                 <ul class="cat-collapse  cat-id-1">
@@ -67,7 +74,7 @@ $site_url = $this->Url->build('/',true); ?>
 
             <div class="col-md-9 content-box ">
                 <div class="row row-featured">
-                    <div class="col-md-12  box-title ">
+                    <div class="col-md-12  box-title gheading">
                         <div class="inner"><h2><span> NEW</span>
                                 SOCIETY MAPS <a href="#" class="sell-your-item"> View more <i class="  icon-th-list"></i> </a></h2>
 
@@ -226,11 +233,11 @@ $site_url = $this->Url->build('/',true); ?>
             <div class="col-md-9">
                 <div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group faq-panel">
                     <div class="card">
-                        <div id="headingOne" role="tab" class="card-header">
-                            <h4 class="card-title">
-                                <a aria-controls="collapseOne" aria-expanded="true" href="#collapseOne" data-parent="#accordion" data-toggle="collapse">
+                        <div id="headingOne" role="tab" class="card-header gheading">
+                            <h4 class="card-title" style=" color:  white !important;">
+                                
                                     About Realhome Society Maps Overview
-                                </a>
+                                
                             </h4>
                         </div>
                         <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show" id="collapseOne">
