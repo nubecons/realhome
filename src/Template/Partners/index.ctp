@@ -2,15 +2,90 @@
 
 $site_url = $this->Url->build('/',true); ?> 
 
-<div class="intro has-map"  style="background-image: url(<?=$site_url?>images/bg3.jpg);">
+<div class="intro has-map"  style="background-image: url(<?=$site_url?>images/bg3.jpg); height: 320px;">
     <div class="dtable hw100">
         <div class="dtable-cell hw100">
             <div class="container text-center">
-                <h1 class="intro-title animated fadeInDown">Partners</h1>
+                <div class=" inner-box">
 
-                <p class="sub animateme fittext3 animated fadeIn">
+                    <div class="row card-footer">
+                        <div class="col-md-12 card bg-light" style="padding-top:0px;" >
+                            <ul id="myTab" class="nav" role="tablist" >
+                                <li class="nav-item"><a href="#buy"   class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary" >  PARTNERS</button></a></li>
+                                <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-default" >  PRODUCTS</button></a></li>
+                                <li class="nav-item"><a href="#rent"  class="nav-link" data-toggle="tab"><button type="submit" class="btn btn-block btn-primary" >  SERVICES</button></a></li>
 
-                </p>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div id="myTabContent" class="tab-content" style="margin-top:10px;">
+                        <div class="tab-pane in active" id="buy">
+                            <div class="container">
+                                <div class="row">
+
+ <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                        <label for="cities">Keyword</label>
+                                        <input type="text" placeholder="Enter Location" name="Location" class="form-control" />
+                                    </div>
+                                
+                                    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                        <label for="exampleInputEmail1">Select Product/Service</label>
+                                        <select class="form-control selecter" name="product_type_id" id="search-category">
+                                            <option selected="selected" value="">All Properties</option>
+                           <?php
+							foreach($ProductTypes as $Mainkey => $ProductType){
+							 ?>
+
+                                            <option value="<?=$Mainkey?>" style="background-color:#E9E9E9;font-weight:bold;">-- <?=$ProductType?> --</option>
+                                     <?php
+											 foreach($SubProductTypes[$Mainkey]  as $key => $sProductType){?>
+                                            <option value="<?=$key?>"><?=$sProductType?></option>
+
+                              <?php }
+							}
+							 ?>    
+
+
+                                        </select>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                        <label for="cities">Cities</label>
+										<?php echo $this->Form->input('city_id',
+                                        ['empty' =>'All Citiess',
+                                        'options' => @$Cities , 'dev' => false , 'label' => false, 
+                                        'class'=>'form-control selecter',
+                                        ]); ?>
+
+                                    </div>
+
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row">
+                                    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                        <label for="cities">Location</label>
+                                        <input type="text" placeholder="Enter Location" name="Location" class="form-control" />
+                                    </div>
+                                    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                        <label for="exampleInputEmail1"> &nbsp;</label>
+                                        <button type="submit" class="btn btn-block btn-primary fa fa-search"> Search</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                   <?php /*?> <div class="tab-pane " id="rent">
+                        <p>Microsoft Windows is a series of graphical
+                            interface operating systems developed, marketed,
+                            and sold by Microsoft</p> 
+                    </div><?php */?>
+                    </div>
+
+
+                </div>
 
             </div>
         </div>
@@ -20,455 +95,267 @@ $site_url = $this->Url->build('/',true); ?>
 <div class="main-container">
     <div class="container">
         <div style="clear: both"></div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-12 page-content col-thin-right">
-
-                <div class="category-list">
-                    <ul id="myTab" class="nav nav-tabs tab-box nav nav-tabs add-tabs" role="tablist">
-                        <li class="active nav-item"><a href="#houses" class="nav-link" data-toggle="tab">Partners<span class="count"> (0)</span></a></li>
-                        <li class="nav-item"><a href="#flats"  class="nav-link"data-toggle="tab">Products<span class="count"> (0)</span></a></li>
-                        <li class="nav-item"><a href="#farm_house"  class="nav-link"data-toggle="tab">Services<span class="count"> (0)</span></a></li>
-                                           </ul>
-                    <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane in active" id="houses">
-                            <div class="inner-box category-content">
-                              <div class="adds-wrapper jobs-list">
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/1.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Shahzad Hammad Traders</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view"> Front-end Developer </a>
-                                        </h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> New York, NY </span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $50000 - $81000 a year</span></span>
-
-                                        <div class="jobs-desc">
-                                            A Web Tester / Developer with experience in PHP, HTML, CSS and
-                                            JavaScript is needed to join a global music services company.
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
+        <div class="col-xl-12 content-box ">
+            <div class="row row-featured">
+                <div class=" relative  content featured-list-row  w100">
+                    <nav class="slider-nav has-white-bg nav-narrow-svg">
+                        <a class="prev"><span class="nav-icon-wrap"></span></a>
+                        <a class="next"><span class="nav-icon-wrap"></span></a>
+                    </nav>
+              
+                           
+                                <div class="owl-item" style="width: 1000px !important; height: 300px !important;">
+                                    <div class="item">
+                                        <img class="img-responsive" src="images/auto/2012-mercedes-benz-sls-amg.jpg" alt="img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-responsive" src="images/img/partners/149635_5a49f40bae9d6.jpg" alt="img">
                                     </div>
                                 </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/2.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Prime Aluminium</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">UI/UX Front-End Web
-                                            Developer </a></h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> New York, NY </span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $10000 - $23000 a year</span></span>
-
-                                        <div class="jobs-desc"> We are seeking a talented UI/UX Front End Web
-                                            Developer to design, develop, support web app software. UI/UX Front-End
-                                            Web Developer....
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/23.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Model Steel</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">Javascript Developer</a>
-                                        </h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> New York, NY </span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Contract </span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i>$50.00 - $60.00 / Hr</span></span>
-
-                                        <div class="jobs-desc">You’re obsessed with creating scalable applications
-                                            using Java. 5+ years of professional coding experience with Java. PKI
-                                            and Security Software....
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/4.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Brighto Paints Pvt Limited</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">Web Developer Jr. - Front
-                                            End</a></h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> Barrington, IL</span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $20000 - $41000 a year</span></span>
-
-                                        <div class="jobs-desc"> Our developers work out of our offices in New York,
-                                            Washington DC, Los Angeles, Oakland, Boston, and London. We're looking
-                                            for a front-end web developer to join...
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/5.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">ASN MarbleX House</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">UI/Web Developer</a></h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> New York, NY </span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $50000 - $70000 a year</span></span>
-
-                                        <div class="jobs-desc"> Delivering a complete front end application. We are
-                                            looking for an AngularJS/Web Developer responsible for the client side
-                                            of our service....
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/17.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Diamond Paints</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">Full Stack Engineer,
-                                            International</a></h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> Mountain View, OR</span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $30000 - $51000 a year</span></span>
-
-                                        <div class="jobs-desc"> You believe in the transformative power education
-                                            brings to people's lives, and know how to create the code that will
-                                            further opportunities for these lifelong...
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                                   <div class="item-list job-item"> <div class="row">
-
-
-                                <div class="col-sm-1  col-xs-2 no-padding photobox">
-                                    <div class="add-image"><a href="#"><img alt="company logo"
-                                                                           src="images/jobs/company-logos/14.jpg"
-                                                                           class="thumbnail no-margin"></a></div>
-                                </div>
-                                <!--/.photobox-->
-                                <div class="col-sm-10  col-xs-10  add-desc-box">
-                                    <div class="ads-details jobs-item">
-                                        <h5 class="company-title "><a href="#">Faysal Bank Limited</a></h5>
-                                        <h4 class="job-title"><a href="<?=$site_url?>partners/view">Java Engineer </a></h4>
-                                                                    <span class="info-row">  <span class="item-location"><i
-                                                                            class="fa fa-map-marker"></i> San Francisco </span> <span
-                                                                            class="date"><i class=" icon-clock"> </i>Full-time</span><span
-                                                                            class=" salary">	<i class=" icon-money"> </i> $30000 - $51000 a year</span></span>
-
-                                        <div class="jobs-desc"> Java C/C++, Python. 5+ years of backend software
-                                            development experience. Projects include real time data synchronization,
-                                            identity management, large...
-                                        </div>
-
-
-                                        <div class="job-actions">
-                                            <ul class="list-unstyled list-inline">
-                                                <li>
-                                                    <a class="save-job" href="#">
-                                                        <span class="fa fa-star-o"></span>
-                                                        Save Job
-                                                    </a>
-                                                </li>
-                                                <li class="saved-job hide">
-                                                    <a href="#" class="saved-job">
-                                                        <span class="fa fa-star"></span>
-                                                        Saved Job
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="email-job">
-                                                        <i class="fa fa-envelope"></i>
-                                                        Email Job
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!--/.add-desc-box-->
-
-                                <!--/.add-desc-box-->
-                            </div></div>
-                            <!--/.job-item-->
-
-
-                        </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane " id="flats">
-                            <p>Products</p> 
-                        </div>
-                        <div class="tab-pane " id="farm_house">
-                            <p>Services</p> 
-                        </div>
-                        <div class="tab-pane " id="upper_portion">
-                            <p>Upper Portion</p> 
-                        </div>
-                        <div class="tab-pane " id="lower_portion">
-                            <p>Lower Portion</p> 
-                        </div>
-                        <div class="tab-pane " id="pent_house">
-                            <p>Pent House</p> 
-                        </div>
-                        <div class="tab-pane " id="rooms">
-                            <p>Rooms</p> 
-                        </div>
+                            
+                 
                     </div>
-
                 </div>
 
 
 
             </div>
-        </div>
+
+              <div class="col-md-12 page-content col-thin-right">
+                
+                
+                    <div class="card sidebar-card card-contact-seller">
+                                <div class="card-header gheading">FEATURED AGENTS <span class="badge badge-secondary"></span>
+                                </div>
+                                <div class="card-content user-info">
+                                    <div class="card-body text-center">
+                                        <ul class="list-unstyled list-user-list list-user-list-cus ">
+                    
+                                            <li><img alt="img" src="<?=$site_url?>img/agents/165153.jpg"
+                                                        class="img-circle" style="display:inline; vertical-align:middle"></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/162995.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img"src="<?=$site_url?>img/agents/169904.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/165435.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/150916.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/172338_5a55d5d81a0f3.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/157272.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/127436.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/160737_5a8eb4f6a15a0.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/168597_5acdfdbda51be.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/159955.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/168857.jpg"
+                                                        class="img-circle   "></a></li>
+                    
+                                            <li><a><img alt="img"src="<?=$site_url?>img/agents/1996_5a619fe5b6dbe.jpg"
+                                                        class="img-circle   "></a></li>
+                                                         <li><a><img alt="img" src="<?=$site_url?>img/agents/156816.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/158071.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/168138.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/165008.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/149724.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/170538_59f18e630c5f1.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/153242.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/160721_5a61c4acdce9e.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/168955.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/157275.jpg"
+                                                        class="img-circle   "></a></li>
+                                            <li><a><img alt="img" src="<?=$site_url?>img/agents/166715.jpg"
+                                                        class="img-circle   "></a></li>
+                                           
+                                           
+                                                         
+                                                                  
+                                        </ul>
+                    
+                    
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+        
+        <div class="col-xl-12 content-box ">
+                <div class="row row-featured">
+                    <div style="clear: both"></div>
+                    <div class="tab-lite relative w100">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs " role="tablist">
+                            <li role="presentation" class="active nav-item"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="nav-link"><i class="icon-location-2"></i>Partners</a>
+                            </li>
+                            <li role="presentation" class="nav-item"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="nav-link"><i class="icon-search"></i>Products</a>
+                            </li>
+                            <li role="presentation" class="nav-item"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" class="nav-link"><i class="icon-th-list"></i>Services</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content" style="padding:15px;">
+                            <div role="tabpanel" class="tab-pane active" id="tab1">
+                              <div class="row">
+                            <div class="col-md-4 col-sm-4 ">
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="fa fa-car ln-shadow"></i>Automobiles  </a>
+
+                                        <span data-target=".cat-id-1" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse cat-id-1 collapse show" style="">
+                                        <li><a href="#">Car Parts &amp; Accessories</a></li>
+                                        <li><a href="#">Campervans &amp; Caravans</a></li>
+                                        <li><a href="#">Motorbikes &amp; Scooters</a></li>
+                                        <li><a href="#">Motorbike Parts &amp; Accessories</a></li>
+                                        <li><a href="#">Vans, Trucks &amp; Plant</a></li>
+                                        <li><a href="#">Wanted</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="icon-home ln-shadow"></i>
+                                        Property <span class="count">228,705</span></a> <span data-target=".cat-id-2" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span></h3>
+
+
+                                    <ul class="cat-collapse collapse show cat-id-2">
+                                        <li><a href="#">House for Rent</a></li>
+                                        <li><a href="#">House for Sale </a></li>
+                                        <li><a href="#"> Apartments For Sale </a></li>
+                                        <li><a href="#">Apartments for Rent </a></li>
+                                        <li><a href="#">Farms-Ranches </a></li>
+                                        <li><a href="#">Land </a></li>
+                                        <li><a href="#">Vacation Rentals </a></li>
+                                        <li><a href="#">Commercial Building</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="icon-home ln-shadow"></i>
+                                        Jobs <span class="count">6375</span></a>
+
+                                        <span data-target=".cat-id-3" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-3">
+                                        <li><a href="#">Full Time Jobs</a></li>
+                                        <li><a href="#">Internet Jobs </a></li>
+                                        <li><a href="#">Learn &amp; Earn jobs </a></li>
+                                        <li><a href="#"> Manual Labor Jobs </a></li>
+                                        <li><a href="#">Other Jobs </a></li>
+                                        <li><a href="#">OwnBusiness </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="fa fa-briefcase ln-shadow"></i> Services <span class="count">45,526</span></a>
+                                        <span data-target=".cat-id-4" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-4">
+                                        <li><a href="#">Building, Home &amp; Removals</a></li>
+                                        <li><a href="#">Entertainment</a></li>
+                                        <li><a href="#">Health &amp; Beauty</a></li>
+                                        <li><a href="#">Miscellaneous</a></li>
+                                        <li><a href="#">Property &amp; Shipping</a></li>
+                                        <li><a href="#">Tax, Money &amp; Visas</a></li>
+                                        <li><a href="#">Telecoms &amp; Computers</a></li>
+                                        <li><a href="#">Travel Services &amp; Tours</a></li>
+                                        <li><a href="#">Tuition &amp; Lessons</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="icon-book-open ln-shadow"></i> Learning <span class="count">26,529</span></a> <span data-target=".cat-id-5" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-5">
+                                        <li><a href="#"> Automotive Classes </a></li>
+                                        <li><a href="#"> Computer Multimedia Classes </a></li>
+                                        <li><a href="#"> Sports Classes </a></li>
+                                        <li><a href="#"> Home Improvement Classes </a></li>
+                                        <li><a href="#"> Language Classes </a></li>
+                                        <li><a href="#"> Music Classes </a></li>
+                                        <li><a href="#"> Personal Fitness </a></li>
+                                        <li><a href="#"> Other Classes </a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class="icon-guidedog ln-shadow"></i> Pets <span class="count">42,111</span></a>
+                                        <span data-target=".cat-id-6" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-6">
+                                        <li><a href="#">Pets for Sale</a></li>
+                                        <li><a href="#">Petsitters &amp; Dogwalkers</a></li>
+                                        <li><a href="#">Equipment &amp; Accessories</a></li>
+                                        <li><a href="#">Missing, Lost &amp; Found</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4   last-column">
+                                <div class="cat-list">
+                                    <h3 class="cat-title"><a href="#"><i class=" icon-basket-1 ln-shadow"></i> For Sale <span class="count">64,526</span></a> <span data-target=".cat-id-7" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-7">
+                                        <li><a href="#">Audio &amp; Stereo</a></li>
+                                        <li><a href="#">Baby &amp; Kids Stuff</a></li>
+                                        <li><a href="#">CDs, DVDs, Games &amp; Books</a></li>
+                                        <li><a href="#">Clothes, Footwear &amp; Accessories</a></li>
+                                        <li><a href="#">Computers &amp; Software</a></li>
+                                        <li><a href="#">Home &amp; Garden</a></li>
+                                        <li><a href="#">Music &amp; Instruments</a></li>
+                                        <li><a href="#">Office Furniture &amp; Equipment</a></li>
+                                        <li><a href="#">Phones, Mobile Phones &amp; Telecoms</a></li>
+                                        <li><a href="#">Sports, Leisure &amp; Travel</a></li>
+                                        <li><a href="#">Tickets</a></li>
+                                        <li><a href="#">TV, DVD &amp; Cameras</a></li>
+                                        <li><a href="#">Video Games &amp; Consoles</a></li>
+                                        <li><a href="#">Freebies</a></li>
+                                        <li><a href="#">Miscellaneous Goods</a></li>
+                                        <li><a href="#">Stuff Wanted</a></li>
+                                        <li><a href="#">Swap Shop</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat-list ">
+                                    <h3 class="cat-title"><a href="#"><i class=" icon-theatre ln-shadow"></i> Community <span class="count">5,30</span> </a> <span data-target=".cat-id-8" aria-expanded="true" data-toggle="collapse" class="btn-cat-collapsed">   <span class=" icon-down-open-big"></span> </span>
+                                    </h3>
+                                    <ul class="cat-collapse collapse show cat-id-8">
+                                        <li><a href="#">Announcements </a></li>
+                                        <li><a href="#">Car Pool - Bike Ride </a></li>
+                                        <li><a href="#">Charity - Donate - NGO </a></li>
+                                        <li><a href="#">Lost - Found </a></li>
+                                        <li><a href="#">Tender Notices </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab2">
+                                <div class="col-xl-12 tab-inner">
+                                    <div class="row">
+                                      Product list gose here
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab3">
+                                <div class="col-xl-12 tab-inner">
+                                    <div class="row">
+                                     Services List Gose here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
     </div>
 </div>

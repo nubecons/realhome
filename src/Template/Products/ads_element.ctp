@@ -101,23 +101,6 @@
            
 </div>
 
-<div class="inner-box col-md-6 pull-left" 
-		   style="
-            height: 140px; width:140px;
-            background: url(<?=$site_url?>img/partners/right_ads_sp_1.jpg);
-            background-position: 0px -2556px;
-			">
-            
-</div>
-  <div class=" inner-box col-md-6 pull-right" 
-		   style="
-           height: 140px; width:140px;
-            background: url(<?=$site_url?>img/partners/right_ads_sp_1.jpg);
-            background-position: 0px -3124px;
-			">
-           
-</div>
-
 <?php /*?> <?php
 						     foreach($Advertisements as $Advertisement){
 								 $ads_link = '#';

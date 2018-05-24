@@ -14,7 +14,7 @@
                 </nav>
 
 
-                <div class="pull-right backtolist"><a href="property-list.html"> <i
+                <div class="pull-right backtolist"><a href="#"> <i
                         class="fa fa-angle-double-left"></i> Back to Results</a></div>
 
             </div>
@@ -187,29 +187,6 @@
                             <div class="row">
                                 <div class="ads-details-info col-md-8">
                                     <p><?=$Product['description']?>
-                                    <h4 class="text-uppercase">Property features</h4>
-
-
-                                    <ul class="list-circle">
-									   			
-                                        <li>KfW Efficiency House 70 standard (EnEV 2014)</li>
-                                        <li>Controlled ventilation with heat recovery</li>
-                                        <li>Floor heating in all rooms</li>
-                                        <li>Additional towel radiator in bath and shower products</li>
-                                        <li>Shower units with floor-level shower trays</li>
-                                        <li>Windows with 3 triple glazing</li>
-                                        <li>Utility Room</li>
-                                        <li>Three Further Double Bedrooms</li>
-                                        <li>Entrance Hall</li>
-
-                                    </ul>
-                                    <h4 class="text-uppercase">Property info </h4>
-                                    <ul class="list-circle">
-                                        <li>3 bathrooms + guest toilet</li>
-                                        <li>Furnished</li>
-                                        <li>Private garden and terrace - with balcony or winter garden (OG)</li>
-                                        <li>Garage and outdoor parking space</li>
-                                    </ul>
 
                                     <h4 class="text-uppercase">Contact Details </h4>
                                     <address>
@@ -513,9 +490,9 @@
                                         </div>
                                         <h3 class="no-margin"> Property Agency </h3>
 
-                                        <p>Location: <strong>New York</strong></p>
+                                        <p>Location: <strong>Pakistan</strong></p>
 
-                                        <p> Web: <strong>www.demoweb.com</strong></p>
+                                        <p> Web: <strong>www.realhome.pk</strong></p>
                                     </div>
                                     <div class="user-ads-action">
 
