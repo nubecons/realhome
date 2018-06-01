@@ -39,7 +39,7 @@
 }
 </style>
 <?php $site_url = $this->Url->build('/',true); ?> 
-<?php echo $this->requestAction('/products/search_element' , [ 'post' => [ 'purpose' => isset($purpose)?$purpose:'']]);?>
+<?php echo $this->requestAction('/products/search_element' , [ 'post' => [ 'purpose' => 'agent']]);?>
 
 
 

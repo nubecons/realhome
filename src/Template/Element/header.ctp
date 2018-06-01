@@ -188,7 +188,7 @@ $(document).ready(function() {
 					</li>
 					
                     <li class="nav-item br-left">
-						<a class="nav-link" href="<?=$site_url?>Agent">Agent</a>
+						<a class="nav-link" href="<?=$site_url?>pages/agents">Agent</a>
 					</li>
                     
                     <li class="nav-item br-left">
