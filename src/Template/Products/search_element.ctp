@@ -249,8 +249,8 @@ $(document).ready(function () {
 	  //hideControlOnEnd: true,
 	  nextSelector:'#cat-next',
 	  prevSelector:'#cat-prev',
-	  prevText: '<img src="<?=$site_url?>img/arrowup.png" >',   
-      nextText: '<img src="<?=$site_url?>img/arrowdown.png">',
+  prevText: ' <button class="w3-button w3-black w3-display-topmiddle" onclick="plusDivs(-1)">&#9650;</button>',   
+      nextText: '  <button class="w3-button w3-black w3-display-bottommiddle" onclick="plusDivs(1)">&#9660;</button>',
 	  
 	  
 	});
