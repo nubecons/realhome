@@ -20,7 +20,7 @@ class PagesController extends AppController {
         parent::beforeFilter($event);
 
 
-        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'advertise', 'help', 'test']);
+        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'agents','advertise', 'help', 'test']);
     }
 
     function test() {
@@ -49,6 +49,10 @@ function advertise() {
 
 function help() {
     $this->set('title', 'Help');
+}
+
+function agents() {
+    $this->set('title', 'Agent');
 }
 
 function workWithUs() {
