@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Controller;
+
 use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
@@ -8,21 +10,27 @@ use Cake\Event\Event;
 
 class PagesController extends AppController {
 
-   function initialize() {
+    function initialize() {
 
         parent::initialize();
     }
 
-   function beforeFilter(Event $event) {
+    function beforeFilter(Event $event) {
 
         parent::beforeFilter($event);
 
+<<<<<<< HEAD
         $this->Auth->allow(['about','contact','privacy', 'home','terms', 'display','locations' ,'test']);
     }
 
    function test() {
         $this->set('title', 'About');
     }
+=======
+        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'advertise', 'help']);
+    }
+
+>>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
     function about() {
         $this->set('title', 'About');
     }
@@ -35,34 +43,58 @@ class PagesController extends AppController {
         $this->set('title', 'Privacy Policy');
     }
 
+<<<<<<< HEAD
    
     function terms() {
         $this->set('title', 'Terms and Conditions');
     }	
 	
 	
+=======
+    function terms() {
+        $this->set('title', 'Terms Of USe');
+    }
+
+    function advertise() {
+        $this->set('title', 'Advertise & Support');
+    }
+
+    function help() {
+        $this->set('title', 'Help');
+    }
+
+    function workWithUs() {
+        $this->set('title', 'Work With Us');
+    }
+
+>>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
     function locations($city_id = null) {
-		
+
         $this->loadModel('Locations');
 
+<<<<<<< HEAD
        $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
 	   $this->set('Locations', $Locations);
 		
 		
 	}
+=======
+        $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id' => $city_id])->toArray();
+        debug($Locations);
+    }
+>>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
 
     function home($purpose = null) {
-     
+
 
         $this->set('purpose', $purpose);
-      
-		
-		
-		$this->loadModel('Products');
-        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE' , 'is_sponsored' => '1'])->toArray();
+
+
+
+        $this->loadModel('Products');
+        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE', 'is_sponsored' => '1'])->toArray();
         $this->set('SponsProducts', $SponsProducts);
-	
-	}
+    }
 
     /**
 
@@ -83,7 +115,7 @@ class PagesController extends AppController {
      */
     public function display(...$path) {
 
-  return $this->redirect('/');
+        return $this->redirect('/');
 
         $count = count($path);
 

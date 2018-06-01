@@ -7,11 +7,7 @@
             <div class="dtable hw100">
                 <div class="dtable-cell hw100">
                     <div class="container text-center">
-<<<<<<< HEAD
-                        <h1 class="intro-title animated fadeInDown"> Terms and Conditions </h1>
-=======
-                        <h1 class="intro-title animated fadeInDown"> Terms of Use </h1>
->>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
+                        <h1 class="intro-title animated fadeInDown">Work With Us </h1>
                     </div>
                 </div>
             </div>
@@ -24,11 +20,7 @@
     <div class="main-container inner-page">
         <div class="container">
             <div class="row clearfix">
-<<<<<<< HEAD
-                <h1 class="text-center title-1"> Terms and Conditions</h1>
-=======
-                <h1 class="text-center title-1">Terms of Use</h1>
->>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
+                <h1 class="text-center title-1"> Work With Us</h1>
                 <hr class="mx-auto small text-hr">
 
                 <div style="clear:both">
