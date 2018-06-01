@@ -186,7 +186,7 @@ $(document).ready(function () {
 	  infiniteLoop: false,
 	  //useCSS:false,
 	  wrapperClass:false,
-	  moveSlides:2,
+	  moveSlides:3,
 	  //hideControlOnEnd: true,
 	  nextSelector:'#cat-next',
 	  prevSelector:'#cat-prev',
