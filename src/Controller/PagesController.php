@@ -19,81 +19,60 @@ class PagesController extends AppController {
 
         parent::beforeFilter($event);
 
-<<<<<<< HEAD
-        $this->Auth->allow(['about','contact','privacy', 'home','terms', 'display','locations' ,'test']);
+
+        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'advertise', 'help', 'test']);
     }
 
-   function test() {
-        $this->set('title', 'About');
-    }
-=======
-        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'advertise', 'help']);
-    }
-
->>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
-    function about() {
+    function test() {
         $this->set('title', 'About');
     }
 
-    function contact() {
-        $this->set('title', 'Contact Us');
-    }
+function about() {
+    $this->set('title', 'About');
+}
 
-    function privacy() {
-        $this->set('title', 'Privacy Policy');
-    }
+function contact() {
+    $this->set('title', 'Contact Us');
+}
 
-<<<<<<< HEAD
-   
-    function terms() {
-        $this->set('title', 'Terms and Conditions');
-    }	
-	
-	
-=======
-    function terms() {
-        $this->set('title', 'Terms Of USe');
-    }
+function privacy() {
+    $this->set('title', 'Privacy Policy');
+}
 
-    function advertise() {
-        $this->set('title', 'Advertise & Support');
-    }
+function terms() {
+    $this->set('title', 'Terms Of USe');
+}
 
-    function help() {
-        $this->set('title', 'Help');
-    }
+function advertise() {
+    $this->set('title', 'Advertise & Support');
+}
 
-    function workWithUs() {
-        $this->set('title', 'Work With Us');
-    }
+function help() {
+    $this->set('title', 'Help');
+}
 
->>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
-    function locations($city_id = null) {
+function workWithUs() {
+    $this->set('title', 'Work With Us');
+}
 
-        $this->loadModel('Locations');
+function locations($city_id = null) {
 
-<<<<<<< HEAD
-       $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
-	   $this->set('Locations', $Locations);
-		
-		
-	}
-=======
-        $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id' => $city_id])->toArray();
-        debug($Locations);
-    }
->>>>>>> 7710f8643e63265a40586fa5cbb115443773155f
+    $this->loadModel('Locations');
 
-    function home($purpose = null) {
+    $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id' => $city_id])->toArray();
+    $this->set('Locations', $Locations);
+}
+
+function home($purpose = null) {
 
 
-        $this->set('purpose', $purpose);
+    $this->set('purpose', $purpose);
 
 
 
-        $this->loadModel('Products');
-        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE', 'is_sponsored' => '1'])->toArray();
-        $this->set('SponsProducts', $SponsProducts);
+    $this->loadModel('Products');
+    $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE', 'is_sponsored' => '1'])->toArray();
+    $this->set('SponsProducts', $SponsProducts);
     }
 
     /**
@@ -160,5 +139,5 @@ class PagesController extends AppController {
             throw new NotFoundException();
         }
     }
-
+    
 }
