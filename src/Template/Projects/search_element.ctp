@@ -11,8 +11,8 @@
   <img class="mySlides" src="<?=$site_url?>images/house/thumb/13.jpg" style="width:100%">
   <img class="mySlides" src="<?=$site_url?>images/house/thumb/14.jpg" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <?php /*?><button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button><?php */?>
 </div>
 
         </div>
@@ -78,14 +78,35 @@ $(document).ready(function () {
 	  //hideControlOnEnd: true,
 	  nextSelector:'#cat-next',
 	  prevSelector:'#cat-prev',
-	  prevText: ' <button class="w3-button w3-black w3-display-topmiddle" onclick="plusDivs(-1)">&#9650;</button>',   
-      nextText: '  <button class="w3-button w3-black w3-display-bottommiddle" onclick="plusDivs(1)">&#9660;</button>',
+	  prevText: ' <button class="w3-button w3-black w3-display-topmiddle">&#9650;</button>',   
+      nextText: '  <button class="w3-button w3-black w3-display-bottommiddle">&#9660;</button>',
+	  
+	  
+	});
+	
+	$('.w3-content').bxSlider({
+	 
+	  auto: false,
+	  autoControls: true,
+	  stopAutoOnClick: true,
+	  pager: false,
+	  //slideWidth: 600,
+	  minSlides:1,
+	  infiniteLoop: false,
+	  //useCSS:false,
+	  //wrapperClass:false,
+	  moveSlides:1,
+	  //hideControlOnEnd: true,
+	 /* nextSelector:'#cat-next',
+	  prevSelector:'#cat-prev',
+	  prevText: ' <button class="w3-button w3-black w3-display-topmiddle">&#9650;</button>',   
+      nextText: '  <button class="w3-button w3-black w3-display-bottommiddle">&#9660;</button>',*/
 	  
 	  
 	});
 });
 
-var slideIndex = 1;
+/*var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -101,7 +122,7 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
-}
+}*/
 </script>
         
 	    	</div>

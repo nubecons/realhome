@@ -245,12 +245,12 @@ $(document).ready(function () {
 	  infiniteLoop: false,
 	  //useCSS:false,
 	  wrapperClass:false,
-	  moveSlides:3,
+	  moveSlides:4,
 	  //hideControlOnEnd: true,
 	  nextSelector:'#cat-next',
 	  prevSelector:'#cat-prev',
-  prevText: ' <button class="w3-button w3-black w3-display-topmiddle" onclick="plusDivs(-1)">&#9650;</button>',   
-      nextText: '  <button class="w3-button w3-black w3-display-bottommiddle" onclick="plusDivs(1)">&#9660;</button>',
+   prevText: '<img src="<?=$site_url?>img/arrowup.png" >',   
+      nextText: '<img src="<?=$site_url?>img/arrowdown.png">',
 	  
 	  
 	});
@@ -269,7 +269,7 @@ $(document).ready(function () {
                               <div class="pop-loc_head" >  
                              <h3 class="title-3">Papular Locations</h3>
                               <div  class="col-md-12  text-center" style="padding-left:85px">
-                              <div  id="cat-prev" style="width:51px; height:31px; overflow:hidden"></div>
+                              <div  id="cat-prev" style="width:51px; height:20px; overflow:hidden"></div>
                               </div>
                               </div>
                               	<div class="inner-box">
@@ -292,7 +292,7 @@ $(document).ready(function () {
                                 </ul>
                             </div>
                             <div  class="col-md-12  text-center" style="padding-left:85px">
-                              <div id="cat-next" style="width:51px; height:31px;overflow:hidden"></div>
+                              <div id="cat-next" style="width:51px; height:20px;overflow:hidden"></div>
                             </div>
                             </div>
                              
