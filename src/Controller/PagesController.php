@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Controller;
+
 use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
@@ -8,18 +10,17 @@ use Cake\Event\Event;
 
 class PagesController extends AppController {
 
-   function initialize() {
+    function initialize() {
 
         parent::initialize();
     }
 
-   function beforeFilter(Event $event) {
+    function beforeFilter(Event $event) {
 
         parent::beforeFilter($event);
 
-        $this->Auth->allow(['about','contact','privacy', 'home', 'display','locations']);
+        $this->Auth->allow(['about', 'contact', 'privacy', 'home', 'display', 'workWithUs', 'terms', 'advertise', 'help']);
     }
-
 
     function about() {
         $this->set('title', 'About');
@@ -32,29 +33,42 @@ class PagesController extends AppController {
     function privacy() {
         $this->set('title', 'Privacy Policy');
     }
-	
+
+    function terms() {
+        $this->set('title', 'Terms Of USe');
+    }
+
+    function advertise() {
+        $this->set('title', 'Advertise & Support');
+    }
+
+    function help() {
+        $this->set('title', 'Help');
+    }
+
+    function workWithUs() {
+        $this->set('title', 'Work With Us');
+    }
+
     function locations($city_id = null) {
-		
+
         $this->loadModel('Locations');
 
-       $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
-	   debug(  $Locations );
-		
-		
-	}
+        $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id' => $city_id])->toArray();
+        debug($Locations);
+    }
 
     function home($purpose = null) {
-     
+
 
         $this->set('purpose', $purpose);
-      
-		
-		
-		$this->loadModel('Products');
-        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE' , 'is_sponsored' => '1'])->toArray();
+
+
+
+        $this->loadModel('Products');
+        $SponsProducts = $this->Products->find('all')->where(['status' => 'ACTIVE', 'is_sponsored' => '1'])->toArray();
         $this->set('SponsProducts', $SponsProducts);
-	
-	}
+    }
 
     /**
 
@@ -75,7 +89,7 @@ class PagesController extends AppController {
      */
     public function display(...$path) {
 
-  return $this->redirect('/');
+        return $this->redirect('/');
 
         $count = count($path);
 

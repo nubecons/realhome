@@ -19,7 +19,11 @@
     						<ul class="list-unstyled footer-nav">
     							<li><a href="<?=$site_url?>pages/about">About Us</a></li>
     							<li><a href="<?=$site_url?>pages/contact">Contact Us</a></li>
+    							<li><a href="<?=$site_url?>pages/workWithUs">Work With Us</a></li> 
+                                                        <li><a href="<?=$site_url?>pages/help">Help & Support</a></li>
+    							<li><a href="<?=$site_url?>pages/advertise">Advertise on Realhome</a></li>
     							<li><a href="<?=$site_url?>pages/privacy"> Privacy Policy</a></li> 
+                                                        <li><a href="<?=$site_url?>pages/terms">Terms Of Use</a></li> 
     						</ul>
     					</div>
     				</div>
@@ -27,6 +31,9 @@
     					<div class="footer-col">
     						<h4 class="footer-title">Account</h4>
     						<ul class="list-unstyled footer-nav">
+                                                    <li><a href="<?=$site_url?>products/blogs">News</a></li>
+                                                    <li><a href="<?=$site_url?>products/forums">Forum</a></li>
+                                                    <li><a href="<?=$site_url?>products/blogs">Blog</a></li>
     							<li><a href="<?=$site_url?>products/add"> Post Add</a></li>
                                  <?php
 						    if($sUser){
@@ -70,11 +77,11 @@
                                                 <div class="footer-col">
     								<h4 class="footer-title">Follow us on</h4>
     								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
-    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i> </a></li>
+    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href=" https://www.facebook.com/Real-Home-196998654435229/?modal=admin_todo_tour"><i class="fa fa-facebook"></i> </a></li>
     									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i> </a></li>
-    									<li><a class="icon-color gp" title="Google+" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-google-plus"></i> </a></li>
+    									<li><a class="icon-color gp" title="Google+" data-placement="top" data-toggle="tooltip" href="https://plus.google.com/u/0/collection/ckJsMF"><i class="fa fa-google-plus"></i> </a></li>
     									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i> </a></li>
-    									<li><a class="icon-color pin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+    									<li><a class="icon-color pin" title="Pinterest" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
     								</ul>
                                                 </div>
     							<!--</div>
