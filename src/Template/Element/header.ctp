@@ -192,7 +192,7 @@ $(document).ready(function() {
 					</li>
                     
                     <li class="nav-item br-left">
-						<a class="nav-link" href="#">New Projects</a>
+						<a class="nav-link" href="<?=$site_url?>Projects/index">New Projects</a>
 					</li>
                 </ul>
                 </div>	 
