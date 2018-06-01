@@ -123,8 +123,14 @@
     background: url(../../img/hdr_txtr.jpg)  repeat-x scroll #ffffff;
     height: 79px;
 	padding:10px;
-	
   }
+
+.login-page{
+	background:url(../../img/login-page.png);
+	width:643px;
+	height:296px;
+	
+	}
   
   
 				
