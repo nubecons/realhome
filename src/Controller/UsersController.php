@@ -502,7 +502,7 @@ class UsersController extends AppController {
 		
 		if($this->sUser){
 		
-			//return $this->redirect('/');
+			return $this->redirect('/');
 		
 			}
 
@@ -534,7 +534,7 @@ class UsersController extends AppController {
 
 				//$hasher = new DefaultPasswordHasher();
 
-              //  $hasher->hash($user->password);
+                //$hasher->hash($user->password);
 
                 $this->request->data['password_decoded'] = $this->request->data['new_password'];
 
@@ -543,6 +543,20 @@ class UsersController extends AppController {
                 $user = $this->Users->patchEntity($user, $this->request->data);
 
                 if ($this->Users->save($user)) {
+					
+					
+					$this->Auth->setUser($user);
+					
+					
+					$email = new Email();
+					$email->template('confirmation')
+					->emailFormat('html')
+					->viewVars(['user' => $user, 'site_name' => $this->SiteInfo['site-name']])
+					->from([$this->SiteInfo['contact_email']])
+					->to($user['email']) //$user['email'];
+					->subject($this->SiteInfo['site-name']. '- Account Created')
+					->send();
+					
 
                     $this->Flash->success(__('Your Account has been created successfully.'));
 
@@ -571,6 +585,7 @@ class UsersController extends AppController {
 	
 	
 	public function profile() {
+		
 		$this->viewBuilder()->setLayout('user');
 		
 		$user = $this->Users->get($this->sUser['id']);

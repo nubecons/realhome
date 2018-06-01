@@ -33,7 +33,7 @@
                                     <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
                                         <label for="cities">Cities</label>
 										<?php echo $this->Form->input('city_id',
-                                        ['empty' =>'All Citiess',
+                                        ['empty' =>'All Cities',
                                         'options' => $Cities , 'dev' => false , 'label' => false, 
                                         'class'=>'form-control selecter',
                                         ]); ?>
@@ -42,18 +42,20 @@
                                     <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
                                         <label for="exampleInputEmail1">Property Type</label>
                                         <select class="form-control selecter" name="product_type_id" id="search-category">
-                                            <option selected="selected" value="">All Properties</option>
-                           <?php
-							foreach($ProductTypes as $Mainkey => $ProductType){
-							 ?>
+                                           <?php /*?> <option selected="selected" value="">All Properties</option><?php */?>
+									   <?php
+                                        foreach($ProductTypes as $Mainkey => $ProductType){
+                                         ?>
 
-                                            <option value="<?=$Mainkey?>" style="background-color:#E9E9E9;font-weight:bold;">-- <?=$ProductType?> --</option>
+                                 <option value="<?=$Mainkey?>" style="background-color:#E9E9E9;font-weight:bold;">-- All <?=$ProductType?> --</option>
                                      <?php
+									   if(isset($SubProductTypes[$Mainkey])){
 											 foreach($SubProductTypes[$Mainkey]  as $key => $sProductType){?>
                                             <option value="<?=$key?>"><?=$sProductType?></option>
 
-                              <?php }
-							}
+	                              <?php }
+									  }
+									}
 							 ?>    
 
 
@@ -134,9 +136,15 @@
 				
 				?>
         <div class="col-md-3 ">
-			<div class="inner-box">
-                            <h3 class="title-3">Papular Locations</h3>
-                            <div class="inner-box-content">
+		
+                              <div class="pop-loc_head" >  
+                             <h3 class="title-3">Papular Locations</h3>
+                              <div  class="col-md-12  text-center" style="padding-left:85px">
+                              <div  id="cat-prev" style="width:51px; height:31px; overflow:hidden"></div>
+                              </div>
+                              </div>
+                              	<div class="inner-box">
+                              <div class="inner-box-content">
                                 <ul class="cat-list arrow">
                                 <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
                                 <li><a href="<?=$site_url?>products/locations/103895"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
@@ -145,13 +153,51 @@
                                 <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
+                                <li><a href="<?=$site_url?>products/locations/103895"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
+                                <li><a href="<?=$site_url?>products/locations/103952"> Islamabad (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103952"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
+                                <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
-                               
-                                    
                                 </ul>
                             </div>
-                        </div>
-        </div>
-    </div>
-    </div>
+                            <div  class="col-md-12  text-center" style="padding-left:85px">
+                              <div id="cat-next" style="width:51px; height:31px;overflow:hidden"></div>
+                            </div>
+                            </div>
+                             
+                           
+                         
+        			</div>
+                   
+
+<script src="<?=$site_url?>assets/plugins/bxslider/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function () {
+	$('.cat-list').bxSlider({
+	  mode:"vertical",	
+	  auto: false,
+	  autoControls: true,
+	  stopAutoOnClick: true,
+	  pager: false,
+	  //slideWidth: 600,
+	  minSlides:8,
+	  infiniteLoop: false,
+	  //useCSS:false,
+	  wrapperClass:false,
+	  moveSlides:2,
+	  //hideControlOnEnd: true,
+	  nextSelector:'#cat-next',
+	  prevSelector:'#cat-prev',
+	  prevText: '<img src="<?=$site_url?>img/arrowup.png" >',   
+      nextText: '<img src="<?=$site_url?>img/arrowdown.png">',
+	  
+	  
+	});
+});
+</script>
+        
+	    	</div>
+    	</div>
     </div>

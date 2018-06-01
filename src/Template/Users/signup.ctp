@@ -1,3 +1,4 @@
+<?php $site_url = $this->Url->build('/',true); ?>
 <div class="main-container">
         <div class="container">
             <div class="row">
@@ -119,10 +120,10 @@
                                             <div class="col-md-8">
                                                 <div class="termbox mb10">
                                                     <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                                        <input type="checkbox" class="custom-control-input">
+                                                        <input type="checkbox" class="custom-control-input" required>
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description"> I have read and agree to the 
-                                                        <a href="#">Terms & Conditions</a> </span>
+                                                        <a href="<?=$site_url?>pages/terms" target="_blank">Terms & Conditions</a> </span>
                                                     </label>
                                                 </div>
                                                 <div style="clear:both"></div>

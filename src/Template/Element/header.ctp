@@ -1,4 +1,23 @@
 <?php $site_url = $this->Url->build('/',true); ?>
+<div class="container text-center" style="padding:5px; height:100px;">
+<a href="#"><img id="topBanner"  src="<?=$site_url?>img/Qazi_Mall_Leaderboard_2704018_03.jpg" alt=""  ></a>
+<script>
+$(document).ready(function() {
+
+    // run the fade() function every 2 seconds
+    setInterval(function(){
+        fade();
+    },1500);
+
+
+    // toggle between fadeIn and fadeOut with 0.3s fade duration.
+    function fade(){
+        $("#topBanner").fadeToggle(400);
+    }
+
+});
+</script>
+</div>
  <div class="container">
 <header id="header">
            <strong class="menu_head">Menu</strong>
@@ -53,24 +72,7 @@
                             </div>
                    
 				   <div class="col-md-4 d-flex justify-content-end ">
-					   <ul class="nav">
-                            
-                        
-						   <li class="nav-item d-flex align-items-center mr-3">
-							   <div class="header_search">
-                               <?php echo $this->Form->create('' ,[ 'id' =>'top_search_form' , 'url' => ['controller' => 'products' ,'action' => 'index'] , 'class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
-								   <input placeholder="Property ID" name="product_id" type="text" class="form-control">
-								   <i class="fa fa-search" aria-hidden="true" onClick="$('#top_search_form').submit()"></i>
-                                   <?php echo $this->Form->end()?>
-							   </div>
-						   </li>
-						   <li class="d-flex align-items-center">
-							   <a href="<?=$site_url?>products/add"  class="add_btn d-flex align-items-center justify-content-center">
-								   <i class="fa fa-plus mr-1" aria-hidden="true"></i> Add Property
-							   </a>
-						   </li>
-                       </ul>
-                       <ul class="nav d-flex">
+					   <ul class="nav d-flex">
 						  <?php /*?> <li class="nav-item">
 							   <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
 						   </li><?php */?>
@@ -90,7 +92,27 @@
 							   <a class="nav-link" href="<?=$site_url?>users/login"><i class="fa fa-user" aria-hidden="true" style="color:#df2114"></i></a>
 						   </li>
                            <?php }?>
+                          
+						  
+                            
 					   </ul>
+                       
+                       <ul class="nav">
+                           <li class="nav-item d-flex align-items-center mr-3">
+							   <div class="header_search">
+                               <?php echo $this->Form->create('' ,[ 'id' =>'top_search_form' , 'url' => ['controller' => 'products' ,'action' => 'index'] , 'class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
+								   <input placeholder="Property ID" name="product_id" type="text" class="form-control">
+								   <i class="fa fa-search" aria-hidden="true" onClick="$('#top_search_form').submit()"></i>
+                                   <?php echo $this->Form->end()?>
+							   </div>
+						   </li>
+						   <li class="d-flex align-items-center">
+							   <a href="<?=$site_url?>products/add"  class="add_btn d-flex align-items-center justify-content-center">
+								   <i class="fa fa-plus mr-1" aria-hidden="true"></i> Add Property
+							   </a>
+						   </li>
+                       </ul>
+                       
 				   </div>
 			   </div>
 
@@ -99,10 +121,11 @@
        
        <div id="secondary_header">
 			<div class="container-fluid d-flex" style="padding-left:0px;">
-				
+				 <div class="col-md-3">
 						<a href="<?=$site_url?>">
 				            <img  src="<?=$site_url?>img/realhomelogo1.png" alt="logo"  >
 						</a>
+                   </div>     
 				
                 
                 <?php
@@ -129,22 +152,28 @@
 					
 					<?php }else{ ?>
                     
-                     <div class="nav-item toggle_menu">
+             <?php /*?>   <div class="nav-item toggle_menu">
                     <a class="nav-link active" href="#">Buy <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div><?php */?>
+               <div class="col-md-9">
+                <div class="row menu_buy">
+                 <img  src="<?=$site_url?>img/menu_buy.png" alt="logo"  >
                 </div>
+                 <div class="row"> 
                 <ul class="nav collapsable_menu">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Homes</a>
+						<a class="nav-link" href="<?=$site_url?>Homes">Homes</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Plots</a>
+						<a class="nav-link" href="<?=$site_url?>Plots">Plots</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Commercial</a>
+						<a class="nav-link" href="<?=$site_url?>Commercial">Commercial</a>
 					</li>
                 </ul>
-				
-                <ul class="nav">
+			 
+                
+                <ul class="nav collapsable_menu">
 		             
                     <?php /*?> <li class="nav-item">
 						<a class="nav-link" href="<?=$site_url?>Buy">Buy</a>
@@ -161,9 +190,15 @@
                     <li class="nav-item br-left">
 						<a class="nav-link" href="<?=$site_url?>Agent">Agent</a>
 					</li>
+                    
+                    <li class="nav-item br-left">
+						<a class="nav-link" href="#">New Projects</a>
+					</li>
                 </ul>
-                
+                </div>	 
+               </div>
                 <?php }?>
+                
 			</div>
 		</div>
 		</div>

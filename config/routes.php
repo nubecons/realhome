@@ -63,6 +63,11 @@ Router::scope('/', function (RouteBuilder $routes) {
 	$routes->connect('/contact', ['controller' => 'Pages', 'action' => 'contact']);
 	$routes->connect('/privacy', ['controller' => 'Pages', 'action' => 'privacy']);
 	$routes->connect('/Buy', ['controller' => 'Pages', 'action' => 'home','Buy']);
+	
+	$routes->connect('/Homes', ['controller' => 'Pages', 'action' => 'home','Homes']);
+	$routes->connect('/Plots', ['controller' => 'Pages', 'action' => 'home','Plots']);
+	$routes->connect('/Commercial', ['controller' => 'Pages', 'action' => 'home','Commercial']);
+	
 	$routes->connect('/Rent', ['controller' => 'Pages', 'action' => 'home','Rent']);
 	$routes->connect('/Wanted', ['controller' => 'Pages', 'action' => 'home','Wanted']);
 	$routes->connect('/Agent', ['controller' => 'Pages', 'action' => 'home','Agent']);

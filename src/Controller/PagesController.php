@@ -17,10 +17,12 @@ class PagesController extends AppController {
 
         parent::beforeFilter($event);
 
-        $this->Auth->allow(['about','contact','privacy', 'home', 'display','locations']);
+        $this->Auth->allow(['about','contact','privacy', 'home','terms', 'display','locations' ,'test']);
     }
 
-
+   function test() {
+        $this->set('title', 'About');
+    }
     function about() {
         $this->set('title', 'About');
     }
@@ -32,13 +34,19 @@ class PagesController extends AppController {
     function privacy() {
         $this->set('title', 'Privacy Policy');
     }
+
+   
+    function terms() {
+        $this->set('title', 'Terms and Conditions');
+    }	
+	
 	
     function locations($city_id = null) {
 		
         $this->loadModel('Locations');
 
        $Locations = $this->Locations->find('list', ['keyField' => 'id', 'valueField' => 'name'])->where(['city_id'=>$city_id])->toArray();
-	   debug(  $Locations );
+	   $this->set('Locations', $Locations);
 		
 		
 	}

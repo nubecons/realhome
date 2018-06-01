@@ -5941,7 +5941,9 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   border-left: solid 1px #d1d1d1;
 }
 #secondary_header {
-  margin: 8px 0;
+ /* margin: 8px 0;*/
+  background: url(../../img/hdr_txtr.jpg) repeat-x scroll;
+  height: 79px;
 }
 #secondary_header .nav-link {
   color: #848484;

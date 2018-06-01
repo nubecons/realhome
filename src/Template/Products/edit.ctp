@@ -1,6 +1,232 @@
 <?php
 
 $site_url = $this->Url->build('/',true); ?> 
+
+     <?php echo $this->Form->create($product ,['class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
+                            <div id="AddFeature" class="modal fade" role="dialog" >
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content" style="width:800px; padding-top:0px">
+              <div class="modal-header subhead" style="margin:0 0 0 0; width:100.1%; padding-right:10px; margin-top:-2px">
+               <h4 class="modal-title"> Property Features</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+               
+              </div>
+              <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="subhead">Main Features</div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Double Glazed Windows</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('double_glazed_windows', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Central Air Conditioning</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('central_air_conditioning', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Central Heating</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('central_heating', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Furnished</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('furnished', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6 ">Electricity Backup</div>
+                                                        <div class="col-lg-6">
+                                                        <?php echo $this->Form->input('electricity_backup', [ 'empty' => '-- Select --' ,  'options' => $ElectricityBackup ,  'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                                        </div>
+                                                    </div>      
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Flooring</div>
+                                                        <div class="col-lg-6">
+                                                        <?php echo $this->Form->input('flooring', [ 'empty' => '-- Select --' ,   'options' => $Flooring ,  'dev' => false , 'label' => false, 'class'=>'form-control']); ?>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Built in year</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('built_in_year', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">View</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('view', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Parking Spaces</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('parking_spaces', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Floors</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('floors', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Other Main Features</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('other_main_features', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                </div>
+
+
+                                                <div class="col-lg-4">
+                                                    <div class="subhead">Rooms</div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Drawing Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('drawing_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Dining Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('dining_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Study Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('study_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Prayer Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('prayer_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Powder Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('powder_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Gym</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('gym', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Sitting Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('sitting_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Laundry  Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('laundry_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Steam  Room</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('steam_room', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Bedrooms</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('f_bedrooms', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Bathroom</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('f_bathroom', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Servant Quarters</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('servant_quarters', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Kitchens</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('kitchens', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Store Rooms</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('store_rooms', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Other Rooms</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('other_rooms', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                </div>  
+
+                                                <div class="col-lg-4">
+                                                    <div class="subhead">Business and Communication</div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Broadband Internet Access</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('broadband_internet_access', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Satellite or Cable TV Ready</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('satellite_cable_tv_ready', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Intercom</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('intercom', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Others</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('c_others', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+
+                                                    <div class="subhead">Healthcare Recreational</div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Lawn or Garden</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('lawn_or_garden', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Swimming Pool</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('swimming_pool', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Jacuzzi</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('jacuzzi', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Others</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('h_others', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                    <div class="subhead">Other Facilities</div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Maintenance Staff</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('maintenance_staff', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Security Staff</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('security_staff', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-9">Facilities for Disabled</div>
+                                                        <div class="col-lg-3"><?php echo $this->Form->checkbox('facilities_for_disabled', []); ?></div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Others</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('of_others', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="subhead">Nearby Locations</div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">School</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_school', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+
+                                                        <div  class="col-lg-6">Hospital</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_hospital', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Restaurants</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_restaurants', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+
+                                                        <div  class="col-lg-6">Shopping Malls</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_shopping_malls', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group row">
+                                                        <div  class="col-lg-6">Distance From Airport (kms)</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_distance_from_airport', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+
+                                                        <div  class="col-lg-6">Others</div>
+                                                        <div class="col-lg-6"><?php echo $this->Form->text('n_c_others', [ 'class'=>'form-control','style' => 'width:100%;height:80%']); ?></div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        
+          </div>
+</div>
 <div class="main-container">
     <div class="container">
         <div class="row">
@@ -8,6 +234,9 @@ $site_url = $this->Url->build('/',true); ?>
                     <?=$this->element('user_property_management')?>
                 </div>
                 <!--/.page-sidebar-->
+                
+                
+                
 
                 <div class="col-md-9 page-content">
            
@@ -15,8 +244,10 @@ $site_url = $this->Url->build('/',true); ?>
                     <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Update Property</strong></h2>
                     <div class="row">
                     <?= $this->Flash->render() ?>
+                
                         <div class="col-sm-12">
-                            <?php echo $this->Form->create($product ,['class' => "form-horizontal" ,'enctype' => 'multipart/form-data' ] ); ?>
+                           
+                            
                             <div class="subhead">PROPERTY TYPE AND LOCATION</div>
 
                             <div class="form-group row">
@@ -195,8 +426,17 @@ $site_url = $this->Url->build('/',true); ?>
                                 </div>
 
                             </div>
+                            
+                            <div class="form-group row">
+                                  <label  class="col-sm-3 col-form-label">Select Features</label>
+                                <div class="col-sm-4">
+                                     <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#AddFeature">Add Features </button>   
+                                </div>
 
-                            <div id="accordion">
+                            </div>
+                            
+
+                           <?php /*?> <div id="accordion">
                                 <div class="card ">
                                     <div class="subhead" id="headingOne" style=" padding:  0px 0px !important; margin-top:  0px; width: 100%">
                                         <h5 class="mb-0">
@@ -416,13 +656,13 @@ $site_url = $this->Url->build('/',true); ?>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div><?php */?>
                             <div class="subhead">ADD IMAGES</div>
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label" for="textarea">Picture</label>
                                 <div class="col-lg-8">
                                     <div class="mb10">
-                                             <?php echo $this->Form->file('image_file', ["id"=>"input-upload-img1" , "type" => "file" , "class" => "file" , "data-preview-file-type" => "text"]); ?>
+                                             <?php echo $this->Form->file('image_file', ["id"=>"input-upload-img1" , "type" => "file" , "accept"=>'image/*' ,  "class" => "file" , "data-preview-file-type" => "text"]); ?>
                                     </div>
 
                                     <p  class="form-text text-muted">
@@ -476,7 +716,7 @@ $site_url = $this->Url->build('/',true); ?>
                                 </div>
                             </div>
 
-                                     <?php echo $this->Form->end()?>
+                                     
 
                         </div>
                     </div>
@@ -488,7 +728,7 @@ $site_url = $this->Url->build('/',true); ?>
     </div>
     <!-- /.container -->
 </div>
-
+<?php echo $this->Form->end()?>
 <script>
     function get_locations(){
         var CityId = $('#city_id option:selected').val();

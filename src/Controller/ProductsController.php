@@ -366,10 +366,32 @@ class ProductsController extends AppController {
         $this->set('UnitOptoins', $this->Products->UnitOptoins);
         $this->set('BedRooms', $this->Products->BedRooms);
         $this->set('BathRooms', $this->Products->BathRooms);
-
+		$purpose = false;
+        if (isset($this->request->data['purpose']) && $this->request->data['purpose'] != '') {
+             $purpose = $this->request->data['purpose'];	
+            $this->Session->delete('SearchData');
+        }
+		
+		$this->set('purpose', $purpose);
+        
+		if ($this->Session->check('SearchData')) {
+            $this->request->data = $this->Session->read('SearchData');
+        }
+		
+		$ProductTypes = [];
+		$ProductType_cond = ['status' => 'ACTIVE', 'parent_id' => 0];
+		if(in_array(strtolower($purpose),['homes','plots' ,'commercial'])){
+			
+			$ProductType_cond['title'] = $purpose;
+			}else{
+		 
+		    $ProductTypes[''] ='All Properties';		
+		 
+		 }
+		
 
         $this->loadModel('ProductTypes');
-        $ProductTypes = $this->ProductTypes->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status' => 'ACTIVE', 'parent_id' => 0])->toArray();
+        $ProductTypes = $ProductTypes + $this->ProductTypes->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where($ProductType_cond)->toArray();
         $this->set('ProductTypes', $ProductTypes);
 
         $SubProductTypes = [];
@@ -383,15 +405,7 @@ class ProductsController extends AppController {
         $this->loadModel('Cities');
         $Cities = $this->Cities->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status' => 'ACTIVE', 'country_code' => 'pk'])->toArray();
         $this->set('Cities', $Cities);
-        $purpose = false;
-        if (isset($this->request->data['purpose']) && $this->request->data['purpose'] != '') {
-            // $purpose = $this->request->data['purpose'];	
-            $this->Session->delete('SearchData');
-        }
-
-        if ($this->Session->check('SearchData')) {
-            $this->request->data = $this->Session->read('SearchData');
-        }
+      
         $this->render();
     }
 

@@ -105,4 +105,26 @@
     color: #fff;
     background-color: #ff6f29;
     border-color: #ff6f29;
-}				
+}
+
+.menu_buy{
+  padding-top:10px;	
+  padding-left:15px;
+}
+
+.collapsable_menu .nav-item {
+  margin-top:15px !important;
+}
+
+.nav-link:hover {
+  color:#000000  !important;
+  }
+ .pop-loc_head {
+    background: url(../../img/hdr_txtr.jpg)  repeat-x scroll #ffffff;
+    height: 79px;
+	padding:10px;
+	
+  }
+  
+  
+				

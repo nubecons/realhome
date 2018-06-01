@@ -462,7 +462,7 @@
                         <div class="col-md-4 col-sm-4 ">
                             <div class="cat-list">
                                 <h3 class="cat-title"><a href="category.html"><i class="icon-home ln-shadow"></i>
-                                   Lahore <span class="count">277,959</span> </a>
+                                   Lahore <span class="count">0</span> </a>
                     
                                     <span data-target=".cat-id-1" aria-expanded="true"  data-toggle="collapse"
                                           class="btn-cat-collapsed collapsed">   <span
@@ -484,7 +484,7 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="cat-list">
                                 <h3 class="cat-title"><a href="category.html"><i class="icon-home ln-shadow"></i> Karachi <span
-                                        class="count">45,526</span></a>
+                                        class="count">0</span></a>
                                     <span data-target=".cat-id-4" aria-expanded="true"  data-toggle="collapse"
                                           class="btn-cat-collapsed collapsed">   <span class=" icon-down-open-big"></span> </span>
                                 </h3>
@@ -504,7 +504,7 @@
                             <div class="cat-list">
                                 <h3 class="cat-title"><a href="category.html"><i
                                         class=" icon-basket-1 ln-shadow"></i>Islamabad <span
-                                        class="count">64,526</span></a> <span data-target=".cat-id-7"
+                                        class="count">0</span></a> <span data-target=".cat-id-7"
                                                                               aria-expanded="true"  data-toggle="collapse"
                                                                               class="btn-cat-collapsed collapsed">   <span
                                         class=" icon-down-open-big"></span> </span>
@@ -658,26 +658,21 @@
                         <div class="card">
                             <div id="headingOne" role="tab" class="card-header gheading collapsed" aria-controls="collapseOne" aria-expanded="true" href="#collapseOne"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  >
-                                        How do I place an ad?
+                                        Buying Properties in Pakistan
                                    
                               
                             </div>
                             <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show" id="collapseOne">
                             
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
-                                    amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu erat
-                                    mattis lorem, lacinia lacinia dui enim at eros. Pellentesque ut gravida augue. Duis
-                                    ac dictum tellus
-                                    <br><br>
-                                    Pellentesque in mauris placerat, porttitor lorem id, ornare nisl. Pellentesque
-                                    rhoncus convallis felis, in egestas libero. Donec et nibh dapibus, sodales nisi
-                                    quis, fringilla augue. Donec dui quam, egestas in varius ut, tincidunt quis ipsum.
-                                    Nulla nec odio eu nisi imperdiet dictum.
-                                    <br><br>
-                                    Curabitur sed leo dictum, convallis lorem eu, suscipit mi. Mauris viverra blandit
-                                    varius. Proin non sem turpis. Etiam fringilla hendrerit nunc at accumsan. Duis
-                                    mollis auctor lobortis.
+                                   "Where should I buy?" is a question we've been asked a gazillion times but we never get tired of attending to you. Instead of giving you one answer, we offer you a multitude of options in a myriad of categories and locations.
+                                   <br>
+
+								Buying a house or property is perhaps one of the most important decisions you would ever make in your life. We consider it our job to help and make this hunt easier for you by giving you every possible option that suits both your pocket as well as your lifestyle.
+								<br><br>
+                                <div class="col-sm-12 text-center" >
+                                <a href="<?=$site_url?>products"  > <button type="button" class="btn btn-primary" style="width:150px"> Start Your Search </button></a>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -685,19 +680,23 @@
                         <div class="card">
                             <div id="headingTwo" role="tab" class="card-header gheading collapsed"  aria-controls="collapseTwo" aria-expanded="false" href="#collapseTwo"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
-                                        What does it cost to advertise?
+                                        Selling Pakistan Real Estate
                                    
                             </div>
                             <div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse"
                                  id="collapseTwo">
                                 <div class="card-body">
-                                    Curabitur sed leo dictum, convallis lorem eu, suscipit mi. Mauris viverra blandit
-                                    varius. Proin non sem turpis. Etiam fringilla hendrerit nunc at accumsan. Duis
-                                    mollis auctor lobortis.
-                                    <br><br>
-                                    Etiam elementum nulla non erat blandit, sed porttitor urna malesuada. Cras euismod a
-                                    nulla sed ornare. Vestibulum id molestie nulla. Phasellus sodales, sapien vitae
-                                    auctor rhoncus
+                                   The luckiest person can run out of luck but here on Realhome.pk, we never run out of advertising options. If you want to quickly take the property off your hands, why not advertise it on Realhome.pk, the virtual paradise of buyers?
+
+Whilst others follow us, we remain busy in carving new and better ways to market your property in the real estate sector that's brim full of activity. The response property sellers get from Realhome.pk is good (we're being humble here). Our excellent services and amazing response has helped us gain our current position as the clear market leader.
+                               
+                               
+                                <br><br>
+                                   <div class="col-sm-12 text-center" >
+                                <a href="<?=$site_url?>products/add"  > 
+                                 <button type="button" class="btn btn-primary" style="width:200px"> List Your Property Now </button>
+                                 </a>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -705,16 +704,21 @@
                         <div class="card">
                             <div id="headingThree" role="tab" class="card-header gheading collapsed" aria-controls="collapseThree" aria-expanded="false" href="#collapseThree"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
-                                        If I post an ad, will I also get more spam e-mails?
+                                       Renting Properties in Pakistan
                                   
                             </div>
                             <div aria-labelledby="headingThree" role="tabpanel" class="panel-collapse collapse"
                                  id="collapseThree">
                                 <div class="card-body">
-                                    Pellentesque in mauris placerat, porttitor lorem id, ornare nisl. Pellentesque
-                                    rhoncus convallis felis, in egestas libero. Donec et nibh dapibus, sodales nisi
-                                    quis, fringilla augue. Donec dui quam, egestas in varius ut, tincidunt quis ipsum.
-                                    Nulla nec odio eu nisi imperdiet dictum.
+                                    Renting can both be a piece of cake or a complete hassle depending upon how you choose to go about it. The easier, wiser and more frequented path leading to a hassle free experience is via Realhome.pk's rent section. Don't take our word for it. Give it a go here and see for yourself.
+                                       <br>
+									If you are a landlord looking to let, we can take care of that for you as well by instantly connecting you with thousands of potential tenants across the country and beyond our borders.
+                               <br><br>
+                               <div class="col-sm-12 text-center" >
+                                
+                                 <button type="button" class="btn btn-primary" style="width:200px">I Want To Rent </button>
+                                 <button type="button" class="btn btn-primary" style="width:200px"> I Want To Let</button>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -722,15 +726,19 @@
                         <div class="card">
                             <div id="heading_04" role="tab" class="card-header gheading collapsed" aria-controls="collapse_04" aria-expanded="false" href="#collapse_04"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
-                                        How long will my ad remain on the website?
+                                       New Projects
                              </div>
                             <div aria-labelledby="heading_04" role="tabpanel" class="panel-collapse collapse"
                                  id="collapse_04">
                                 <div class="card-body">
-                                    Pellentesque in mauris placerat, porttitor lorem id, ornare nisl. Pellentesque
-                                    rhoncus convallis felis, in egestas libero. Donec et nibh dapibus, sodales nisi
-                                    quis, fringilla augue. Donec dui quam, egestas in varius ut, tincidunt quis ipsum.
-                                    Nulla nec odio eu nisi imperdiet dictum.
+                                  We eat, drink and breathe real estate. We seek out and advertise new projects even before others get a whiff of them. Our New Projects section is the launching pad for the up & coming and the New. 
+									<br>
+								  Much like the rest of the website, savvy, hawk-eyed investors prowl this section looking for projects that can send their money-weaving machines spinning. So let the hunt begin!
+                                
+                                 <br>
+                                 <div class="col-sm-12 text-center" >
+                                 	<button type="button" class="btn btn-primary" style="width:200px">Find New Project </button>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -738,37 +746,25 @@
                         <div class="card">
                             <div id="heading_05" role="tab" class="card-header gheading collapsed" aria-controls="collapse_05" aria-expanded="false" href="#collapse_05"
                                        data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
-                                        I sold my item. How do I delete my ad?
+                                      Realhome.pk - Pakistan Property & Pakistan Real Estate Portal
                                    
                             </div>
                             <div aria-labelledby="heading_05" role="tabpanel" class="panel-collapse collapse"
                                  id="collapse_05">
                                 <div class="card-body">
-                                    Pellentesque in mauris placerat, porttitor lorem id, ornare nisl. Pellentesque
-                                    rhoncus convallis felis, in egestas libero. Donec et nibh dapibus, sodales nisi
-                                    quis, fringilla augue. Donec dui quam, egestas in varius ut, tincidunt quis ipsum.
-                                    Nulla nec odio eu nisi imperdiet dictum.
+                                  Realhome.pk is an online property classifieds website that has single-handedly revolutionized the real estate sector in Pakistan. Realhome.pk is by far the largest realty portal of Pakistan, which connects estate agencies, builders, developers and sellers with investors, buyers and tenants. Since 2017, Real Home has been the primary choice for people looking to invest, buy, sell, or rent properties in all major cities of Pakistan. 
+                                  
+                                    <br>
+                                 <div class="col-sm-12 text-center" >
+                                   <a href="<?=$site_url?>pages/about"  > 
+                                 	<button type="button" class="btn btn-primary" style="width:200px">More About Real Home </button>
+                                    </a>
+                                </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div id="heading_06" role="tab"class="card-header gheading collapsed" aria-controls="collapse_06" aria-expanded="false" href="#collapse_06"
-                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  >
-                                        What is a wish list?
-                                 
-                            </div>
-                            <div aria-labelledby="heading_06" role="tabpanel" class="panel-collapse collapse"
-                                 id="collapse_06">
-                                <div class="card-body">
-
-
-                                    Curabitur sed leo dictum, convallis lorem eu, suscipit mi. Mauris viverra blandit
-                                    varius. Proin non sem turpis. Etiam fringilla hendrerit nunc at accumsan. Duis
-                                    mollis auctor lobortis.
-                                </div>
-                            </div>
-                        </div>
+                       
 
 
                     </div>
@@ -816,7 +812,8 @@
                                       <div class="row">
 		                                Real estate is complicated but thankfully, for you, we have given a platform to connect with gurus and godfathers who know the market like the back of their hands. With an army of experts, there is hardly a query we cannot tackle. 
 So come on, hit us with your best shot. <br> <br>
- <button type="submit" class="btn btn-block btn-primary" style="width:100px">  Visit Forum </button>
+										
+                                        <a href="<?=$site_url?>forums" > <button type="button" class="btn btn-block btn-primary" style="width:100px">  Visit Forum </button></a>
                     			        </div>
                             	</div>
                                  <div class="col-xl-12  box-title ">
