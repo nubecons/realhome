@@ -124,12 +124,12 @@ $site_url = $this->Url->build('/',true); ?>
 
             </div><?php */?>
                        
-       <div class="container col-md-8" >
+       <div class="container col-md-10" >
        <div class="w3-content">
-          <img src="<?=$site_url?>images/house/thumb/2.jpg" >
-          <img src="<?=$site_url?>images/house/thumb/11.jpg" >
-          <img src="<?=$site_url?>images/house/thumb/13.jpg" >
-          <img src="<?=$site_url?>images/house/thumb/14.jpg">
+          <img src="<?=$site_url?>images/house/thumb/2.jpg" style="max-height:350px" >
+          <img src="<?=$site_url?>images/house/thumb/11.jpg" style="max-height:350px">
+          <img src="<?=$site_url?>images/house/thumb/13.jpg" style="max-height:350px">
+          <img src="<?=$site_url?>images/house/thumb/14.jpg" style="max-height:350px">
         </div>
        
        </div>     
@@ -153,7 +153,7 @@ $(document).ready(function () {
             
             
 
-              <div class="container col-md-8" >
+              <div class="container col-md-10" >
                 
                     <div class="card sidebar-card card-contact-seller">
                                 <div class="card-header gheading">FEATURED AGENTS <span class="badge badge-secondary"></span>
@@ -223,7 +223,7 @@ $(document).ready(function () {
                             </div>
                 
         </div>
-          <div class="container col-md-8" >
+          <div class="container col-md-10" >
         <div class="col-xl-12 content-box ">
                 <div class="row row-featured">
                     <div style="clear: both"></div>
