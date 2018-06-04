@@ -2,7 +2,8 @@
 
 $site_url = $this->Url->build('/',true); ?> 
 
-<div class="intro has-map"  style="background-image: url(<?=$site_url?>images/bg3.jpg); height: 320px;">
+<div class="intro has-map"  style="background-image: url(<?=$site_url?>images/bg3.jpg); height: 340px;">
+<br>
     <div class="dtable hw100">
         <div class="dtable-cell hw100">
             <div class="container text-center">
@@ -91,10 +92,12 @@ $site_url = $this->Url->build('/',true); ?>
         </div>
     </div>
 </div>
+
+
 <!-- /.intro -->
 <div class="main-container">
     <div class="container">
-        <div style="clear: both"></div>
+     <?php /*?>   <div style="clear: both"></div>
         <div class="col-xl-12 content-box ">
             <div class="row row-featured">
                 <div class=" relative  content featured-list-row  w100">
@@ -119,10 +122,38 @@ $site_url = $this->Url->build('/',true); ?>
 
 
 
-            </div>
+            </div><?php */?>
+                       
+       <div class="container col-md-8" >
+       <div class="w3-content">
+          <img src="<?=$site_url?>images/house/thumb/2.jpg" >
+          <img src="<?=$site_url?>images/house/thumb/11.jpg" >
+          <img src="<?=$site_url?>images/house/thumb/13.jpg" >
+          <img src="<?=$site_url?>images/house/thumb/14.jpg">
+        </div>
+       
+       </div>     
+            
 
-              <div class="col-md-12 page-content col-thin-right">
-                
+<script src="<?=$site_url?>assets/plugins/bxslider/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function () {
+	$('.w3-content').bxSlider({
+	  auto: false,
+	  autoControls: true,
+	  stopAutoOnClick: true,
+	  pager: false,
+	  minSlides:1,
+	  infiniteLoop: false,
+	  moveSlides:1,
+	});
+});
+
+</script>
+            
+            
+
+              <div class="container col-md-8" >
                 
                     <div class="card sidebar-card card-contact-seller">
                                 <div class="card-header gheading">FEATURED AGENTS <span class="badge badge-secondary"></span>
@@ -190,8 +221,9 @@ $site_url = $this->Url->build('/',true); ?>
                                     </div>
                                 </div>
                             </div>
-                </div>
-        
+                
+        </div>
+          <div class="container col-md-8" >
         <div class="col-xl-12 content-box ">
                 <div class="row row-featured">
                     <div style="clear: both"></div>
@@ -356,6 +388,7 @@ $site_url = $this->Url->build('/',true); ?>
                     </div>
 
                 </div>
+            </div>
             </div>
     </div>
 </div>

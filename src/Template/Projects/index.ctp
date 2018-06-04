@@ -251,7 +251,8 @@ $site_url = $this->Url->build('/',true); ?>
                                 </div>
                               
                             </div>
-                                        </div></div></div></div>
+                            </div>
+                          </div></div></div>
                                   
                                   
                                   

@@ -403,7 +403,7 @@ class ProductsController extends AppController {
 
 
         $this->loadModel('Cities');
-        $Cities = $this->Cities->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status' => 'ACTIVE', 'country_code' => 'pk'])->toArray();
+        $Cities = $this->Cities->find('list', ['keyField' => 'id', 'valueField' => 'title'])->where(['status' => 'ACTIVE', 'country_code' => 'pk'])->limit(15000)->toArray();
         $this->set('Cities', $Cities);
       
         $this->render();

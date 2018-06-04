@@ -249,7 +249,7 @@ $(document).ready(function () {
 	  //hideControlOnEnd: true,
 	  nextSelector:'#cat-next',
 	  prevSelector:'#cat-prev',
-   prevText: '<img src="<?=$site_url?>img/arrowup.png" >',   
+      prevText: '<img src="<?=$site_url?>img/arrowup.png" >',   
       nextText: '<img src="<?=$site_url?>img/arrowdown.png">',
 	  
 	  
@@ -266,33 +266,39 @@ $(document).ready(function () {
 				?>
         <div class="col-md-3 ">
 		
-                              <div class="pop-loc_head" >  
+                              <div class="card-header gheading" >  
                              <h3 class="title-3">Papular Locations</h3>
-                              <div  class="col-md-12  text-center" style="padding-left:85px">
-                              <div  id="cat-prev" style="width:51px; height:20px; overflow:hidden"></div>
+                              <div  class="col-md-12  text-center" style="padding-left:100px">
+                              <div  id="cat-prev" style="width:30px; height:20px; overflow:hidden"></div>
                               </div>
                               </div>
-                              	<div class="inner-box">
+                              
+                              <div class="inner-box">
                               <div class="inner-box-content">
                                 <ul class="cat-list arrow">
-                                <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
+                                 <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
                                 <li><a href="<?=$site_url?>products/locations/103895"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
                                 <li><a href="<?=$site_url?>products/locations/103952"> Islamabad (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103952"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
                                 <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
-                                <li><a href="<?=$site_url?>products/locations/103908"> Lahore (<?=isset($city_products['103908'])?number_format($city_products['103908']):'0';?>)</a></li>
-                                <li><a href="<?=$site_url?>products/locations/103895"> Karachi (<?=isset($city_products['103895'])?number_format($city_products['103895']):'0';?>)</a></li>
-                                <li><a href="<?=$site_url?>products/locations/103952"> Islamabad (<?=isset($city_products['103882'])?number_format($city_products['103882']):'0';?>) </a></li>
-                                <li><a href="<?=$site_url?>products/locations/103952"> Peshawar (<?=isset($city_products['103952'])?number_format($city_products['103952']):'0';?>) </a></li>
-                                <li><a href="<?=$site_url?>products/locations/103956"> Quetta (<?=isset($city_products['103956'])?number_format($city_products['103956']):'0';?>) </a></li>
-                                <li><a href="<?=$site_url?>products/locations/103961"> Rawalpindi (<?=isset($city_products['103961'])?number_format($city_products['103961']):'0';?>) </a></li>
-                                <li><a href="<?=$site_url?>products/locations/103930"> Multan (<?=isset($city_products['103930'])?number_format($city_products['103930']):'0';?>) </a></li>
-                                </ul>
+                                <?php
+								
+								foreach($Cities as $city_id => $City)
+								 {
+								  $city_product = $this->GetInfo->getProductCityCount(['city_id' => $city_id]);	
+								 
+								 ?>
+                                
+                                 <li><a href="<?=$site_url?>products/locations/103908"> <?=$City?> (<?=isset($city_product[$city_id])?number_format($city_product[$city_id]):'0';?>)</a></li>
+									
+								<?php } ?>
+                                
+                                s</ul>
                             </div>
-                            <div  class="col-md-12  text-center" style="padding-left:85px">
-                              <div id="cat-next" style="width:51px; height:20px;overflow:hidden"></div>
+                            <div  class="col-md-12  text-center" style="padding-left:115px">
+                              <div id="cat-next" style="width:30px; height:20px;overflow:hidden"></div>
                             </div>
                             </div>
                              
