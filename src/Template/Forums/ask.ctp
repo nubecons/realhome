@@ -1,5 +1,4 @@
 <?php
-
 $site_url = $this->Url->build('/',true); ?>
 
 <div class="main-container inner-page">
@@ -17,7 +16,7 @@ $site_url = $this->Url->build('/',true); ?>
                                             <div ><span class="icon search"></span>Ask Your Question&nbsp;</div>
 
                                             <textarea name="thread_detail" id="thread_detail" style=";width:190px;" class="rfield left focused" placeholder="Get your questions answered by real estate experts ..." onfocus="$(this).addClass( & quot; focused & quot; );" rows="4"></textarea>		<div onclick="$(this).closest('form').submit();" class="clr ask_form_btn grn_btn">
-                                                <a href="#buy" class="nav-link" data-toggle="tab"><button type="button" class="btn btn-block btn-primary">Ask Now</button></a>
+                                                <a href="<?=$site_url."forums/ask"?>"><button type="button" class="btn btn-block btn-primary">Ask Now</button></a>
                                             </div>
                                             <div class="clr"><a rel="nofollow" href="<?=$site_url."forums/ask"?>" class="green" style="float: left; margin: 0px 0px 10px 13px;"><i class="icon d"></i>Start New Discussion</a></div>
                                         </div>

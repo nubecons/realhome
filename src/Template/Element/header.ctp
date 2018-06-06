@@ -150,6 +150,30 @@ $(document).ready(function() {
                 
                 
 					
+					<?php }elseif(isset($is_forum) and $is_forum == 1){
+			    ?>		
+                
+                 <ul class="nav">
+		             <li class="nav-item">
+						<a class="nav-link" href="<?=$site_url?>Forums">All</a>
+					</li>
+					
+                    <li class="nav-item br-left">
+						<a class="nav-link" href="<?=$site_url?>Forums">Q&A</a>
+					</li>
+					
+                    <li class="nav-item br-left">
+						<a class="nav-link" href="<?=$site_url?>Forums">Discussions</a>
+					</li>
+                                         <li class="nav-item br-left">
+						<a class="nav-link" href="<?=$site_url?>Forums/ask">Start New Discussion</a>
+					</li>
+					
+                 
+                </ul>
+                
+                
+					
 					<?php }else{ ?>
                     
              <?php /*?>   <div class="nav-item toggle_menu">

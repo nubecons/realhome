@@ -20,6 +20,7 @@ class ForumsController extends AppController {
 		$this->Auth->allow(['index','ask','view']);
     }
     public function index() {
+         $this->set('is_forum', '1');
         $this->loadModel('ForumCategories');
         $ForumCategories = $this->ForumCategories->find()->all();
         $this->set('ForumCategories', $ForumCategories);
@@ -29,6 +30,7 @@ class ForumsController extends AppController {
 	
 	 public function view($cat_id = null)
     {
+              $this->set('is_forum', '1');
 	        $this->loadModel('ForumCategories');
 			$ForumCategories = $this->ForumCategories->find()->all();
 			$this->set('ForumCategories', $ForumCategories);
@@ -80,7 +82,7 @@ class ForumsController extends AppController {
     }
 	
     public function ask() {
-		
+		 $this->set('is_forum', '1');
 			$this->loadModel('ForumCategories');
 			$ForumCategories = $this->ForumCategories->find()->all();
 			$this->set('ForumCategories', $ForumCategories);
