@@ -266,8 +266,8 @@ $(document).ready(function () {
 				?>
         <div class="col-md-3 ">
 		
-                              <div class="card-header gheading" >  
-                             <h3 class="title-3">Papular Locations</h3>
+                           <div class="card-header gheading" style="padding-top:10px; padding-bottom:5px" >  
+                             <h3 class="title-3" style="line-height:0px; padding-top:5px; padding-bottom:5px;">Papular Locations</h3>
                               <div  class="col-md-12  text-center" style="padding-left:100px">
                               <div  id="cat-prev" style="width:30px; height:20px; overflow:hidden"></div>
                               </div>

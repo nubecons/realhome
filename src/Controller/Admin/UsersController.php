@@ -98,7 +98,7 @@
 	
 	
 	
-	return $this->redirect(array('controller'=>'/Users', 'action'=>'changePassword',$userID));
+	return $this->redirect(array('controller'=>'Users', 'action'=>'changePassword',$userID));
 	
 	
 	
